@@ -1,0 +1,1 @@
+define("jira/shifter/shifter-group",["jira/jquery/deferred","jquery"],function(Deferred,jQuery){return{name:"",weight:-1,getSuggestions:function(args){return Deferred()},onSelection:jQuery.noop}});

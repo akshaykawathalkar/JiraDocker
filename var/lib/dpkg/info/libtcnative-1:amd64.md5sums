@@ -1,0 +1,8 @@
+11fdada7507d704ea704c01c28840689  usr/lib/x86_64-linux-gnu/libtcnative-1.a
+e6a58eb5984f2cc75254e789b84b4b26  usr/lib/x86_64-linux-gnu/libtcnative-1.so.0.2.10
+7a7ea89e16391e16c4c88e7037c2d390  usr/lib/x86_64-linux-gnu/pkgconfig/tcnative-1.pc
+67149f112e40a7b09465ab5288bbd691  usr/share/doc/libtcnative-1/README.Debian
+7b533ea00e1ebfbe8e20a61884f76be0  usr/share/doc/libtcnative-1/changelog.Debian.gz
+b25c46e8442057c06b0a04b3517f7bd1  usr/share/doc/libtcnative-1/changelog.gz
+e946475a6dcbcc38e17355d8dfef1bff  usr/share/doc/libtcnative-1/copyright
+416e837c0018597493ce92602db7ebcc  usr/share/lintian/overrides/libtcnative-1

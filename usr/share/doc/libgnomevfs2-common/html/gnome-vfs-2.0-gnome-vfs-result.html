@@ -1,0 +1,620 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GnomeVFS - Filesystem Abstraction library: GnomeVFSResult</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="GnomeVFS - Filesystem Abstraction library">
+<link rel="up" href="data-types.html" title="Basic Data Types">
+<link rel="prev" href="data-types.html" title="Basic Data Types">
+<link rel="next" href="gnome-vfs-2.0-gnome-vfs-uri.html" title="GnomeVFSURI">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-result.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-result.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="data-types.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="data-types.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gnome-vfs-2.0-gnome-vfs-uri.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gnome-vfs-2.0-gnome-vfs-result"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gnome-vfs-2.0-gnome-vfs-result.top_of_page"></a>GnomeVFSResult</span></h2>
+<p>GnomeVFSResult — Result of I/O operations, the equivalent of errno</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-result.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#gnome-vfs-result-to-string" title="gnome_vfs_result_to_string ()">gnome_vfs_result_to_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#gnome-vfs-result-from-errno-code" title="gnome_vfs_result_from_errno_code ()">gnome_vfs_result_from_errno_code</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#gnome-vfs-result-from-errno" title="gnome_vfs_result_from_errno ()">gnome_vfs_result_from_errno</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#gnome-vfs-result-from-h-errno" title="gnome_vfs_result_from_h_errno ()">gnome_vfs_result_from_h_errno</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#gnome-vfs-result-from-h-errno-val" title="gnome_vfs_result_from_h_errno_val ()">gnome_vfs_result_from_h_errno_val</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-result.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult">GnomeVFSResult</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-result.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">
+</pre>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-result.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-result.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gnome-vfs-result-to-string"></a><h3>gnome_vfs_result_to_string ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+gnome_vfs_result_to_string (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> result</code></em>);</pre>
+<p>Returns a string representing <em class="parameter"><code>result</code></em>
+, useful for debugging
+purposes, but probably not appropriate for passing to the user.</p>
+<div class="refsect3">
+<a name="id-1.4.2.7.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> to convert to a string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.2.7.2.6"></a><h4>Returns</h4>
+<p> a string representing <em class="parameter"><code>result</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-result-from-errno-code"></a><h3>gnome_vfs_result_from_errno_code ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_result_from_errno_code (<em class="parameter"><code><span class="type">int</span> errno_code</code></em>);</pre>
+<p>Converts a system errno value to a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.4.2.7.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>errno_code</p></td>
+<td class="parameter_description"><p>integer of the same type as the system "errno".</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.2.7.3.6"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> equivalent to <em class="parameter"><code>errno_code</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-result-from-errno"></a><h3>gnome_vfs_result_from_errno ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_result_from_errno (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Converts the system errno to a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.4.2.7.4.5"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> equivalent to the current system errno.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-result-from-h-errno"></a><h3>gnome_vfs_result_from_h_errno ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_result_from_h_errno (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Converts the system "h_errno" to a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> (h_errno represents errors
+accessing and finding internet hosts)</p>
+<div class="refsect3">
+<a name="id-1.4.2.7.5.5"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> equivalent to the current system "h_errno".</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-result-from-h-errno-val"></a><h3>gnome_vfs_result_from_h_errno_val ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_result_from_h_errno_val (<em class="parameter"><code><span class="type">int</span> h_errno_code</code></em>);</pre>
+<p>Converts the error code <em class="parameter"><code>h_errno_code</code></em>
+ into a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.4.2.7.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>h_errno_code</p></td>
+<td class="parameter_description"><p>an integer representing the same error code
+as the system h_errno.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.2.7.6.6"></a><h4>Returns</h4>
+<p> The <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> equivalent to the <em class="parameter"><code>h_errno_code</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-result.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GnomeVFSResult"></a><h3>enum GnomeVFSResult</h3>
+<div class="warning"><p><code class="literal">GnomeVFSResult</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>A <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> informs library clients about the result of a file operation.
+Unless it is <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><span class="type">GNOME_VFS_OK</span></a>, it denotes that a problem occurred and the operation
+could not be executed successfully.</p>
+<p>gnome_vfs_result_to_string() provides a textual representation of <a href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult"><span class="type">GnomeVFSResults</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.4.2.8.2.6"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-OK:CAPS"></a>GNOME_VFS_OK</p></td>
+<td class="enum_member_description">
+<p>No error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-NOT-FOUND:CAPS"></a>GNOME_VFS_ERROR_NOT_FOUND</p></td>
+<td class="enum_member_description">
+<p>File not found.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-GENERIC:CAPS"></a>GNOME_VFS_ERROR_GENERIC</p></td>
+<td class="enum_member_description">
+<p>Generic error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-INTERNAL:CAPS"></a>GNOME_VFS_ERROR_INTERNAL</p></td>
+<td class="enum_member_description">
+<p>Internal error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-BAD-PARAMETERS:CAPS"></a>GNOME_VFS_ERROR_BAD_PARAMETERS</p></td>
+<td class="enum_member_description">
+<p>Invalid parameters.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-NOT-SUPPORTED:CAPS"></a>GNOME_VFS_ERROR_NOT_SUPPORTED</p></td>
+<td class="enum_member_description">
+<p>Unsupported operation.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-IO:CAPS"></a>GNOME_VFS_ERROR_IO</p></td>
+<td class="enum_member_description">
+<p>I/O error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-CORRUPTED-DATA:CAPS"></a>GNOME_VFS_ERROR_CORRUPTED_DATA</p></td>
+<td class="enum_member_description">
+<p>Data corrupted.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-WRONG-FORMAT:CAPS"></a>GNOME_VFS_ERROR_WRONG_FORMAT</p></td>
+<td class="enum_member_description">
+<p>Format not valid.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-BAD-FILE:CAPS"></a>GNOME_VFS_ERROR_BAD_FILE</p></td>
+<td class="enum_member_description">
+<p>Bad file handle.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-TOO-BIG:CAPS"></a>GNOME_VFS_ERROR_TOO_BIG</p></td>
+<td class="enum_member_description">
+<p>File too big.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-NO-SPACE:CAPS"></a>GNOME_VFS_ERROR_NO_SPACE</p></td>
+<td class="enum_member_description">
+<p>No space left on device.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-READ-ONLY:CAPS"></a>GNOME_VFS_ERROR_READ_ONLY</p></td>
+<td class="enum_member_description">
+<p>Read-only file system.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-INVALID-URI:CAPS"></a>GNOME_VFS_ERROR_INVALID_URI</p></td>
+<td class="enum_member_description">
+<p>Invalid URI.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-NOT-OPEN:CAPS"></a>GNOME_VFS_ERROR_NOT_OPEN</p></td>
+<td class="enum_member_description">
+<p>File not open.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-INVALID-OPEN-MODE:CAPS"></a>GNOME_VFS_ERROR_INVALID_OPEN_MODE</p></td>
+<td class="enum_member_description">
+<p>Open mode not valid.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-ACCESS-DENIED:CAPS"></a>GNOME_VFS_ERROR_ACCESS_DENIED</p></td>
+<td class="enum_member_description">
+<p>Access denied.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-TOO-MANY-OPEN-FILES:CAPS"></a>GNOME_VFS_ERROR_TOO_MANY_OPEN_FILES</p></td>
+<td class="enum_member_description">
+<p>Too many open files.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-EOF:CAPS"></a>GNOME_VFS_ERROR_EOF</p></td>
+<td class="enum_member_description">
+<p>End of file.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-NOT-A-DIRECTORY:CAPS"></a>GNOME_VFS_ERROR_NOT_A_DIRECTORY</p></td>
+<td class="enum_member_description">
+<p>Not a directory.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-IN-PROGRESS:CAPS"></a>GNOME_VFS_ERROR_IN_PROGRESS</p></td>
+<td class="enum_member_description">
+<p>Operation in progress.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-INTERRUPTED:CAPS"></a>GNOME_VFS_ERROR_INTERRUPTED</p></td>
+<td class="enum_member_description">
+<p>Operation interrupted.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-FILE-EXISTS:CAPS"></a>GNOME_VFS_ERROR_FILE_EXISTS</p></td>
+<td class="enum_member_description">
+<p>File exists.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-LOOP:CAPS"></a>GNOME_VFS_ERROR_LOOP</p></td>
+<td class="enum_member_description">
+<p>Looping links encountered.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-NOT-PERMITTED:CAPS"></a>GNOME_VFS_ERROR_NOT_PERMITTED</p></td>
+<td class="enum_member_description">
+<p>Operation not permitted.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-IS-DIRECTORY:CAPS"></a>GNOME_VFS_ERROR_IS_DIRECTORY</p></td>
+<td class="enum_member_description">
+<p>Is a directory.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-NO-MEMORY:CAPS"></a>GNOME_VFS_ERROR_NO_MEMORY</p></td>
+<td class="enum_member_description">
+<p>Not enough memory.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-HOST-NOT-FOUND:CAPS"></a>GNOME_VFS_ERROR_HOST_NOT_FOUND</p></td>
+<td class="enum_member_description">
+<p>Host not found.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-INVALID-HOST-NAME:CAPS"></a>GNOME_VFS_ERROR_INVALID_HOST_NAME</p></td>
+<td class="enum_member_description">
+<p>Host name not valid.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-HOST-HAS-NO-ADDRESS:CAPS"></a>GNOME_VFS_ERROR_HOST_HAS_NO_ADDRESS</p></td>
+<td class="enum_member_description">
+<p>Host has no address.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-LOGIN-FAILED:CAPS"></a>GNOME_VFS_ERROR_LOGIN_FAILED</p></td>
+<td class="enum_member_description">
+<p>Login failed.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-CANCELLED:CAPS"></a>GNOME_VFS_ERROR_CANCELLED</p></td>
+<td class="enum_member_description">
+<p>Operation cancelled.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-DIRECTORY-BUSY:CAPS"></a>GNOME_VFS_ERROR_DIRECTORY_BUSY</p></td>
+<td class="enum_member_description">
+<p>Directory busy.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-DIRECTORY-NOT-EMPTY:CAPS"></a>GNOME_VFS_ERROR_DIRECTORY_NOT_EMPTY</p></td>
+<td class="enum_member_description">
+<p>Directory not empty.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-TOO-MANY-LINKS:CAPS"></a>GNOME_VFS_ERROR_TOO_MANY_LINKS</p></td>
+<td class="enum_member_description">
+<p>Too many links.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-READ-ONLY-FILE-SYSTEM:CAPS"></a>GNOME_VFS_ERROR_READ_ONLY_FILE_SYSTEM</p></td>
+<td class="enum_member_description">
+<p>Read only file system.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-NOT-SAME-FILE-SYSTEM:CAPS"></a>GNOME_VFS_ERROR_NOT_SAME_FILE_SYSTEM</p></td>
+<td class="enum_member_description">
+<p>Not on the same file system.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-NAME-TOO-LONG:CAPS"></a>GNOME_VFS_ERROR_NAME_TOO_LONG</p></td>
+<td class="enum_member_description">
+<p>Name too long.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-SERVICE-NOT-AVAILABLE:CAPS"></a>GNOME_VFS_ERROR_SERVICE_NOT_AVAILABLE</p></td>
+<td class="enum_member_description">
+<p>Service not available.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-SERVICE-OBSOLETE:CAPS"></a>GNOME_VFS_ERROR_SERVICE_OBSOLETE</p></td>
+<td class="enum_member_description">
+<p>Request obsoletes service's data.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-PROTOCOL-ERROR:CAPS"></a>GNOME_VFS_ERROR_PROTOCOL_ERROR</p></td>
+<td class="enum_member_description">
+<p>Protocol error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-NO-MASTER-BROWSER:CAPS"></a>GNOME_VFS_ERROR_NO_MASTER_BROWSER</p></td>
+<td class="enum_member_description">
+<p>Could not find master browser.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-NO-DEFAULT:CAPS"></a>GNOME_VFS_ERROR_NO_DEFAULT</p></td>
+<td class="enum_member_description">
+<p>No default action associated.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-NO-HANDLER:CAPS"></a>GNOME_VFS_ERROR_NO_HANDLER</p></td>
+<td class="enum_member_description">
+<p>No handler for URL scheme.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-PARSE:CAPS"></a>GNOME_VFS_ERROR_PARSE</p></td>
+<td class="enum_member_description">
+<p>Error parsing command line.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-LAUNCH:CAPS"></a>GNOME_VFS_ERROR_LAUNCH</p></td>
+<td class="enum_member_description">
+<p>Error launching command.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-TIMEOUT:CAPS"></a>GNOME_VFS_ERROR_TIMEOUT</p></td>
+<td class="enum_member_description">
+<p>Timeout reached.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-NAMESERVER:CAPS"></a>GNOME_VFS_ERROR_NAMESERVER</p></td>
+<td class="enum_member_description">
+<p>Nameserver error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-LOCKED:CAPS"></a>GNOME_VFS_ERROR_LOCKED</p></td>
+<td class="enum_member_description">
+<p>The resource is locked.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-DEPRECATED-FUNCTION:CAPS"></a>GNOME_VFS_ERROR_DEPRECATED_FUNCTION</p></td>
+<td class="enum_member_description">
+<p>Function call deprecated.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-INVALID-FILENAME:CAPS"></a>GNOME_VFS_ERROR_INVALID_FILENAME</p></td>
+<td class="enum_member_description">
+<p>The specified filename is invalid.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-ERROR-NOT-A-SYMBOLIC-LINK:CAPS"></a>GNOME_VFS_ERROR_NOT_A_SYMBOLIC_LINK</p></td>
+<td class="enum_member_description">
+<p>Not a symbolic link.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-NUM-ERRORS:CAPS"></a>GNOME_VFS_NUM_ERRORS</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

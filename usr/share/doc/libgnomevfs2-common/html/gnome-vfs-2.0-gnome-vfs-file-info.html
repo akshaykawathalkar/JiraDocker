@@ -1,0 +1,1770 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GnomeVFS - Filesystem Abstraction library: GnomeVFSFileInfo</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="GnomeVFS - Filesystem Abstraction library">
+<link rel="up" href="data-types.html" title="Basic Data Types">
+<link rel="prev" href="gnome-vfs-2.0-gnome-vfs-utils.html" title="gnome-vfs-utils">
+<link rel="next" href="gnome-vfs-2.0-gnome-vfs-file-size.html" title="GnomeVFSFileSize">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-file-info.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-file-info.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="data-types.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gnome-vfs-2.0-gnome-vfs-utils.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gnome-vfs-2.0-gnome-vfs-file-size.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gnome-vfs-2.0-gnome-vfs-file-info"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gnome-vfs-2.0-gnome-vfs-file-info.top_of_page"></a>GnomeVFSFileInfo</span></h2>
+<p>GnomeVFSFileInfo — stores information about files, GnomeVFS equivalent of stat</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-file-info.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-SYMLINK:CAPS" title="GNOME_VFS_FILE_INFO_SYMLINK()">GNOME_VFS_FILE_INFO_SYMLINK</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-SET-SYMLINK:CAPS" title="GNOME_VFS_FILE_INFO_SET_SYMLINK()">GNOME_VFS_FILE_INFO_SET_SYMLINK</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-LOCAL:CAPS" title="GNOME_VFS_FILE_INFO_LOCAL()">GNOME_VFS_FILE_INFO_LOCAL</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-SET-LOCAL:CAPS" title="GNOME_VFS_FILE_INFO_SET_LOCAL()">GNOME_VFS_FILE_INFO_SET_LOCAL</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-SUID:CAPS" title="GNOME_VFS_FILE_INFO_SUID()">GNOME_VFS_FILE_INFO_SUID</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-SGID:CAPS" title="GNOME_VFS_FILE_INFO_SGID()">GNOME_VFS_FILE_INFO_SGID</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-STICKY:CAPS" title="GNOME_VFS_FILE_INFO_STICKY()">GNOME_VFS_FILE_INFO_STICKY</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-SET-SUID:CAPS" title="GNOME_VFS_FILE_INFO_SET_SUID()">GNOME_VFS_FILE_INFO_SET_SUID</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-SET-SGID:CAPS" title="GNOME_VFS_FILE_INFO_SET_SGID()">GNOME_VFS_FILE_INFO_SET_SGID</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-SET-STICKY:CAPS" title="GNOME_VFS_FILE_INFO_SET_STICKY()">GNOME_VFS_FILE_INFO_SET_STICKY</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="returnvalue">GnomeVFSFileInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#gnome-vfs-file-info-new" title="gnome_vfs_file_info_new ()">gnome_vfs_file_info_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#gnome-vfs-file-info-unref" title="gnome_vfs_file_info_unref ()">gnome_vfs_file_info_unref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#gnome-vfs-file-info-ref" title="gnome_vfs_file_info_ref ()">gnome_vfs_file_info_ref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#gnome-vfs-file-info-clear" title="gnome_vfs_file_info_clear ()">gnome_vfs_file_info_clear</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#gnome-vfs-file-info-get-mime-type" title="gnome_vfs_file_info_get_mime_type ()">gnome_vfs_file_info_get_mime_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#gnome-vfs-file-info-copy" title="gnome_vfs_file_info_copy ()">gnome_vfs_file_info_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="returnvalue">GnomeVFSFileInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#gnome-vfs-file-info-dup" title="gnome_vfs_file_info_dup ()">gnome_vfs_file_info_dup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#gnome-vfs-file-info-matches" title="gnome_vfs_file_info_matches ()">gnome_vfs_file_info_matches</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#gnome-vfs-file-info-list-ref" title="gnome_vfs_file_info_list_ref ()">gnome_vfs_file_info_list_ref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#gnome-vfs-file-info-list-unref" title="gnome_vfs_file_info_list_unref ()">gnome_vfs_file_info_list_unref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#gnome-vfs-file-info-list-copy" title="gnome_vfs_file_info_list_copy ()">gnome_vfs_file_info_list_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#gnome-vfs-file-info-list-free" title="gnome_vfs_file_info_list_free ()">gnome_vfs_file_info_list_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSGetFileInfoResult" title="GnomeVFSGetFileInfoResult"><span class="returnvalue">GnomeVFSGetFileInfoResult</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#gnome-vfs-get-file-info-result-dup" title="gnome_vfs_get_file_info_result_dup ()">gnome_vfs_get_file_info_result_dup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#gnome-vfs-get-file-info-result-free" title="gnome_vfs_get_file_info_result_free ()">gnome_vfs_get_file_info_result_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-file-info.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileFlags" title="enum GnomeVFSFileFlags">GnomeVFSFileFlags</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileType" title="enum GnomeVFSFileType">GnomeVFSFileType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfoFields" title="enum GnomeVFSFileInfoFields">GnomeVFSFileInfoFields</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFilePermissions" title="enum GnomeVFSFilePermissions">GnomeVFSFilePermissions</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfoOptions" title="enum GnomeVFSFileInfoOptions">GnomeVFSFileInfoOptions</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSSetFileInfoMask" title="enum GnomeVFSSetFileInfoMask">GnomeVFSSetFileInfoMask</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSGetFileInfoResult" title="GnomeVFSGetFileInfoResult">GnomeVFSGetFileInfoResult</a></td>
+</tr>
+<tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSInodeNumber" title="GnomeVFSInodeNumber">GnomeVFSInodeNumber</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo">GnomeVFSFileInfo</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-file-info.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">
+</pre>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-file-info.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-file-info.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GNOME-VFS-FILE-INFO-SYMLINK:CAPS"></a><h3>GNOME_VFS_FILE_INFO_SYMLINK()</h3>
+<pre class="programlisting">#define             GNOME_VFS_FILE_INFO_SYMLINK(info)</pre>
+<p>Determines whether a file is a symbolic link given <em class="parameter"><code>info</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>GnomeVFSFileInfo struct</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GNOME-VFS-FILE-INFO-SET-SYMLINK:CAPS"></a><h3>GNOME_VFS_FILE_INFO_SET_SYMLINK()</h3>
+<pre class="programlisting">#define             GNOME_VFS_FILE_INFO_SET_SYMLINK(info, value)</pre>
+<p>Set the symbolic link field in <em class="parameter"><code>info</code></em>
+ to <em class="parameter"><code>value</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>GnomeVFSFileInfo struct</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>if <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, <em class="parameter"><code>info</code></em>
+is set to indicate the file is a symbolic link</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GNOME-VFS-FILE-INFO-LOCAL:CAPS"></a><h3>GNOME_VFS_FILE_INFO_LOCAL()</h3>
+<pre class="programlisting">#define             GNOME_VFS_FILE_INFO_LOCAL(info)</pre>
+<p>Determines whether a file is local given <em class="parameter"><code>info</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>GnomeVFSFileInfo struct</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GNOME-VFS-FILE-INFO-SET-LOCAL:CAPS"></a><h3>GNOME_VFS_FILE_INFO_SET_LOCAL()</h3>
+<pre class="programlisting">#define             GNOME_VFS_FILE_INFO_SET_LOCAL(info, value)</pre>
+<p>Set the "local file" field in <em class="parameter"><code>info</code></em>
+ to <em class="parameter"><code>value</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>GnomeVFSFileInfo struct</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>if <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, <em class="parameter"><code>info</code></em>
+is set to indicate the file is local</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GNOME-VFS-FILE-INFO-SUID:CAPS"></a><h3>GNOME_VFS_FILE_INFO_SUID()</h3>
+<pre class="programlisting">#define             GNOME_VFS_FILE_INFO_SUID(info)</pre>
+<p>Determines whether a file belongs to the super user.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>GnomeVFSFileInfo struct</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GNOME-VFS-FILE-INFO-SGID:CAPS"></a><h3>GNOME_VFS_FILE_INFO_SGID()</h3>
+<pre class="programlisting">#define             GNOME_VFS_FILE_INFO_SGID(info)</pre>
+<p>Determines whether a file belongs to the super user's group.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>GnomeVFSFileInfo struct</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GNOME-VFS-FILE-INFO-STICKY:CAPS"></a><h3>GNOME_VFS_FILE_INFO_STICKY()</h3>
+<pre class="programlisting">#define             GNOME_VFS_FILE_INFO_STICKY(info)</pre>
+<p>Determines whether a file has the sticky bit set, given <em class="parameter"><code>info</code></em>
+</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>GnomeVFSFileInfo struct</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GNOME-VFS-FILE-INFO-SET-SUID:CAPS"></a><h3>GNOME_VFS_FILE_INFO_SET_SUID()</h3>
+<pre class="programlisting">#define             GNOME_VFS_FILE_INFO_SET_SUID(info, value)</pre>
+<p>Set the SUID field in <em class="parameter"><code>info</code></em>
+ to <em class="parameter"><code>value</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>GnomeVFSFileInfo struct</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>if <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, <em class="parameter"><code>info</code></em>
+is set to indicate the file belongs to the super user</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GNOME-VFS-FILE-INFO-SET-SGID:CAPS"></a><h3>GNOME_VFS_FILE_INFO_SET_SGID()</h3>
+<pre class="programlisting">#define             GNOME_VFS_FILE_INFO_SET_SGID(info, value)</pre>
+<p>Set the SGID field in <em class="parameter"><code>info</code></em>
+ to <em class="parameter"><code>value</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>GnomeVFSFileInfo struct</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>if <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, <em class="parameter"><code>info</code></em>
+is set to indicate the file belongs to the super user's group</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GNOME-VFS-FILE-INFO-SET-STICKY:CAPS"></a><h3>GNOME_VFS_FILE_INFO_SET_STICKY()</h3>
+<pre class="programlisting">#define             GNOME_VFS_FILE_INFO_SET_STICKY(info, value)</pre>
+<p>Set the sticky bit in <em class="parameter"><code>info</code></em>
+ to <em class="parameter"><code>value</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>GnomeVFSFileInfo struct</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>if <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, <em class="parameter"><code>info</code></em>
+is set to indicate the file has the sticky bit set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-file-info-new"></a><h3>gnome_vfs_file_info_new ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="returnvalue">GnomeVFSFileInfo</span></a> *
+gnome_vfs_file_info_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Allocate and initialize a new <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> struct.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.12.5"></a><h4>Returns</h4>
+<p> a pointer to the newly allocated file information struct.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-file-info-unref"></a><h3>gnome_vfs_file_info_unref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_file_info_unref (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> *info</code></em>);</pre>
+<p>Decreases the refcount of <em class="parameter"><code>info</code></em>
+ by 1. Frees the struct <em class="parameter"><code>info</code></em>
+ if refcount becomes 0.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>pointer to a file information struct.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-file-info-ref"></a><h3>gnome_vfs_file_info_ref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_file_info_ref (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> *info</code></em>);</pre>
+<p>Increment refcount of <em class="parameter"><code>info</code></em>
+ by 1.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>pointer to a file information struct.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-file-info-clear"></a><h3>gnome_vfs_file_info_clear ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_file_info_clear (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> *info</code></em>);</pre>
+<p>Clear <em class="parameter"><code>info</code></em>
+ so that it's ready to accept new data. This is
+supposed to be used when <em class="parameter"><code>info</code></em>
+ already contains meaningful information which
+we want to replace.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.15.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>pointer to a file information struct.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-file-info-get-mime-type"></a><h3>gnome_vfs_file_info_get_mime_type ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+gnome_vfs_file_info_get_mime_type (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> *info</code></em>);</pre>
+<p>Retrieve MIME type from <em class="parameter"><code>info</code></em>
+. There is no need to free the return
+value.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.16.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a pointer to a file information struct.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.5.7.16.6"></a><h4>Returns</h4>
+<p> a pointer to a string representing the MIME type.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-file-info-copy"></a><h3>gnome_vfs_file_info_copy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_file_info_copy (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> *dest</code></em>,
+                          <em class="parameter"><code>const <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> *src</code></em>);</pre>
+<p>Copy information from <em class="parameter"><code>src</code></em>
+ into <em class="parameter"><code>dest</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.17.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>dest</p></td>
+<td class="parameter_description"><p>pointer to a struct to copy <em class="parameter"><code>src</code></em>
+'s information into.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>src</p></td>
+<td class="parameter_description"><p>pointer to the information to be copied into <em class="parameter"><code>dest</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-file-info-dup"></a><h3>gnome_vfs_file_info_dup ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="returnvalue">GnomeVFSFileInfo</span></a> *
+gnome_vfs_file_info_dup (<em class="parameter"><code>const <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> *orig</code></em>);</pre>
+<p>Duplicates <em class="parameter"><code>orig</code></em>
+ and returns it.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.18.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>orig</p></td>
+<td class="parameter_description"><p>pointer to a file information structure to duplicate.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.5.7.18.6"></a><h4>Returns</h4>
+<p> a new file information struct that duplicates the information in <em class="parameter"><code>orig</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-file-info-matches"></a><h3>gnome_vfs_file_info_matches ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gnome_vfs_file_info_matches (<em class="parameter"><code>const <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> *a</code></em>,
+                             <em class="parameter"><code>const <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> *b</code></em>);</pre>
+<p>Compare the two file info structs, return <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if they match exactly
+the same file data.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.19.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>a</p></td>
+<td class="parameter_description"><p>first <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> struct to compare.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>b</p></td>
+<td class="parameter_description"><p>second <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> struct to compare.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.5.7.19.6"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the two <a href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfos</span></a> match, otherwise return <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-file-info-list-ref"></a><h3>gnome_vfs_file_info_list_ref ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+gnome_vfs_file_info_list_ref (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *list</code></em>);</pre>
+<p>Increments the refcount of the items in <em class="parameter"><code>list</code></em>
+ by one.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.20.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>list</p></td>
+<td class="parameter_description"><p>list of <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> elements.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.5.7.20.6"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>list</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-file-info-list-unref"></a><h3>gnome_vfs_file_info_list_unref ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+gnome_vfs_file_info_list_unref (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *list</code></em>);</pre>
+<p>Decrements the refcount of the items in <em class="parameter"><code>list</code></em>
+ by one.
+Note that the list is *not freed* even if each member of the list
+is freed.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.21.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>list</p></td>
+<td class="parameter_description"><p>list of <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> elements.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.5.7.21.6"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>list</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-file-info-list-copy"></a><h3>gnome_vfs_file_info_list_copy ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+gnome_vfs_file_info_list_copy (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *list</code></em>);</pre>
+<p>Creates a duplicate of <em class="parameter"><code>list</code></em>
+, and references each member of
+that list.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.22.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>list</p></td>
+<td class="parameter_description"><p>list of <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> elements.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.5.7.22.6"></a><h4>Returns</h4>
+<p> a newly referenced duplicate of <em class="parameter"><code>list</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-file-info-list-free"></a><h3>gnome_vfs_file_info_list_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_file_info_list_free (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *list</code></em>);</pre>
+<p>Decrements the refcount of each member of <em class="parameter"><code>list</code></em>
+ by one,
+and frees the list itself.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.23.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>list</p></td>
+<td class="parameter_description"><p>list of <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> elements.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-get-file-info-result-dup"></a><h3>gnome_vfs_get_file_info_result_dup ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSGetFileInfoResult" title="GnomeVFSGetFileInfoResult"><span class="returnvalue">GnomeVFSGetFileInfoResult</span></a> *
+gnome_vfs_get_file_info_result_dup (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSGetFileInfoResult" title="GnomeVFSGetFileInfoResult"><span class="type">GnomeVFSGetFileInfoResult</span></a> *result</code></em>);</pre>
+<p>Duplicate <em class="parameter"><code>result</code></em>
+.</p>
+<p>Note: The internal uri and fileinfo objects are not duplicated
+but their refcount is incremented by 1.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.24.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSGetFileInfoResult" title="GnomeVFSGetFileInfoResult"><span class="type">GnomeVFSGetFileInfoResult</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.5.7.24.7"></a><h4>Returns</h4>
+<p> a duplicated version of <em class="parameter"><code>result</code></em>
+.</p>
+<p></p>
+</div>
+<p class="since">Since 2.12</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-get-file-info-result-free"></a><h3>gnome_vfs_get_file_info_result_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_get_file_info_result_free (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSGetFileInfoResult" title="GnomeVFSGetFileInfoResult"><span class="type">GnomeVFSGetFileInfoResult</span></a> *result</code></em>);</pre>
+<p>Unrefs the internal uri and fileinfo objects and frees the
+memory allocated for <em class="parameter"><code>result</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.5.7.25.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSGetFileInfoResult" title="GnomeVFSGetFileInfoResult"><span class="type">GnomeVFSGetFileInfoResult</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since 2.12</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-file-info.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GnomeVFSFileFlags"></a><h3>enum GnomeVFSFileFlags</h3>
+<p>Packed boolean bitfield representing special
+flags a <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> struct can have.</p>
+<div class="refsect3">
+<a name="id-1.4.5.8.2.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-FLAGS-NONE:CAPS"></a>GNOME_VFS_FILE_FLAGS_NONE</p></td>
+<td class="enum_member_description">
+<p>no flags</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-FLAGS-SYMLINK:CAPS"></a>GNOME_VFS_FILE_FLAGS_SYMLINK</p></td>
+<td class="enum_member_description">
+<p>whether the file is a symlink.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-FLAGS-LOCAL:CAPS"></a>GNOME_VFS_FILE_FLAGS_LOCAL</p></td>
+<td class="enum_member_description">
+<p>whether the file is on a local filesystem</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSFileType"></a><h3>enum GnomeVFSFileType</h3>
+<p>Maps to a <code class="literal">stat</code> mode, and identifies the kind of file represented by a
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> struct, stored in the <code class="literal">type</code> field.</p>
+<div class="refsect3">
+<a name="id-1.4.5.8.3.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-TYPE-UNKNOWN:CAPS"></a>GNOME_VFS_FILE_TYPE_UNKNOWN</p></td>
+<td class="enum_member_description">
+<p>The file type is unknown (none of the types below matches).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-TYPE-REGULAR:CAPS"></a>GNOME_VFS_FILE_TYPE_REGULAR</p></td>
+<td class="enum_member_description">
+<p>The file is a regular file (stat: <code class="literal">S_ISREG</code>).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-TYPE-DIRECTORY:CAPS"></a>GNOME_VFS_FILE_TYPE_DIRECTORY</p></td>
+<td class="enum_member_description">
+<p>The file is a directory (stat: <code class="literal">S_ISDIR</code>).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-TYPE-FIFO:CAPS"></a>GNOME_VFS_FILE_TYPE_FIFO</p></td>
+<td class="enum_member_description">
+<p>The file is a FIFO (stat: <code class="literal">S_ISFIFO</code>).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-TYPE-SOCKET:CAPS"></a>GNOME_VFS_FILE_TYPE_SOCKET</p></td>
+<td class="enum_member_description">
+<p>The file is a socket (stat: <code class="literal">S_ISSOCK</code>).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-TYPE-CHARACTER-DEVICE:CAPS"></a>GNOME_VFS_FILE_TYPE_CHARACTER_DEVICE</p></td>
+<td class="enum_member_description">
+<p>The file is a character device (stat: <code class="literal">S_ISCHR</code>).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-TYPE-BLOCK-DEVICE:CAPS"></a>GNOME_VFS_FILE_TYPE_BLOCK_DEVICE</p></td>
+<td class="enum_member_description">
+<p>The file is a block device (stat: <code class="literal">S_ISBLK</code>).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-TYPE-SYMBOLIC-LINK:CAPS"></a>GNOME_VFS_FILE_TYPE_SYMBOLIC_LINK</p></td>
+<td class="enum_member_description">
+<p>The file is a symbolic link (stat: <code class="literal">S_ISLNK</code>).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSFileInfoFields"></a><h3>enum GnomeVFSFileInfoFields</h3>
+<p>Flags indicating what fields in a <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> struct are valid. 
+Name is always assumed valid (how else would you have gotten a
+FileInfo struct otherwise?)</p>
+<div class="refsect3">
+<a name="id-1.4.5.8.4.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FIELDS-NONE:CAPS"></a>GNOME_VFS_FILE_INFO_FIELDS_NONE</p></td>
+<td class="enum_member_description">
+<p>No fields are valid</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FIELDS-TYPE:CAPS"></a>GNOME_VFS_FILE_INFO_FIELDS_TYPE</p></td>
+<td class="enum_member_description">
+<p>Type field is valid</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FIELDS-PERMISSIONS:CAPS"></a>GNOME_VFS_FILE_INFO_FIELDS_PERMISSIONS</p></td>
+<td class="enum_member_description">
+<p>Permissions field is valid</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FIELDS-FLAGS:CAPS"></a>GNOME_VFS_FILE_INFO_FIELDS_FLAGS</p></td>
+<td class="enum_member_description">
+<p>Flags field is valid</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FIELDS-DEVICE:CAPS"></a>GNOME_VFS_FILE_INFO_FIELDS_DEVICE</p></td>
+<td class="enum_member_description">
+<p>Device field is valid</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FIELDS-INODE:CAPS"></a>GNOME_VFS_FILE_INFO_FIELDS_INODE</p></td>
+<td class="enum_member_description">
+<p>Inode field is valid</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FIELDS-LINK-COUNT:CAPS"></a>GNOME_VFS_FILE_INFO_FIELDS_LINK_COUNT</p></td>
+<td class="enum_member_description">
+<p>Link count field is valid</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FIELDS-SIZE:CAPS"></a>GNOME_VFS_FILE_INFO_FIELDS_SIZE</p></td>
+<td class="enum_member_description">
+<p>Size field is valid</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FIELDS-BLOCK-COUNT:CAPS"></a>GNOME_VFS_FILE_INFO_FIELDS_BLOCK_COUNT</p></td>
+<td class="enum_member_description">
+<p>Block count field is valid</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FIELDS-IO-BLOCK-SIZE:CAPS"></a>GNOME_VFS_FILE_INFO_FIELDS_IO_BLOCK_SIZE</p></td>
+<td class="enum_member_description">
+<p>I/O Block Size field is valid</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FIELDS-ATIME:CAPS"></a>GNOME_VFS_FILE_INFO_FIELDS_ATIME</p></td>
+<td class="enum_member_description">
+<p>Access time field is valid</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FIELDS-MTIME:CAPS"></a>GNOME_VFS_FILE_INFO_FIELDS_MTIME</p></td>
+<td class="enum_member_description">
+<p>Modification time field is valid</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FIELDS-CTIME:CAPS"></a>GNOME_VFS_FILE_INFO_FIELDS_CTIME</p></td>
+<td class="enum_member_description">
+<p>Creating time field is valid</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FIELDS-SYMLINK-NAME:CAPS"></a>GNOME_VFS_FILE_INFO_FIELDS_SYMLINK_NAME</p></td>
+<td class="enum_member_description">
+<p>Symlink name field is valid</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FIELDS-MIME-TYPE:CAPS"></a>GNOME_VFS_FILE_INFO_FIELDS_MIME_TYPE</p></td>
+<td class="enum_member_description">
+<p>Mime type field is valid</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FIELDS-ACCESS:CAPS"></a>GNOME_VFS_FILE_INFO_FIELDS_ACCESS</p></td>
+<td class="enum_member_description">
+<p>Access bits of the permissions
+bitfield are valid</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FIELDS-IDS:CAPS"></a>GNOME_VFS_FILE_INFO_FIELDS_IDS</p></td>
+<td class="enum_member_description">
+<p>UID and GID information are valid</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FIELDS-ACL:CAPS"></a>GNOME_VFS_FILE_INFO_FIELDS_ACL</p></td>
+<td class="enum_member_description">
+<p>ACL field is valid</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FIELDS-SELINUX-CONTEXT:CAPS"></a>GNOME_VFS_FILE_INFO_FIELDS_SELINUX_CONTEXT</p></td>
+<td class="enum_member_description">
+<p>SELinux Security context is valid</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSFilePermissions"></a><h3>enum GnomeVFSFilePermissions</h3>
+<p>File permissions. Some of these fields correspond to traditional
+UNIX semantics, others provide more abstract concepts.</p>
+<div class="note">
+  Some network file systems don't support traditional UNIX semantics but
+  still provide file access control. Thus, if you want to modify the
+  permissions (i.e. do a chmod), you should rely on the traditional
+  fields, but if you just want to determine whether a file or directory
+  can be read from or written to, you should rely on the more
+  abstract <code class="literal">GNOME_VFS_PERM_ACCESS_</code>* fields.
+</div>
+<div class="refsect3">
+<a name="id-1.4.5.8.5.5"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-PERM-SUID:CAPS"></a>GNOME_VFS_PERM_SUID</p></td>
+<td class="enum_member_description">
+<p>UID bit</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-PERM-SGID:CAPS"></a>GNOME_VFS_PERM_SGID</p></td>
+<td class="enum_member_description">
+<p>GID bit</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-PERM-STICKY:CAPS"></a>GNOME_VFS_PERM_STICKY</p></td>
+<td class="enum_member_description">
+<p>Sticky bit.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-PERM-USER-READ:CAPS"></a>GNOME_VFS_PERM_USER_READ</p></td>
+<td class="enum_member_description">
+<p>Owner has read permission.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-PERM-USER-WRITE:CAPS"></a>GNOME_VFS_PERM_USER_WRITE</p></td>
+<td class="enum_member_description">
+<p>Owner has write permission.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-PERM-USER-EXEC:CAPS"></a>GNOME_VFS_PERM_USER_EXEC</p></td>
+<td class="enum_member_description">
+<p>Owner has execution permission.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-PERM-USER-ALL:CAPS"></a>GNOME_VFS_PERM_USER_ALL</p></td>
+<td class="enum_member_description">
+<p>Owner has all permissions.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-PERM-GROUP-READ:CAPS"></a>GNOME_VFS_PERM_GROUP_READ</p></td>
+<td class="enum_member_description">
+<p>Group has read permission.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-PERM-GROUP-WRITE:CAPS"></a>GNOME_VFS_PERM_GROUP_WRITE</p></td>
+<td class="enum_member_description">
+<p>Group has write permission.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-PERM-GROUP-EXEC:CAPS"></a>GNOME_VFS_PERM_GROUP_EXEC</p></td>
+<td class="enum_member_description">
+<p>Group has execution permission.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-PERM-GROUP-ALL:CAPS"></a>GNOME_VFS_PERM_GROUP_ALL</p></td>
+<td class="enum_member_description">
+<p>Group has all permissions.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-PERM-OTHER-READ:CAPS"></a>GNOME_VFS_PERM_OTHER_READ</p></td>
+<td class="enum_member_description">
+<p>Others have read permission.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-PERM-OTHER-WRITE:CAPS"></a>GNOME_VFS_PERM_OTHER_WRITE</p></td>
+<td class="enum_member_description">
+<p>Others have write permission.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-PERM-OTHER-EXEC:CAPS"></a>GNOME_VFS_PERM_OTHER_EXEC</p></td>
+<td class="enum_member_description">
+<p>Others have execution permission.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-PERM-OTHER-ALL:CAPS"></a>GNOME_VFS_PERM_OTHER_ALL</p></td>
+<td class="enum_member_description">
+<p>Others have all permissions.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-PERM-ACCESS-READABLE:CAPS"></a>GNOME_VFS_PERM_ACCESS_READABLE</p></td>
+<td class="enum_member_description">
+<p>This file is readable for the current client.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-PERM-ACCESS-WRITABLE:CAPS"></a>GNOME_VFS_PERM_ACCESS_WRITABLE</p></td>
+<td class="enum_member_description">
+<p>This file is writable for the current client.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-PERM-ACCESS-EXECUTABLE:CAPS"></a>GNOME_VFS_PERM_ACCESS_EXECUTABLE</p></td>
+<td class="enum_member_description">
+<p>This file is executable for the current client.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSFileInfoOptions"></a><h3>enum GnomeVFSFileInfoOptions</h3>
+<p>Packed boolean bitfield representing options that can
+be passed into a <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info-ops.html#gnome-vfs-get-file-info" title="gnome_vfs_get_file_info ()"><code class="function">gnome_vfs_get_file_info()</code></a> call (or other
+related calls that return file info) and affect the operation
+of get_file_info.</p>
+<div class="refsect3">
+<a name="id-1.4.5.8.6.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-DEFAULT:CAPS"></a>GNOME_VFS_FILE_INFO_DEFAULT</p></td>
+<td class="enum_member_description">
+<p>default flags</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-GET-MIME-TYPE:CAPS"></a>GNOME_VFS_FILE_INFO_GET_MIME_TYPE</p></td>
+<td class="enum_member_description">
+<p>detect the MIME type</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FORCE-FAST-MIME-TYPE:CAPS"></a>GNOME_VFS_FILE_INFO_FORCE_FAST_MIME_TYPE</p></td>
+<td class="enum_member_description">
+<p>only use fast MIME type 
+detection (extensions)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FORCE-SLOW-MIME-TYPE:CAPS"></a>GNOME_VFS_FILE_INFO_FORCE_SLOW_MIME_TYPE</p></td>
+<td class="enum_member_description">
+<p>force slow MIME type 
+detection where available (sniffing, algorithmic detection, etc)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-FOLLOW-LINKS:CAPS"></a>GNOME_VFS_FILE_INFO_FOLLOW_LINKS</p></td>
+<td class="enum_member_description">
+<p>automatically follow symbolic 
+links and retrieve the properties of their target (recommended)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-GET-ACCESS-RIGHTS:CAPS"></a>GNOME_VFS_FILE_INFO_GET_ACCESS_RIGHTS</p></td>
+<td class="enum_member_description">
+<p>tries to get data similar 
+to what would return access(2) on a local file system (ie is the 
+file readable, writable and/or executable). Can be really slow on 
+remote file systems</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-NAME-ONLY:CAPS"></a>GNOME_VFS_FILE_INFO_NAME_ONLY</p></td>
+<td class="enum_member_description">
+<p>When reading a directory, only
+get the filename (if doing so is faster). Useful to e.g. count
+the number of files.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-GET-ACL:CAPS"></a>GNOME_VFS_FILE_INFO_GET_ACL</p></td>
+<td class="enum_member_description">
+<p>get ACLs for the file</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-FILE-INFO-GET-SELINUX-CONTEXT:CAPS"></a>GNOME_VFS_FILE_INFO_GET_SELINUX_CONTEXT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSSetFileInfoMask"></a><h3>enum GnomeVFSSetFileInfoMask</h3>
+<p>Packed boolean bitfield representing the aspects of the file
+to be changed in a <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info-ops.html#gnome-vfs-set-file-info" title="gnome_vfs_set_file_info ()"><code class="function">gnome_vfs_set_file_info()</code></a> call.</p>
+<div class="refsect3">
+<a name="id-1.4.5.8.7.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-SET-FILE-INFO-NONE:CAPS"></a>GNOME_VFS_SET_FILE_INFO_NONE</p></td>
+<td class="enum_member_description">
+<p>don't set any file info fields</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-SET-FILE-INFO-NAME:CAPS"></a>GNOME_VFS_SET_FILE_INFO_NAME</p></td>
+<td class="enum_member_description">
+<p>change the name</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-SET-FILE-INFO-PERMISSIONS:CAPS"></a>GNOME_VFS_SET_FILE_INFO_PERMISSIONS</p></td>
+<td class="enum_member_description">
+<p>change the permissions</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-SET-FILE-INFO-OWNER:CAPS"></a>GNOME_VFS_SET_FILE_INFO_OWNER</p></td>
+<td class="enum_member_description">
+<p>change the file's owner</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-SET-FILE-INFO-TIME:CAPS"></a>GNOME_VFS_SET_FILE_INFO_TIME</p></td>
+<td class="enum_member_description">
+<p>change the file's time stamp(s)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-SET-FILE-INFO-ACL:CAPS"></a>GNOME_VFS_SET_FILE_INFO_ACL</p></td>
+<td class="enum_member_description">
+<p>change the file's ACLs</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-SET-FILE-INFO-SELINUX-CONTEXT:CAPS"></a>GNOME_VFS_SET_FILE_INFO_SELINUX_CONTEXT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-SET-FILE-INFO-SYMLINK-NAME:CAPS"></a>GNOME_VFS_SET_FILE_INFO_SYMLINK_NAME</p></td>
+<td class="enum_member_description">
+<p>change the file's symlink name</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSGetFileInfoResult"></a><h3>GnomeVFSGetFileInfoResult</h3>
+<pre class="programlisting">typedef struct {
+	GnomeVFSURI *uri;
+	GnomeVFSResult result;
+	GnomeVFSFileInfo *file_info;
+} GnomeVFSGetFileInfoResult;
+</pre>
+<p>This data structure encapsulates the details of an individual file
+info request that was part of a mass file info request launched
+through <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-get-file-info" title="gnome_vfs_async_get_file_info ()"><code class="function">gnome_vfs_async_get_file_info()</code></a>, and is passed to a
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncGetFileInfoCallback" title="GnomeVFSAsyncGetFileInfoCallback ()"><span class="type">GnomeVFSAsyncGetFileInfoCallback</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.4.5.8.8.5"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *<em class="structfield"><code><a name="GnomeVFSGetFileInfoResult.uri"></a>uri</code></em>;</p></td>
+<td class="struct_member_description"><p>The <a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> the file info was requested for.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> <em class="structfield"><code><a name="GnomeVFSGetFileInfoResult.result"></a>result</code></em>;</p></td>
+<td class="struct_member_description"><p>The <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> of the file info request.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> *<em class="structfield"><code><a name="GnomeVFSGetFileInfoResult.file-info"></a>file_info</code></em>;</p></td>
+<td class="struct_member_description"><p>The <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> that was retrieved.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSInodeNumber"></a><h3>GnomeVFSInodeNumber</h3>
+<pre class="programlisting">typedef GnomeVFSFileSize GnomeVFSInodeNumber;
+</pre>
+<p>Represents the i-node of a file, this is a low level data structure
+that the operating system uses to hold information about a file.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSFileInfo"></a><h3>GnomeVFSFileInfo</h3>
+<pre class="programlisting">typedef struct {
+	char *name;
+
+	GnomeVFSFileInfoFields valid_fields;
+	GnomeVFSFileType type;
+	GnomeVFSFilePermissions permissions;
+
+	GnomeVFSFileFlags flags;
+
+	dev_t device;
+	GnomeVFSInodeNumber inode;
+
+	guint link_count;
+
+	guint uid;
+	guint gid;
+
+	GnomeVFSFileSize size;
+
+	GnomeVFSFileSize block_count;
+
+	guint io_block_size;
+
+	time_t atime;
+	time_t mtime;
+	time_t ctime;
+
+	char *symlink_name;
+
+	char *mime_type;
+
+	guint refcount;
+
+	/* File ACLs */
+	GnomeVFSACL *acl;
+
+	/* SELinux security context. -- ascii string, raw format. */
+	char* selinux_context;
+} GnomeVFSFileInfo;
+</pre>
+<div class="note">
+  When doing massive I/O, it is suggested to adhere <em class="parameter"><code>io_block_size</code></em> if applicable.
+  For network file systems, this may be set to very big values allowing
+  parallelization.
+</div>
+<p>The GnomeVFSFileInfo structure contains information about a file.</p>
+<div class="refsect3">
+<a name="id-1.4.5.8.10.6"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><span class="type">char</span> *<em class="structfield"><code><a name="GnomeVFSFileInfo.name"></a>name</code></em>;</p></td>
+<td class="struct_member_description"><p>A char * specifying the base name of the file (without any path string).</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfoFields" title="enum GnomeVFSFileInfoFields"><span class="type">GnomeVFSFileInfoFields</span></a> <em class="structfield"><code><a name="GnomeVFSFileInfo.valid-fields"></a>valid_fields</code></em>;</p></td>
+<td class="struct_member_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfoFields" title="enum GnomeVFSFileInfoFields"><span class="type">GnomeVFSFileInfoFields</span></a> specifying which fields of
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> are valid. Note that <em class="parameter"><code>name</code></em>
+is always
+assumed to be valid, i.e. clients may assume that it is not NULL.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileType" title="enum GnomeVFSFileType"><span class="type">GnomeVFSFileType</span></a> <em class="structfield"><code><a name="GnomeVFSFileInfo.type"></a>type</code></em>;</p></td>
+<td class="struct_member_description"><p>The <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileType" title="enum GnomeVFSFileType"><span class="type">GnomeVFSFileType</span></a> of the file (i.e. regular, directory, block device, ...)
+if <em class="parameter"><code>valid_fields</code></em>
+provides GNOME_VFS_FILE_INFO_FIELDS_TYPE.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFilePermissions" title="enum GnomeVFSFilePermissions"><span class="type">GnomeVFSFilePermissions</span></a> <em class="structfield"><code><a name="GnomeVFSFileInfo.permissions"></a>permissions</code></em>;</p></td>
+<td class="struct_member_description"><p>The <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFilePermissions" title="enum GnomeVFSFilePermissions"><span class="type">GnomeVFSFilePermissions</span></a> corresponding to the UNIX-like
+permissions of the file, if <em class="parameter"><code>valid_fields</code></em>
+provides
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-FIELDS-PERMISSIONS:CAPS"><span class="type">GNOME_VFS_FILE_INFO_FIELDS_PERMISSIONS</span></a>, and the
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFilePermissions" title="enum GnomeVFSFilePermissions"><span class="type">GnomeVFSFilePermissions</span></a> corresponding to abstract access
+concepts (<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-PERM-ACCESS-READABLE:CAPS"><span class="type">GNOME_VFS_PERM_ACCESS_READABLE</span></a>, <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-PERM-ACCESS-WRITABLE:CAPS"><span class="type">GNOME_VFS_PERM_ACCESS_WRITABLE</span></a>,
+and <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-PERM-ACCESS-EXECUTABLE:CAPS"><span class="type">GNOME_VFS_PERM_ACCESS_EXECUTABLE</span></a>) if <em class="parameter"><code>valid_fields</code></em>
+provides <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-FIELDS-PERMISSIONS:CAPS"><span class="type">GNOME_VFS_FILE_INFO_FIELDS_PERMISSIONS</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileFlags" title="enum GnomeVFSFileFlags"><span class="type">GnomeVFSFileFlags</span></a> <em class="structfield"><code><a name="GnomeVFSFileInfo.flags"></a>flags</code></em>;</p></td>
+<td class="struct_member_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileFlags" title="enum GnomeVFSFileFlags"><span class="type">GnomeVFSFileFlags</span></a> providing additional information about the file,
+for instance whether it is local or a symbolic link, if
+<em class="parameter"><code>valid_fields</code></em>
+provides <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-FIELDS-FLAGS:CAPS"><span class="type">GNOME_VFS_FILE_INFO_FIELDS_FLAGS</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">dev_t</span> <em class="structfield"><code><a name="GnomeVFSFileInfo.device"></a>device</code></em>;</p></td>
+<td class="struct_member_description"><p>Identifies the device the file is located on, if
+<em class="parameter"><code>valid_fields</code></em>
+provides <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-FIELDS-DEVICE:CAPS"><span class="type">GNOME_VFS_FILE_INFO_FIELDS_DEVICE</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSInodeNumber" title="GnomeVFSInodeNumber"><span class="type">GnomeVFSInodeNumber</span></a> <em class="structfield"><code><a name="GnomeVFSFileInfo.inode"></a>inode</code></em>;</p></td>
+<td class="struct_member_description"><p>Identifies the inode corresponding to the file, if
+<em class="parameter"><code>valid_fields</code></em>
+provides <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-FIELDS-INODE:CAPS"><span class="type">GNOME_VFS_FILE_INFO_FIELDS_INODE</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GnomeVFSFileInfo.link-count"></a>link_count</code></em>;</p></td>
+<td class="struct_member_description"><p>Counts the number of hard links to the file, if
+<em class="parameter"><code>valid_fields</code></em>
+provides <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-FIELDS-LINK-COUNT:CAPS"><span class="type">GNOME_VFS_FILE_INFO_FIELDS_LINK_COUNT</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GnomeVFSFileInfo.uid"></a>uid</code></em>;</p></td>
+<td class="struct_member_description"><p>The user owning the file, if <em class="parameter"><code>valid_fields</code></em>
+provides
+GNOME_VFS_FILE_INFO_FIELDS_IDS.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GnomeVFSFileInfo.gid"></a>gid</code></em>;</p></td>
+<td class="struct_member_description"><p>The user owning the file, if <em class="parameter"><code>valid_fields</code></em>
+provides
+GNOME_VFS_FILE_INFO_FIELDS_IDS.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-size.html#GnomeVFSFileSize" title="GnomeVFSFileSize"><span class="type">GnomeVFSFileSize</span></a> <em class="structfield"><code><a name="GnomeVFSFileInfo.size"></a>size</code></em>;</p></td>
+<td class="struct_member_description"><p>The size of the file in bytes (a <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-size.html#GnomeVFSFileSize" title="GnomeVFSFileSize"><span class="type">GnomeVFSFileSize</span></a>),
+if <em class="parameter"><code>valid_fields</code></em>
+provides <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-FIELDS-SIZE:CAPS"><span class="type">GNOME_VFS_FILE_INFO_FIELDS_SIZE</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-size.html#GnomeVFSFileSize" title="GnomeVFSFileSize"><span class="type">GnomeVFSFileSize</span></a> <em class="structfield"><code><a name="GnomeVFSFileInfo.block-count"></a>block_count</code></em>;</p></td>
+<td class="struct_member_description"><p>The size of the file in file system blocks (a <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-size.html#GnomeVFSFileSize" title="GnomeVFSFileSize"><span class="type">GnomeVFSFileSize</span></a>),
+if <em class="parameter"><code>valid_fields</code></em>
+provides <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-FIELDS-BLOCK-COUNT:CAPS"><span class="type">GNOME_VFS_FILE_INFO_FIELDS_BLOCK_COUNT</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GnomeVFSFileInfo.io-block-size"></a>io_block_size</code></em>;</p></td>
+<td class="struct_member_description"><p>The optimal buffer size for reading/writing the file, if
+<em class="parameter"><code>valid_fields</code></em>
+provides <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-FIELDS-IO-BLOCK-SIZE:CAPS"><span class="type">GNOME_VFS_FILE_INFO_FIELDS_IO_BLOCK_SIZE</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">time_t</span> <em class="structfield"><code><a name="GnomeVFSFileInfo.atime"></a>atime</code></em>;</p></td>
+<td class="struct_member_description"><p>The time of the last file access, if <em class="parameter"><code>valid_fields</code></em>
+provides
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-FIELDS-ATIME:CAPS"><span class="type">GNOME_VFS_FILE_INFO_FIELDS_ATIME</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">time_t</span> <em class="structfield"><code><a name="GnomeVFSFileInfo.mtime"></a>mtime</code></em>;</p></td>
+<td class="struct_member_description"><p>The time of the last file contents modification, if <em class="parameter"><code>valid_fields</code></em>
+provides <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-FIELDS-MTIME:CAPS"><span class="type">GNOME_VFS_FILE_INFO_FIELDS_MTIME</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">time_t</span> <em class="structfield"><code><a name="GnomeVFSFileInfo.ctime"></a>ctime</code></em>;</p></td>
+<td class="struct_member_description"><p>The time of the last inode change, if <em class="parameter"><code>valid_fields</code></em>
+provides
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-FIELDS-CTIME:CAPS"><span class="type">GNOME_VFS_FILE_INFO_FIELDS_CTIME</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">char</span> *<em class="structfield"><code><a name="GnomeVFSFileInfo.symlink-name"></a>symlink_name</code></em>;</p></td>
+<td class="struct_member_description"><p>This is the name of the file this link points to, <em class="parameter"><code>type</code></em>
+is <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-FLAGS-SYMLINK:CAPS"><span class="type">GNOME_VFS_FILE_FLAGS_SYMLINK</span></a>, and <em class="parameter"><code>valid_fields</code></em>
+provides <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-FIELDS-SYMLINK-NAME:CAPS"><span class="type">GNOME_VFS_FILE_INFO_FIELDS_SYMLINK_NAME</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">char</span> *<em class="structfield"><code><a name="GnomeVFSFileInfo.mime-type"></a>mime_type</code></em>;</p></td>
+<td class="struct_member_description"><p>This is a char * identifying the type of the file, if
+<em class="parameter"><code>valid_fields</code></em>
+provides <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GNOME-VFS-FILE-INFO-FIELDS-MIME-TYPE:CAPS"><span class="type">GNOME_VFS_FILE_INFO_FIELDS_MIME_TYPE</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GnomeVFSFileInfo.refcount"></a>refcount</code></em>;</p></td>
+<td class="struct_member_description"><p>The reference count of this file info, which is one by default, and
+that can be increased using <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#gnome-vfs-file-info-ref" title="gnome_vfs_file_info_ref ()"><code class="function">gnome_vfs_file_info_ref()</code></a> and decreased
+using <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#gnome-vfs-file-info-unref" title="gnome_vfs_file_info_unref ()"><code class="function">gnome_vfs_file_info_unref()</code></a>. When it drops to zero, the file info
+is freed and its memory is invalid. Make sure to keep your own
+reference to a file info if you received it from GnomeVFS, i.e.
+if you didn't call <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#gnome-vfs-file-info-new" title="gnome_vfs_file_info_new ()"><code class="function">gnome_vfs_file_info_new()</code></a> yourself.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">GnomeVFSACL</span> *<em class="structfield"><code><a name="GnomeVFSFileInfo.acl"></a>acl</code></em>;</p></td>
+<td class="struct_member_description"> </td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">char</span> *<em class="structfield"><code><a name="GnomeVFSFileInfo.selinux-context"></a>selinux_context</code></em>;</p></td>
+<td class="struct_member_description"> </td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

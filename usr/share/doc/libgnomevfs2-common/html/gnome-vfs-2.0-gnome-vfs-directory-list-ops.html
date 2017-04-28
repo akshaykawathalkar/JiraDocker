@@ -1,0 +1,766 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GnomeVFS - Filesystem Abstraction library: Listing Directory Contents</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="GnomeVFS - Filesystem Abstraction library">
+<link rel="up" href="gnome-vfs-directory-ops.html" title="Directory-Specific Operations">
+<link rel="prev" href="gnome-vfs-2.0-gnome-vfs-directory-basic-ops.html" title="Basic Directory Operations">
+<link rel="next" href="gnome-vfs-2.0-gnome-vfs-directory-find-ops.html" title="Locating Standard Directories">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-directory-list-ops.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-directory-list-ops.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gnome-vfs-directory-ops.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gnome-vfs-2.0-gnome-vfs-directory-basic-ops.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gnome-vfs-2.0-gnome-vfs-directory-find-ops.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gnome-vfs-2.0-gnome-vfs-directory-list-ops"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gnome-vfs-2.0-gnome-vfs-directory-list-ops.top_of_page"></a>Listing Directory Contents</span></h2>
+<p>Listing Directory Contents — Listing the contents of directories.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-directory-list-ops.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitFunc" title="GnomeVFSDirectoryVisitFunc ()">*GnomeVFSDirectoryVisitFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-open" title="gnome_vfs_directory_open ()">gnome_vfs_directory_open</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-open-from-uri" title="gnome_vfs_directory_open_from_uri ()">gnome_vfs_directory_open_from_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-read-next" title="gnome_vfs_directory_read_next ()">gnome_vfs_directory_read_next</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-close" title="gnome_vfs_directory_close ()">gnome_vfs_directory_close</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit" title="gnome_vfs_directory_visit ()">gnome_vfs_directory_visit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit-uri" title="gnome_vfs_directory_visit_uri ()">gnome_vfs_directory_visit_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit-files" title="gnome_vfs_directory_visit_files ()">gnome_vfs_directory_visit_files</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit-files-at-uri" title="gnome_vfs_directory_visit_files_at_uri ()">gnome_vfs_directory_visit_files_at_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-list-load" title="gnome_vfs_directory_list_load ()">gnome_vfs_directory_list_load</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-directory-list-ops.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryHandle" title="GnomeVFSDirectoryHandle">GnomeVFSDirectoryHandle</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitOptions" title="enum GnomeVFSDirectoryVisitOptions">GnomeVFSDirectoryVisitOptions</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-directory-list-ops.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">
+</pre>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-directory-list-ops.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-directory-list-ops.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GnomeVFSDirectoryVisitFunc"></a><h3>GnomeVFSDirectoryVisitFunc ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<span class="c_punctuation">(</span>*GnomeVFSDirectoryVisitFunc<span class="c_punctuation">)</span> (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *rel_path</code></em>,
+                               <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> *info</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> recursing_will_loop</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *recurse</code></em>);</pre>
+<p>This function is passed to <a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit" title="gnome_vfs_directory_visit ()"><code class="function">gnome_vfs_directory_visit()</code></a>,
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit-uri" title="gnome_vfs_directory_visit_uri ()"><code class="function">gnome_vfs_directory_visit_uri()</code></a>, <a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit-files" title="gnome_vfs_directory_visit_files ()"><code class="function">gnome_vfs_directory_visit_files()</code></a> and
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit-files-at-uri" title="gnome_vfs_directory_visit_files_at_uri ()"><code class="function">gnome_vfs_directory_visit_files_at_uri()</code></a>, and is called for each
+file in the specified directory.</p>
+<div class="note">
+ When a recursive visit was requested for a particular directory, errors
+ during the child visit will lead to a cancellation of the overall visit.
+ Thus, you must ensure that the user has sufficient access rights to visit
+ a directory before requesting a recursion.
+</div>
+<div class="refsect3">
+<a name="id-1.6.3.7.2.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rel_path</p></td>
+<td class="parameter_description"><p>A char * specifying the path of the currently visited
+file relative to the base directory for the visit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>The <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> of the currently visited file.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>recursing_will_loop</p></td>
+<td class="parameter_description"><p>Whether setting *<em class="parameter"><code>recurse</code></em>
+to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> will cause
+a loop, i.e. whether this is a link
+pointing to a parent directory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>The user data passed to <a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit" title="gnome_vfs_directory_visit ()"><code class="function">gnome_vfs_directory_visit()</code></a>,
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit-uri" title="gnome_vfs_directory_visit_uri ()"><code class="function">gnome_vfs_directory_visit_uri()</code></a>, <a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit-files" title="gnome_vfs_directory_visit_files ()"><code class="function">gnome_vfs_directory_visit_files()</code></a> or
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit-files-at-uri" title="gnome_vfs_directory_visit_files_at_uri ()"><code class="function">gnome_vfs_directory_visit_files_at_uri()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>recurse</p></td>
+<td class="parameter_description"><p>A valid pointer to a <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>, which points to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> by
+default and can be modified to point to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, which indicates that
+the currently considered file should be visited recursively.
+The recursive visit will only be actually done if <em class="parameter"><code>info</code></em>
+refers to a directory,
+*<em class="parameter"><code>recurse</code></em>
+is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> and the return value of the <a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitFunc" title="GnomeVFSDirectoryVisitFunc ()"><span class="type">GnomeVFSDirectoryVisitFunc</span></a> is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.
+*<em class="parameter"><code>recurse</code></em>
+should usually not be set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>recursing_will_loop</code></em>
+is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.3.7.2.7"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if visit should be continued, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-directory-open"></a><h3>gnome_vfs_directory_open ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_directory_open (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryHandle" title="GnomeVFSDirectoryHandle"><span class="type">GnomeVFSDirectoryHandle</span></a> **handle</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text_uri</code></em>,
+                          <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfoOptions" title="enum GnomeVFSFileInfoOptions"><span class="type">GnomeVFSFileInfoOptions</span></a> options</code></em>);</pre>
+<p>Open directory <em class="parameter"><code>text_uri</code></em>
+ for reading.  On return, @*handle will point to
+a <a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryHandle" title="GnomeVFSDirectoryHandle"><span class="type">GnomeVFSDirectoryHandle</span></a> object which can be used to read the directory
+entries one by one.</p>
+<div class="refsect3">
+<a name="id-1.6.3.7.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>pointer to a pointer to a <a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryHandle" title="GnomeVFSDirectoryHandle"><span class="type">GnomeVFSDirectoryHandle</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text_uri</p></td>
+<td class="parameter_description"><p>string representing the uri to open.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>options</p></td>
+<td class="parameter_description"><p>options for reading file information.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.3.7.3.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-directory-open-from-uri"></a><h3>gnome_vfs_directory_open_from_uri ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_directory_open_from_uri (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryHandle" title="GnomeVFSDirectoryHandle"><span class="type">GnomeVFSDirectoryHandle</span></a> **handle</code></em>,
+                                   <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *uri</code></em>,
+                                   <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfoOptions" title="enum GnomeVFSFileInfoOptions"><span class="type">GnomeVFSFileInfoOptions</span></a> options</code></em>);</pre>
+<p>Open directory <em class="parameter"><code>text_uri</code></em>
+ for reading.  On return, @*handle will point to
+a <a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryHandle" title="GnomeVFSDirectoryHandle"><span class="type">GnomeVFSDirectoryHandle</span></a> object which can be used to read the directory
+entries one by one.</p>
+<div class="refsect3">
+<a name="id-1.6.3.7.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>pointer to a pointer to a <a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryHandle" title="GnomeVFSDirectoryHandle"><span class="type">GnomeVFSDirectoryHandle</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>uri to open.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>options</p></td>
+<td class="parameter_description"><p>options for reading file information.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.3.7.4.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-directory-read-next"></a><h3>gnome_vfs_directory_read_next ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_directory_read_next (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryHandle" title="GnomeVFSDirectoryHandle"><span class="type">GnomeVFSDirectoryHandle</span></a> *handle</code></em>,
+                               <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> *file_info</code></em>);</pre>
+<p>Read the next directory entry from <em class="parameter"><code>handle</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.6.3.7.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>a directory handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>file_info</p></td>
+<td class="parameter_description"><p>pointer to a <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> struct where the data about
+the directory at <em class="parameter"><code>handle</code></em>
+will be stored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.3.7.5.6"></a><h4>Returns</h4>
+<p> an integer value representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-directory-close"></a><h3>gnome_vfs_directory_close ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_directory_close (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryHandle" title="GnomeVFSDirectoryHandle"><span class="type">GnomeVFSDirectoryHandle</span></a> *handle</code></em>);</pre>
+<p>Close <em class="parameter"><code>handle</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.6.3.7.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>a directory handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.3.7.6.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-directory-visit"></a><h3>gnome_vfs_directory_visit ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_directory_visit (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text_uri</code></em>,
+                           <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfoOptions" title="enum GnomeVFSFileInfoOptions"><span class="type">GnomeVFSFileInfoOptions</span></a> info_options</code></em>,
+                           <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitOptions" title="enum GnomeVFSDirectoryVisitOptions"><span class="type">GnomeVFSDirectoryVisitOptions</span></a> visit_options</code></em>,
+                           <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitFunc" title="GnomeVFSDirectoryVisitFunc ()"><span class="type">GnomeVFSDirectoryVisitFunc</span></a> callback</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<p>Visit <em class="parameter"><code>text_uri</code></em>
+, retrieving information as specified by <em class="parameter"><code>info_options</code></em>
+.</p>
+<p>This function is identical to <a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit-uri" title="gnome_vfs_directory_visit_uri ()"><code class="function">gnome_vfs_directory_visit_uri()</code></a>, except
+that it takes a text URI instead of a <a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.6.3.7.7.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>text_uri</p></td>
+<td class="parameter_description"><p>uri string representation of a directory to visit the files in.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>info_options</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfoOptions" title="enum GnomeVFSFileInfoOptions"><span class="type">GnomeVFSFileInfoOptions</span></a> specifying what kind of file information must be
+retrieved about the contents of the directory referenced by <em class="parameter"><code>uri</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>visit_options</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitOptions" title="enum GnomeVFSDirectoryVisitOptions"><span class="type">GnomeVFSDirectoryVisitOptions</span></a> controlling e.g. loop prevention,
+and filesystem checks. These affect the way visiting is done.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitFunc" title="GnomeVFSDirectoryVisitFunc ()"><span class="type">GnomeVFSDirectoryVisitFunc</span></a> callback to be called for every visited file.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>data to be passed to <em class="parameter"><code>callback</code></em>
+at each iteration.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.3.7.7.7"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating the success of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-directory-visit-uri"></a><h3>gnome_vfs_directory_visit_uri ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_directory_visit_uri (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *uri</code></em>,
+                               <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfoOptions" title="enum GnomeVFSFileInfoOptions"><span class="type">GnomeVFSFileInfoOptions</span></a> info_options</code></em>,
+                               <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitOptions" title="enum GnomeVFSDirectoryVisitOptions"><span class="type">GnomeVFSDirectoryVisitOptions</span></a> visit_options</code></em>,
+                               <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitFunc" title="GnomeVFSDirectoryVisitFunc ()"><span class="type">GnomeVFSDirectoryVisitFunc</span></a> callback</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<p>Visit <em class="parameter"><code>uri</code></em>
+, retrieving information as specified by <em class="parameter"><code>info_options</code></em>
+. </p>
+<p>This function is identical to <a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit" title="gnome_vfs_directory_visit ()"><code class="function">gnome_vfs_directory_visit()</code></a>, except
+that it takes a <a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> instead of a text URI.</p>
+<div class="refsect3">
+<a name="id-1.6.3.7.8.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> of a directory to visit the files in.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>info_options</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfoOptions" title="enum GnomeVFSFileInfoOptions"><span class="type">GnomeVFSFileInfoOptions</span></a> specifying what kind of file information must be
+retrieved about the contents of the directory referenced by <em class="parameter"><code>uri</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>visit_options</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitOptions" title="enum GnomeVFSDirectoryVisitOptions"><span class="type">GnomeVFSDirectoryVisitOptions</span></a> controlling e.g. loop prevention,
+and filesystem checks. These affect the way visiting is done.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitFunc" title="GnomeVFSDirectoryVisitFunc ()"><span class="type">GnomeVFSDirectoryVisitFunc</span></a> callback to be called for every visited file.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>data to be passed to <em class="parameter"><code>callback</code></em>
+at each iteration.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.3.7.8.7"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating whether the operation succeeded.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-directory-visit-files"></a><h3>gnome_vfs_directory_visit_files ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_directory_visit_files (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text_uri</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *file_list</code></em>,
+                                 <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfoOptions" title="enum GnomeVFSFileInfoOptions"><span class="type">GnomeVFSFileInfoOptions</span></a> info_options</code></em>,
+                                 <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitOptions" title="enum GnomeVFSDirectoryVisitOptions"><span class="type">GnomeVFSDirectoryVisitOptions</span></a> visit_options</code></em>,
+                                 <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitFunc" title="GnomeVFSDirectoryVisitFunc ()"><span class="type">GnomeVFSDirectoryVisitFunc</span></a> callback</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<p>Fetches information about a list of files in a base uri <em class="parameter"><code>uri</code></em>
+.</p>
+<p>If any of the files refers to a directory, and the <em class="parameter"><code>callback</code></em>
+ requests
+recursion for the specified file, <a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit-uri" title="gnome_vfs_directory_visit_uri ()"><code class="function">gnome_vfs_directory_visit_uri()</code></a> will
+be called for the directory.</p>
+<p>This function is identical to <a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit-files-at-uri" title="gnome_vfs_directory_visit_files_at_uri ()"><code class="function">gnome_vfs_directory_visit_files_at_uri()</code></a>,
+except that it takes a text URI instead of a <a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.6.3.7.9.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>text_uri</p></td>
+<td class="parameter_description"><p>string representing the uri of a directory to visit the files in.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>file_list</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of char *s of file names in <em class="parameter"><code>uri</code></em>
+to visit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>info_options</p></td>
+<td class="parameter_description"><p>bitmask controlling the type of information to fetch.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>visit_options</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitOptions" title="enum GnomeVFSDirectoryVisitOptions"><span class="type">GnomeVFSDirectoryVisitOptions</span></a> controlling e.g. loop prevention,
+and filesystem checks. These affect the way visiting is done.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitFunc" title="GnomeVFSDirectoryVisitFunc ()"><span class="type">GnomeVFSDirectoryVisitFunc</span></a> callback to call with the file info structs.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.3.7.9.8"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating the success of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-directory-visit-files-at-uri"></a><h3>gnome_vfs_directory_visit_files_at_uri ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_directory_visit_files_at_uri
+                               (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *uri</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *file_list</code></em>,
+                                <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfoOptions" title="enum GnomeVFSFileInfoOptions"><span class="type">GnomeVFSFileInfoOptions</span></a> info_options</code></em>,
+                                <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitOptions" title="enum GnomeVFSDirectoryVisitOptions"><span class="type">GnomeVFSDirectoryVisitOptions</span></a> visit_options</code></em>,
+                                <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitFunc" title="GnomeVFSDirectoryVisitFunc ()"><span class="type">GnomeVFSDirectoryVisitFunc</span></a> callback</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<p>Fetches information about a list of files in a base uri <em class="parameter"><code>uri</code></em>
+.</p>
+<p>This function is identical to <a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit-files-at-uri" title="gnome_vfs_directory_visit_files_at_uri ()"><code class="function">gnome_vfs_directory_visit_files_at_uri()</code></a>,
+except that it takes a <a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> instead of a text URI.</p>
+<p>If any of the files refers to a directory, and the <em class="parameter"><code>callback</code></em>
+ requests
+recursion for the specified file, <a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit-uri" title="gnome_vfs_directory_visit_uri ()"><code class="function">gnome_vfs_directory_visit_uri()</code></a> will
+be called for the directory.</p>
+<div class="refsect3">
+<a name="id-1.6.3.7.10.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> of a directory to visit the files in.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>file_list</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of char *s of file names in <em class="parameter"><code>uri</code></em>
+to visit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>info_options</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfoOptions" title="enum GnomeVFSFileInfoOptions"><span class="type">GnomeVFSFileInfoOptions</span></a> specifying what kind of file information must be
+retrieved about the contents of the directory referenced by <em class="parameter"><code>uri</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>visit_options</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitOptions" title="enum GnomeVFSDirectoryVisitOptions"><span class="type">GnomeVFSDirectoryVisitOptions</span></a> controlling e.g. loop prevention,
+and filesystem checks. These affect the way visiting is done.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitFunc" title="GnomeVFSDirectoryVisitFunc ()"><span class="type">GnomeVFSDirectoryVisitFunc</span></a> callback to call with the file info structs.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.3.7.10.8"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating the success of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-directory-list-load"></a><h3>gnome_vfs_directory_list_load ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_directory_list_load (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> **list</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text_uri</code></em>,
+                               <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfoOptions" title="enum GnomeVFSFileInfoOptions"><span class="type">GnomeVFSFileInfoOptions</span></a> options</code></em>);</pre>
+<p>Load a directory from <em class="parameter"><code>text_uri</code></em>
+ with the specified <em class="parameter"><code>options</code></em>
+
+into a list.</p>
+<div class="refsect3">
+<a name="id-1.6.3.7.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>list</p></td>
+<td class="parameter_description"><p>address of a pointer to a list of <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text_uri</p></td>
+<td class="parameter_description"><p>a string representing the uri of the directory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>options</p></td>
+<td class="parameter_description"><p>options for loading the directory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.3.7.11.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-directory-list-ops.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GnomeVFSDirectoryHandle"></a><h3>GnomeVFSDirectoryHandle</h3>
+<pre class="programlisting">typedef struct GnomeVFSDirectoryHandle GnomeVFSDirectoryHandle;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSDirectoryVisitOptions"></a><h3>enum GnomeVFSDirectoryVisitOptions</h3>
+<p>These options control the way in which directories are visited. They are
+passed to <a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit" title="gnome_vfs_directory_visit ()"><code class="function">gnome_vfs_directory_visit()</code></a>, <a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit-uri" title="gnome_vfs_directory_visit_uri ()"><code class="function">gnome_vfs_directory_visit_uri()</code></a>
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit-files" title="gnome_vfs_directory_visit_files ()"><code class="function">gnome_vfs_directory_visit_files()</code></a> and
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#gnome-vfs-directory-visit-files-at-uri" title="gnome_vfs_directory_visit_files_at_uri ()"><code class="function">gnome_vfs_directory_visit_files_at_uri()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.6.3.8.3.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-DIRECTORY-VISIT-DEFAULT:CAPS"></a>GNOME_VFS_DIRECTORY_VISIT_DEFAULT</p></td>
+<td class="enum_member_description">
+<p>Default options, i.e. call 
+the specified <a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitFunc" title="GnomeVFSDirectoryVisitFunc ()"><span class="type">GnomeVFSDirectoryVisitFunc</span></a> for each file.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-DIRECTORY-VISIT-SAMEFS:CAPS"></a>GNOME_VFS_DIRECTORY_VISIT_SAMEFS</p></td>
+<td class="enum_member_description">
+<p>Visit only directories on the same 
+file system as the parent</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-DIRECTORY-VISIT-LOOPCHECK:CAPS"></a>GNOME_VFS_DIRECTORY_VISIT_LOOPCHECK</p></td>
+<td class="enum_member_description">
+<p>Loop prevention. If this
+is set, and a file is found to be a directory referencing a prefiously 
+found directory inode (i.e. already used for one of it's parents), this
+is considered a recursion loop, and <a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitFunc" title="GnomeVFSDirectoryVisitFunc ()"><span class="type">GnomeVFSDirectoryVisitFunc</span></a> will
+be notified using its <em class="parameter"><code>recursing_will_loop</code></em>
+ parameter. If this is not
+set, the <a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-list-ops.html#GnomeVFSDirectoryVisitFunc" title="GnomeVFSDirectoryVisitFunc ()"><span class="type">GnomeVFSDirectoryVisitFunc</span></a>'s <em class="parameter"><code>recursing_will_loop</code></em>
+ parameter
+will always be set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-DIRECTORY-VISIT-IGNORE-RECURSE-ERROR:CAPS"></a>GNOME_VFS_DIRECTORY_VISIT_IGNORE_RECURSE_ERROR</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

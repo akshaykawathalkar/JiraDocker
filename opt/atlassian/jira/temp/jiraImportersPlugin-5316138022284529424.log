@@ -1,0 +1,51 @@
+2017-04-26 04:57:40,303 INFO - Import started by akshay using com.atlassian.jira.plugins.importer.sample.SampleDataBean
+2017-04-26 04:57:40,333 INFO - ------------------------------
+2017-04-26 04:57:40,333 INFO - Importing: Users
+2017-04-26 04:57:40,342 INFO - ------------------------------
+2017-04-26 04:57:40,342 INFO - Only new items will be imported
+2017-04-26 04:57:40,344 INFO - 0 users associated with import. All of them imported as inactive, this can be changed after import in User Access step.
+2017-04-26 04:57:40,344 INFO - ------------------------------
+2017-04-26 04:57:40,344 INFO - Finished Importing : Users
+2017-04-26 04:57:40,344 INFO - ------------------------------
+2017-04-26 04:57:40,344 INFO - 0 users successfully created.
+2017-04-26 04:57:40,345 INFO - Retrieving projects...
+2017-04-26 04:57:40,345 INFO - Project ExternalProject{id='null', key='AK', externalName='akshay', name='akshay'} exists and found correctly.
+2017-04-26 04:57:40,450 INFO - ------------------------------
+2017-04-26 04:57:40,451 INFO - Importing: Versions
+2017-04-26 04:57:40,451 INFO - ------------------------------
+2017-04-26 04:57:40,451 INFO - Only new items will be imported
+2017-04-26 04:57:40,451 INFO - ------------------------------
+2017-04-26 04:57:40,451 INFO - Finished Importing : Versions
+2017-04-26 04:57:40,452 INFO - ------------------------------
+2017-04-26 04:57:40,452 INFO - ------------------------------
+2017-04-26 04:57:40,452 INFO - Importing: Components
+2017-04-26 04:57:40,452 INFO - ------------------------------
+2017-04-26 04:57:40,452 INFO - Only new items will be imported
+2017-04-26 04:57:40,452 INFO - ------------------------------
+2017-04-26 04:57:40,452 INFO - Finished Importing : Components
+2017-04-26 04:57:40,453 INFO - ------------------------------
+2017-04-26 04:57:40,453 INFO - Retrieving custom fields...
+2017-04-26 04:57:40,453 INFO - ------------------------------
+2017-04-26 04:57:40,453 INFO - Importing: Issues
+2017-04-26 04:57:40,453 INFO - ------------------------------
+2017-04-26 04:57:40,453 INFO - Only new items will be imported
+2017-04-26 04:57:40,455 INFO - Importing issue: [externalId='null', summary='This is your first task']
+2017-04-26 04:57:41,928 INFO - Importing issue: [externalId='null', summary='Workflows and statuses']
+2017-04-26 04:57:42,019 INFO - Importing issue: [externalId='null', summary='Editing tasks']
+2017-04-26 04:57:42,144 INFO - Importing issue: [externalId='null', summary='Searching for information']
+2017-04-26 04:57:42,243 INFO - Importing issue: [externalId='null', summary='Keyboard shortcuts']
+2017-04-26 04:57:42,438 INFO - Importing issue: [externalId='null', summary='What's next?']
+2017-04-26 04:57:42,634 INFO - Reindexing last 6 issues imported ...
+2017-04-26 04:57:42,857 INFO - Reindexing took 219 ms.
+2017-04-26 04:57:42,858 INFO - 6 issues successfully created
+2017-04-26 04:57:42,858 INFO - ------------------------------
+2017-04-26 04:57:42,858 INFO - Finished Importing : Issues
+2017-04-26 04:57:42,858 INFO - ------------------------------
+2017-04-26 04:57:42,859 INFO - ------------------------------
+2017-04-26 04:57:42,859 INFO - Importing: Issue Links & Subtasks
+2017-04-26 04:57:42,859 INFO - ------------------------------
+2017-04-26 04:57:42,859 INFO - Only new items will be imported
+2017-04-26 04:57:42,859 INFO - ------------------------------
+2017-04-26 04:57:42,859 INFO - Finished Importing : Issue Links & Subtasks
+2017-04-26 04:57:42,859 INFO - ------------------------------
+2017-04-26 04:57:42,860 INFO - No issues need to be reindexed.

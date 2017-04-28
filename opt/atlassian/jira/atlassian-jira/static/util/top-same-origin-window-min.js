@@ -1,0 +1,1 @@
+define("jira/util/top-same-origin-window",function(){return function(parentOf){function satisfiesSameOrigin(w){try{if(w.location.href==undefined){return false}}catch(e){return false}return true}function isTopMostWindow(w){return w===w.parent}while(!isTopMostWindow(parentOf)&&satisfiesSameOrigin(parentOf.parent)){parentOf=parentOf.parent}return parentOf}});

@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GnomeVFS - Filesystem Abstraction library: Monitoring</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="GnomeVFS - Filesystem Abstraction library">
+<link rel="up" href="gnome-vfs-file-and-dirs-ops.html" title="Advanced File/Directory Operations">
+<link rel="prev" href="gnome-vfs-2.0-gnome-vfs-xfer.html" title="File Transfers">
+<link rel="next" href="gnome-vfs-2.0-gnome-vfs-file-advanced-ops.html" title="Backend-Specific Operations">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-monitor.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-monitor.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gnome-vfs-file-and-dirs-ops.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gnome-vfs-2.0-gnome-vfs-xfer.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gnome-vfs-2.0-gnome-vfs-file-advanced-ops.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gnome-vfs-2.0-gnome-vfs-monitor"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gnome-vfs-2.0-gnome-vfs-monitor.top_of_page"></a>Monitoring</span></h2>
+<p>Monitoring — watch files for changes, and get called back if they do</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-monitor.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gnome-vfs-2.0-gnome-vfs-monitor.html#GnomeVFSMonitorCallback" title="GnomeVFSMonitorCallback ()">*GnomeVFSMonitorCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-monitor.html#gnome-vfs-monitor-add" title="gnome_vfs_monitor_add ()">gnome_vfs_monitor_add</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-monitor.html#gnome-vfs-monitor-cancel" title="gnome_vfs_monitor_cancel ()">gnome_vfs_monitor_cancel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-monitor.html#gnome-vfs-monitor-callback" title="gnome_vfs_monitor_callback ()">gnome_vfs_monitor_callback</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-monitor.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-monitor.html#GnomeVFSMonitorHandle" title="GnomeVFSMonitorHandle">GnomeVFSMonitorHandle</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-monitor.html#GnomeVFSMonitorType" title="enum GnomeVFSMonitorType">GnomeVFSMonitorType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-monitor.html#GnomeVFSMonitorEventType" title="enum GnomeVFSMonitorEventType">GnomeVFSMonitorEventType</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-monitor.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">
+</pre>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-monitor.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-monitor.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GnomeVFSMonitorCallback"></a><h3>GnomeVFSMonitorCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GnomeVFSMonitorCallback<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-monitor.html#GnomeVFSMonitorHandle" title="GnomeVFSMonitorHandle"><span class="type">GnomeVFSMonitorHandle</span></a> *handle</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *monitor_uri</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *info_uri</code></em>,
+                            <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-monitor.html#GnomeVFSMonitorEventType" title="enum GnomeVFSMonitorEventType"><span class="type">GnomeVFSMonitorEventType</span></a> event_type</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Function called when a monitor detects a change.</p>
+<div class="refsect3">
+<a name="id-1.7.3.7.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>the handle of the monitor that created the event</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>monitor_uri</p></td>
+<td class="parameter_description"><p>the URI of the monitor that was triggered</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>info_uri</p></td>
+<td class="parameter_description"><p>the URI of the actual file this event is concerned with (this can be different
+from <em class="parameter"><code>monitor_uri</code></em>
+if it was a directory monitor)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>event_type</p></td>
+<td class="parameter_description"><p>what happened to <em class="parameter"><code>info_uri</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data passed to <a class="link" href="gnome-vfs-2.0-gnome-vfs-monitor.html#gnome-vfs-monitor-add" title="gnome_vfs_monitor_add ()"><code class="function">gnome_vfs_monitor_add()</code></a> when the monitor was created</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-monitor-add"></a><h3>gnome_vfs_monitor_add ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_monitor_add (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-monitor.html#GnomeVFSMonitorHandle" title="GnomeVFSMonitorHandle"><span class="type">GnomeVFSMonitorHandle</span></a> **handle</code></em>,
+                       <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text_uri</code></em>,
+                       <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-monitor.html#GnomeVFSMonitorType" title="enum GnomeVFSMonitorType"><span class="type">GnomeVFSMonitorType</span></a> monitor_type</code></em>,
+                       <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-monitor.html#GnomeVFSMonitorCallback" title="GnomeVFSMonitorCallback ()"><span class="type">GnomeVFSMonitorCallback</span></a> callback</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Watch the file or directory at <em class="parameter"><code>text_uri</code></em>
+ for changes (or the creation/deletion of the file)
+and call <em class="parameter"><code>callback</code></em>
+ when there is a change. If a directory monitor is added, <em class="parameter"><code>callback</code></em>
+ is
+notified when any file in the directory changes.</p>
+<div class="refsect3">
+<a name="id-1.7.3.7.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>after the call, <em class="parameter"><code>handle</code></em>
+will be a pointer to an operation handle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text_uri</p></td>
+<td class="parameter_description"><p>string representing the uri to monitor.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>monitor_type</p></td>
+<td class="parameter_description"><p>add a directory or file monitor.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to call when the monitor is tripped.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.7.3.7.3.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-monitor-cancel"></a><h3>gnome_vfs_monitor_cancel ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_monitor_cancel (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-monitor.html#GnomeVFSMonitorHandle" title="GnomeVFSMonitorHandle"><span class="type">GnomeVFSMonitorHandle</span></a> *handle</code></em>);</pre>
+<p>Cancel the monitor pointed to be <em class="parameter"><code>handle</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.7.3.7.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the monitor to cancel.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.7.3.7.4.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-monitor-callback"></a><h3>gnome_vfs_monitor_callback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_monitor_callback (<em class="parameter"><code><span class="type">GnomeVFSMethodHandle</span> *method_handle</code></em>,
+                            <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *info_uri</code></em>,
+                            <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-monitor.html#GnomeVFSMonitorEventType" title="enum GnomeVFSMonitorEventType"><span class="type">GnomeVFSMonitorEventType</span></a> event_type</code></em>);</pre>
+<p>gnome_vfs_monitor_callback() is used by <span class="type">GnomeVFSMethods</span> to indicate that a particular
+resource changed, and will issue the emission of the <a class="link" href="gnome-vfs-2.0-gnome-vfs-monitor.html#GnomeVFSMonitorCallback" title="GnomeVFSMonitorCallback ()"><span class="type">GnomeVFSMonitorCallback</span></a> registered
+using <a class="link" href="gnome-vfs-2.0-gnome-vfs-monitor.html#gnome-vfs-monitor-add" title="gnome_vfs_monitor_add ()"><code class="function">gnome_vfs_monitor_add()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.7.3.7.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>method_handle</p></td>
+<td class="parameter_description"><p>Method-specific monitor handle obtained through <a class="link" href="gnome-vfs-2.0-gnome-vfs-monitor.html#gnome-vfs-monitor-add" title="gnome_vfs_monitor_add ()"><code class="function">gnome_vfs_monitor_add()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>info_uri</p></td>
+<td class="parameter_description"><p>URI that triggered the callback.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>event_type</p></td>
+<td class="parameter_description"><p>The event obtained for <em class="parameter"><code>info_uri</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-monitor.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GnomeVFSMonitorHandle"></a><h3>GnomeVFSMonitorHandle</h3>
+<pre class="programlisting">typedef struct GnomeVFSMonitorHandle GnomeVFSMonitorHandle;
+</pre>
+<p>a handle representing a file or directory monitor that
+was registered using <a class="link" href="gnome-vfs-2.0-gnome-vfs-monitor.html#gnome-vfs-monitor-add" title="gnome_vfs_monitor_add ()"><code class="function">gnome_vfs_monitor_add()</code></a> and that
+can be cancelled using <a class="link" href="gnome-vfs-2.0-gnome-vfs-monitor.html#gnome-vfs-monitor-cancel" title="gnome_vfs_monitor_cancel ()"><code class="function">gnome_vfs_monitor_cancel()</code></a>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSMonitorType"></a><h3>enum GnomeVFSMonitorType</h3>
+<p>Type of resources that can be monitored.</p>
+<div class="refsect3">
+<a name="id-1.7.3.8.3.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-MONITOR-FILE:CAPS"></a>GNOME_VFS_MONITOR_FILE</p></td>
+<td class="enum_member_description">
+<p>the monitor is registered for a single file.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-MONITOR-DIRECTORY:CAPS"></a>GNOME_VFS_MONITOR_DIRECTORY</p></td>
+<td class="enum_member_description">
+<p>the monitor is registered for all files in a directory,
+				 and the directory itself.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSMonitorEventType"></a><h3>enum GnomeVFSMonitorEventType</h3>
+<p>Types of events that can be monitored.</p>
+<div class="refsect3">
+<a name="id-1.7.3.8.4.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-MONITOR-EVENT-CHANGED:CAPS"></a>GNOME_VFS_MONITOR_EVENT_CHANGED</p></td>
+<td class="enum_member_description">
+<p>file data changed (FAM, inotify).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-MONITOR-EVENT-DELETED:CAPS"></a>GNOME_VFS_MONITOR_EVENT_DELETED</p></td>
+<td class="enum_member_description">
+<p>file deleted event (FAM, inotify).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-MONITOR-EVENT-STARTEXECUTING:CAPS"></a>GNOME_VFS_MONITOR_EVENT_STARTEXECUTING</p></td>
+<td class="enum_member_description">
+<p>file was executed (FAM only).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-MONITOR-EVENT-STOPEXECUTING:CAPS"></a>GNOME_VFS_MONITOR_EVENT_STOPEXECUTING</p></td>
+<td class="enum_member_description">
+<p>executed file isn't executed anymore (FAM only).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-MONITOR-EVENT-CREATED:CAPS"></a>GNOME_VFS_MONITOR_EVENT_CREATED</p></td>
+<td class="enum_member_description">
+<p>file created event (FAM, inotify).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-MONITOR-EVENT-METADATA-CHANGED:CAPS"></a>GNOME_VFS_MONITOR_EVENT_METADATA_CHANGED</p></td>
+<td class="enum_member_description">
+<p>file metadata changed (inotify only).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

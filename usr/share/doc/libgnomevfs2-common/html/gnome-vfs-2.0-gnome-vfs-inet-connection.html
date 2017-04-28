@@ -1,0 +1,478 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GnomeVFS - Filesystem Abstraction library: Internet connection</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="GnomeVFS - Filesystem Abstraction library">
+<link rel="up" href="networking.html" title="Networking">
+<link rel="prev" href="gnome-vfs-2.0-gnome-vfs-socket-buffer.html" title="Unified bufferd network I/O">
+<link rel="next" href="mime-registry.html" title="MIME Registry">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-inet-connection.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-inet-connection.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="networking.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gnome-vfs-2.0-gnome-vfs-socket-buffer.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="mime-registry.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gnome-vfs-2.0-gnome-vfs-inet-connection"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gnome-vfs-2.0-gnome-vfs-inet-connection.top_of_page"></a>Internet connection</span></h2>
+<p>Internet connection — Simple TCP/IP connection functions.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-inet-connection.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#gnome-vfs-inet-connection-create" title="gnome_vfs_inet_connection_create ()">gnome_vfs_inet_connection_create</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#gnome-vfs-inet-connection-destroy" title="gnome_vfs_inet_connection_destroy ()">gnome_vfs_inet_connection_destroy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#gnome-vfs-inet-connection-free" title="gnome_vfs_inet_connection_free ()">gnome_vfs_inet_connection_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-socket.html#GnomeVFSSocket" title="GnomeVFSSocket"><span class="returnvalue">GnomeVFSSocket</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#gnome-vfs-inet-connection-to-socket" title="gnome_vfs_inet_connection_to_socket ()">gnome_vfs_inet_connection_to_socket</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-socket-buffer.html#GnomeVFSSocketBuffer" title="GnomeVFSSocketBuffer"><span class="returnvalue">GnomeVFSSocketBuffer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#gnome-vfs-inet-connection-to-socket-buffer" title="gnome_vfs_inet_connection_to_socket_buffer ()">gnome_vfs_inet_connection_to_socket_buffer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#gnome-vfs-inet-connection-get-fd" title="gnome_vfs_inet_connection_get_fd ()">gnome_vfs_inet_connection_get_fd</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#gnome-vfs-inet-connection-create-from-address" title="gnome_vfs_inet_connection_create_from_address ()">gnome_vfs_inet_connection_create_from_address</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-resolve.html#GnomeVFSAddress" title="GnomeVFSAddress"><span class="returnvalue">GnomeVFSAddress</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#gnome-vfs-inet-connection-get-address" title="gnome_vfs_inet_connection_get_address ()">gnome_vfs_inet_connection_get_address</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#gnome-vfs-inet-connection-get-ip" title="gnome_vfs_inet_connection_get_ip ()">gnome_vfs_inet_connection_get_ip</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-inet-connection.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#GnomeVFSInetConnection" title="GnomeVFSInetConnection">GnomeVFSInetConnection</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-inet-connection.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">
+</pre>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-inet-connection.description"></a><h2>Description</h2>
+<p>
+A <a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#GnomeVFSInetConnection" title="GnomeVFSInetConnection"><span class="type">GnomeVFSInetConnection</span></a> represents a TCP/IP connection. You can either use
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#gnome-vfs-inet-connection-create" title="gnome_vfs_inet_connection_create ()"><span class="type">gnome_vfs_inet_connection_create</span></a> which will use the <a class="link" href="gnome-vfs-2.0-gnome-vfs-resolve.html#gnome-vfs-resolve" title="gnome_vfs_resolve ()"><span class="type">gnome_vfs_resolve</span></a> DNS
+resolution functions internally or you can do the name resolution yourself
+and use <a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#gnome-vfs-inet-connection-create-from-address" title="gnome_vfs_inet_connection_create_from_address ()"><span class="type">gnome_vfs_inet_connection_create_from_address</span></a> to connect to a specific
+address.
+After a connection has been established all I/O is done through a GnomeVFSSocket
+or a GnomeVFSSocketBuffer.
+</p>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-inet-connection.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gnome-vfs-inet-connection-create"></a><h3>gnome_vfs_inet_connection_create ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_inet_connection_create (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#GnomeVFSInetConnection" title="GnomeVFSInetConnection"><span class="type">GnomeVFSInetConnection</span></a> **connection_return</code></em>,
+                                  <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *host_name</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> host_port</code></em>,
+                                  <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSCancellation" title="GnomeVFSCancellation"><span class="type">GnomeVFSCancellation</span></a> *cancellation</code></em>);</pre>
+<p>Creates a connection at <em class="parameter"><code>connection_return</code></em>
+ to <em class="parameter"><code>host_name</code></em>
+ using
+port <em class="parameter"><code>port</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.10.7.7.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection_return</p></td>
+<td class="parameter_description"><p>pointer to a pointer to a <a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#GnomeVFSInetConnection" title="GnomeVFSInetConnection"><span class="type">GnomeVFSInetConnection</span></a>, which will
+contain an allocated <a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#GnomeVFSInetConnection" title="GnomeVFSInetConnection"><span class="type">GnomeVFSInetConnection</span></a> object on return.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>host_name</p></td>
+<td class="parameter_description"><p>string indicating the host to establish an internet connection with.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>host_port</p></td>
+<td class="parameter_description"><p>port number to connect to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cancellation</p></td>
+<td class="parameter_description"><p>handle allowing cancellation of the operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.10.7.7.2.6"></a><h4>Returns</h4>
+<p> <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating the success of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-inet-connection-destroy"></a><h3>gnome_vfs_inet_connection_destroy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_inet_connection_destroy (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#GnomeVFSInetConnection" title="GnomeVFSInetConnection"><span class="type">GnomeVFSInetConnection</span></a> *connection</code></em>,
+                                   <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSCancellation" title="GnomeVFSCancellation"><span class="type">GnomeVFSCancellation</span></a> *cancellation</code></em>);</pre>
+<p>Closes/Destroys <em class="parameter"><code>connection</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.10.7.7.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>connection to destroy.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cancellation</p></td>
+<td class="parameter_description"><p>handle for cancelling the operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-inet-connection-free"></a><h3>gnome_vfs_inet_connection_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_inet_connection_free (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#GnomeVFSInetConnection" title="GnomeVFSInetConnection"><span class="type">GnomeVFSInetConnection</span></a> *connection</code></em>,
+                                <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSCancellation" title="GnomeVFSCancellation"><span class="type">GnomeVFSCancellation</span></a> *cancellation</code></em>);</pre>
+<p>Frees <em class="parameter"><code>connection</code></em>
+ without closing the socket.</p>
+<div class="refsect3">
+<a name="id-1.10.7.7.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>connection to free.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cancellation</p></td>
+<td class="parameter_description"><p>handle for cancelling the operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-inet-connection-to-socket"></a><h3>gnome_vfs_inet_connection_to_socket ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-socket.html#GnomeVFSSocket" title="GnomeVFSSocket"><span class="returnvalue">GnomeVFSSocket</span></a> *
+gnome_vfs_inet_connection_to_socket (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#GnomeVFSInetConnection" title="GnomeVFSInetConnection"><span class="type">GnomeVFSInetConnection</span></a> *connection</code></em>);</pre>
+<p>Wrap <em class="parameter"><code>connection</code></em>
+ inside a standard <a class="link" href="gnome-vfs-2.0-gnome-vfs-socket.html#GnomeVFSSocket" title="GnomeVFSSocket"><span class="type">GnomeVFSSocket</span></a> for convenience.</p>
+<div class="refsect3">
+<a name="id-1.10.7.7.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>connection to be wrapped into a <a class="link" href="gnome-vfs-2.0-gnome-vfs-socket.html#GnomeVFSSocket" title="GnomeVFSSocket"><span class="type">GnomeVFSSocket</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.10.7.7.5.6"></a><h4>Returns</h4>
+<p> a newly created <a class="link" href="gnome-vfs-2.0-gnome-vfs-socket.html#GnomeVFSSocket" title="GnomeVFSSocket"><span class="type">GnomeVFSSocket</span></a> around <em class="parameter"><code>connection</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-inet-connection-to-socket-buffer"></a><h3>gnome_vfs_inet_connection_to_socket_buffer ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-socket-buffer.html#GnomeVFSSocketBuffer" title="GnomeVFSSocketBuffer"><span class="returnvalue">GnomeVFSSocketBuffer</span></a> *
+gnome_vfs_inet_connection_to_socket_buffer
+                               (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#GnomeVFSInetConnection" title="GnomeVFSInetConnection"><span class="type">GnomeVFSInetConnection</span></a> *connection</code></em>);</pre>
+<p>Wrap <em class="parameter"><code>connection</code></em>
+ inside a standard <a class="link" href="gnome-vfs-2.0-gnome-vfs-socket-buffer.html#GnomeVFSSocketBuffer" title="GnomeVFSSocketBuffer"><span class="type">GnomeVFSSocketBuffer</span></a> for convenience.</p>
+<div class="refsect3">
+<a name="id-1.10.7.7.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>connection to be wrapped into a <a class="link" href="gnome-vfs-2.0-gnome-vfs-socket-buffer.html#GnomeVFSSocketBuffer" title="GnomeVFSSocketBuffer"><span class="type">GnomeVFSSocketBuffer</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.10.7.7.6.6"></a><h4>Returns</h4>
+<p> a newly created <a class="link" href="gnome-vfs-2.0-gnome-vfs-socket-buffer.html#GnomeVFSSocketBuffer" title="GnomeVFSSocketBuffer"><span class="type">GnomeVFSSocketBuffer</span></a> around <em class="parameter"><code>connection</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-inet-connection-get-fd"></a><h3>gnome_vfs_inet_connection_get_fd ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gnome_vfs_inet_connection_get_fd (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#GnomeVFSInetConnection" title="GnomeVFSInetConnection"><span class="type">GnomeVFSInetConnection</span></a> *connection</code></em>);</pre>
+<p>Retrieve the UNIX file descriptor corresponding to <em class="parameter"><code>connection</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.10.7.7.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>connection to get the file descriptor from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.10.7.7.7.6"></a><h4>Returns</h4>
+<p> file descriptor.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-inet-connection-create-from-address"></a><h3>gnome_vfs_inet_connection_create_from_address ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_inet_connection_create_from_address
+                               (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#GnomeVFSInetConnection" title="GnomeVFSInetConnection"><span class="type">GnomeVFSInetConnection</span></a> **connection_return</code></em>,
+                                <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-resolve.html#GnomeVFSAddress" title="GnomeVFSAddress"><span class="type">GnomeVFSAddress</span></a> *address</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> host_port</code></em>,
+                                <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSCancellation" title="GnomeVFSCancellation"><span class="type">GnomeVFSCancellation</span></a> *cancellation</code></em>);</pre>
+<p>Creates a connection at <em class="parameter"><code>connection_return</code></em>
+ to <em class="parameter"><code>address</code></em>
+ using
+port <em class="parameter"><code>port</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.10.7.7.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>connection_return</p></td>
+<td class="parameter_description"><p>pointer to a pointer to a <a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#GnomeVFSInetConnection" title="GnomeVFSInetConnection"><span class="type">GnomeVFSInetConnection</span></a>, which will
+contain an allocated <a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#GnomeVFSInetConnection" title="GnomeVFSInetConnection"><span class="type">GnomeVFSInetConnection</span></a> object on return.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>address</p></td>
+<td class="parameter_description"><p>a valid <a class="link" href="gnome-vfs-2.0-gnome-vfs-resolve.html#GnomeVFSAddress" title="GnomeVFSAddress"><span class="type">GnomeVFSAddress</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>host_port</p></td>
+<td class="parameter_description"><p>port number to connect to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cancellation</p></td>
+<td class="parameter_description"><p>handle allowing cancellation of the operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.10.7.7.8.6"></a><h4>Returns</h4>
+<p> <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating the success of the operation.</p>
+<p></p>
+</div>
+<p class="since">Since 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-inet-connection-get-address"></a><h3>gnome_vfs_inet_connection_get_address ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-resolve.html#GnomeVFSAddress" title="GnomeVFSAddress"><span class="returnvalue">GnomeVFSAddress</span></a> *
+gnome_vfs_inet_connection_get_address (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#GnomeVFSInetConnection" title="GnomeVFSInetConnection"><span class="type">GnomeVFSInetConnection</span></a> *connection</code></em>);</pre>
+<p>Retrieve the address of the other side of a connected <em class="parameter"><code>connection</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.10.7.7.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>connection to get the address from. </p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.10.7.7.9.6"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-resolve.html#GnomeVFSAddress" title="GnomeVFSAddress"><span class="type">GnomeVFSAddress</span></a> containing the address.</p>
+<p>Since 2.8</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-inet-connection-get-ip"></a><h3>gnome_vfs_inet_connection_get_ip ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_inet_connection_get_ip (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-inet-connection.html#GnomeVFSInetConnection" title="GnomeVFSInetConnection"><span class="type">GnomeVFSInetConnection</span></a> *connection</code></em>);</pre>
+<p>Retrieve the ip address of the other side of a connected <em class="parameter"><code>connection</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.10.7.7.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>connection</p></td>
+<td class="parameter_description"><p>connection to get the ip from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.10.7.7.10.6"></a><h4>Returns</h4>
+<p> string version of the ip.</p>
+<p></p>
+</div>
+<p class="since">Since 2.8</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-inet-connection.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GnomeVFSInetConnection"></a><h3>GnomeVFSInetConnection</h3>
+<pre class="programlisting">typedef struct GnomeVFSInetConnection GnomeVFSInetConnection;
+</pre>
+<p>
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

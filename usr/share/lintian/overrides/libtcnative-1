@@ -1,0 +1,2 @@
+libtcnative-1: non-dev-pkg-with-shlib-symlink
+libtcnative-1: package-name-doesnt-match-sonames libtcnative-1-0

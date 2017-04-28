@@ -1,0 +1,1 @@
+define("jira/util/navigator",["internal/util/navigator","jquery"],function(internalNavigator,jQuery){var Navigator=jQuery.extend({},internalNavigator);Navigator.isOpera=function(){return jQuery.browser.opera===true};Navigator.modifierKey=function(){return AJS.Meta.get("keyboard-accesskey-modifier")};return Navigator});

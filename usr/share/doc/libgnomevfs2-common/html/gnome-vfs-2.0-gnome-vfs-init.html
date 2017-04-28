@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GnomeVFS - Filesystem Abstraction library: Initialization/Shutdown</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="GnomeVFS - Filesystem Abstraction library">
+<link rel="up" href="index.html" title="GnomeVFS - Filesystem Abstraction library">
+<link rel="prev" href="gnome-vfs-first-steps.html" title="A Gentle Programming Primer">
+<link rel="next" href="data-types.html" title="Basic Data Types">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-init.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-init.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="gnome-vfs-first-steps.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="data-types.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gnome-vfs-2.0-gnome-vfs-init"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gnome-vfs-2.0-gnome-vfs-init.top_of_page"></a>Initialization/Shutdown</span></h2>
+<p>Initialization/Shutdown</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-init.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-init.html#gnome-vfs-init" title="gnome_vfs_init ()">gnome_vfs_init</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-init.html#gnome-vfs-initialized" title="gnome_vfs_initialized ()">gnome_vfs_initialized</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-init.html#gnome-vfs-shutdown" title="gnome_vfs_shutdown ()">gnome_vfs_shutdown</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-init.html#gnome-vfs-loadinit" title="gnome_vfs_loadinit ()">gnome_vfs_loadinit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-init.html#gnome-vfs-preinit" title="gnome_vfs_preinit ()">gnome_vfs_preinit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-init.html#gnome-vfs-postinit" title="gnome_vfs_postinit ()">gnome_vfs_postinit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-init.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">
+</pre>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-init.description"></a><h2>Description</h2>
+<p>
+Starting GnomeVFS up and shutting it down. Usually when using the whole
+GNOME framework this library is initialized and shutdown automatically
+when calling gnome_init.
+</p>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-init.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gnome-vfs-init"></a><h3>gnome_vfs_init ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gnome_vfs_init (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>If gnome-vfs is not already initialized, initialize it. This must be
+called prior to performing any other gnome-vfs operations, and may
+be called multiple times without error.</p>
+<div class="refsect3">
+<a name="id-1.3.6.2.5"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if gnome-vfs is successfully initialized (or was
+already initialized).</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-initialized"></a><h3>gnome_vfs_initialized ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gnome_vfs_initialized (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Detects if gnome-vfs has already been initialized (gnome-vfs must be
+initialized prior to using any methods or operations).</p>
+<div class="refsect3">
+<a name="id-1.3.6.3.5"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if gnome-vfs has already been initialized.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-shutdown"></a><h3>gnome_vfs_shutdown ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_shutdown (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Cease all active gnome-vfs operations and unload the MIME
+database from memory.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-loadinit"></a><h3>gnome_vfs_loadinit ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_loadinit (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> app</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> modinfo</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_loadinit</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-preinit"></a><h3>gnome_vfs_preinit ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_preinit (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> app</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> modinfo</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_preinit</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-postinit"></a><h3>gnome_vfs_postinit ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_postinit (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> app</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> modinfo</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_postinit</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-init.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

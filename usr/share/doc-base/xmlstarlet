@@ -1,0 +1,18 @@
+Document: xmlstarlet
+Title: xmlstarlet Manual
+Author: Mikhail Grushinskiy
+Abstract: This manual describes the xmlstarlet XML processing tool.
+Section: File Management
+
+Format: PostScript
+Files: /usr/share/doc/xmlstarlet/xmlstarlet-ug.ps.gz
+
+Format: PDF
+Files: /usr/share/doc/xmlstarlet/xmlstarlet-ug.pdf.gz
+
+Format: text
+Files: /usr/share/doc/xmlstarlet/xmlstarlet.txt.gz
+
+Format: HTML
+Index: /usr/share/doc/xmlstarlet/xmlstarlet-ug.html
+Files: /usr/share/doc/xmlstarlet/*.html

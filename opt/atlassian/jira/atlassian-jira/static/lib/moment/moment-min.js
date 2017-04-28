@@ -1,0 +1,1 @@
+define("jira/moment",["jira/moment/moment.jira.i18n"],function(moment){moment.splitDate=function(value,format){return Date.splitDate(value,format)};return moment});

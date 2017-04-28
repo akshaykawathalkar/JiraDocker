@@ -1,0 +1,1 @@
+define("wrm/context-path",function(){return window.AJS.contextPath});

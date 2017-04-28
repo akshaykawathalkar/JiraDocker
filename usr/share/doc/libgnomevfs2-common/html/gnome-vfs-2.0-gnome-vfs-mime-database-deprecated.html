@@ -1,0 +1,2031 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GnomeVFS - Filesystem Abstraction library: gnome-vfs-mime-database-deprecated</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="GnomeVFS - Filesystem Abstraction library">
+<link rel="up" href="mime-registry.html" title="MIME Registry">
+<link rel="prev" href="gnome-vfs-2.0-gnome-vfs-mime-monitor.html" title="gnome-vfs-mime-monitor">
+<link rel="next" href="gnome-vfs-2.0-gnome-vfs-application-registry.html" title="Deprecated Application Registry API">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="mime-registry.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gnome-vfs-2.0-gnome-vfs-mime-monitor.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gnome-vfs-2.0-gnome-vfs-application-registry.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.top_of_page"></a>gnome-vfs-mime-database-deprecated</span></h2>
+<p>gnome-vfs-mime-database-deprecated</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeActionType" title="enum GnomeVFSMimeActionType"><span class="returnvalue">GnomeVFSMimeActionType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-get-default-action-type" title="gnome_vfs_mime_get_default_action_type ()">gnome_vfs_mime_get_default_action_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeAction" title="struct GnomeVFSMimeAction"><span class="returnvalue">GnomeVFSMimeAction</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-get-default-action" title="gnome_vfs_mime_get_default_action ()">gnome_vfs_mime_get_default_action</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-get-short-list-applications" title="gnome_vfs_mime_get_short_list_applications ()">gnome_vfs_mime_get_short_list_applications</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-get-short-list-components" title="gnome_vfs_mime_get_short_list_components ()">gnome_vfs_mime_get_short_list_components</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-set-default-action-type" title="gnome_vfs_mime_set_default_action_type ()">gnome_vfs_mime_set_default_action_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-set-icon" title="gnome_vfs_mime_set_icon ()">gnome_vfs_mime_set_icon</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-set-description" title="gnome_vfs_mime_set_description ()">gnome_vfs_mime_set_description</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-set-can-be-executable" title="gnome_vfs_mime_set_can_be_executable ()">gnome_vfs_mime_set_can_be_executable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-set-short-list-applications" title="gnome_vfs_mime_set_short_list_applications ()">gnome_vfs_mime_set_short_list_applications</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-set-short-list-components" title="gnome_vfs_mime_set_short_list_components ()">gnome_vfs_mime_set_short_list_components</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-add-application-to-short-list" title="gnome_vfs_mime_add_application_to_short_list ()">gnome_vfs_mime_add_application_to_short_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-remove-application-from-short-list" title="gnome_vfs_mime_remove_application_from_short_list ()">gnome_vfs_mime_remove_application_from_short_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-add-component-to-short-list" title="gnome_vfs_mime_add_component_to_short_list ()">gnome_vfs_mime_add_component_to_short_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-remove-component-from-short-list" title="gnome_vfs_mime_remove_component_from_short_list ()">gnome_vfs_mime_remove_component_from_short_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-set-default-application" title="gnome_vfs_mime_set_default_application ()">gnome_vfs_mime_set_default_application</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-set-default-component" title="gnome_vfs_mime_set_default_component ()">gnome_vfs_mime_set_default_component</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-add-extension" title="gnome_vfs_mime_add_extension ()">gnome_vfs_mime_add_extension</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-remove-extension" title="gnome_vfs_mime_remove_extension ()">gnome_vfs_mime_remove_extension</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-extend-all-applications" title="gnome_vfs_mime_extend_all_applications ()">gnome_vfs_mime_extend_all_applications</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-remove-from-all-applications" title="gnome_vfs_mime_remove_from_all_applications ()">gnome_vfs_mime_remove_from_all_applications</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database.html#GnomeVFSMimeApplication" title="GnomeVFSMimeApplication"><span class="returnvalue">GnomeVFSMimeApplication</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-application-new-from-id" title="gnome_vfs_mime_application_new_from_id ()">gnome_vfs_mime_application_new_from_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-action-launch" title="gnome_vfs_mime_action_launch ()">gnome_vfs_mime_action_launch</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-action-launch-with-env" title="gnome_vfs_mime_action_launch_with_env ()">gnome_vfs_mime_action_launch_with_env</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-action-free" title="gnome_vfs_mime_action_free ()">gnome_vfs_mime_action_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-id-in-application-list" title="gnome_vfs_mime_id_in_application_list ()">gnome_vfs_mime_id_in_application_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-id-in-component-list" title="gnome_vfs_mime_id_in_component_list ()">gnome_vfs_mime_id_in_component_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-remove-application-from-list" title="gnome_vfs_mime_remove_application_from_list ()">gnome_vfs_mime_remove_application_from_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-remove-component-from-list" title="gnome_vfs_mime_remove_component_from_list ()">gnome_vfs_mime_remove_component_from_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-id-list-from-component-list" title="gnome_vfs_mime_id_list_from_component_list ()">gnome_vfs_mime_id_list_from_component_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-id-list-from-application-list" title="gnome_vfs_mime_id_list_from_application_list ()">gnome_vfs_mime_id_list_from_application_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-freeze" title="gnome_vfs_mime_freeze ()">gnome_vfs_mime_freeze</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-thaw" title="gnome_vfs_mime_thaw ()">gnome_vfs_mime_thaw</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-info-reload" title="gnome_vfs_mime_info_reload ()">gnome_vfs_mime_info_reload</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-type-is-known" title="gnome_vfs_mime_type_is_known ()">gnome_vfs_mime_type_is_known</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-get-value" title="gnome_vfs_mime_get_value ()">gnome_vfs_mime_get_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-set-value" title="gnome_vfs_mime_set_value ()">gnome_vfs_mime_set_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-get-key-list" title="gnome_vfs_mime_get_key_list ()">gnome_vfs_mime_get_key_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-keys-list-free" title="gnome_vfs_mime_keys_list_free ()">gnome_vfs_mime_keys_list_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-get-extensions-list" title="gnome_vfs_mime_get_extensions_list ()">gnome_vfs_mime_get_extensions_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-extensions-list-free" title="gnome_vfs_mime_extensions_list_free ()">gnome_vfs_mime_extensions_list_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-get-extensions-string" title="gnome_vfs_mime_get_extensions_string ()">gnome_vfs_mime_get_extensions_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-get-extensions-pretty-string" title="gnome_vfs_mime_get_extensions_pretty_string ()">gnome_vfs_mime_get_extensions_pretty_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-get-registered-mime-types" title="gnome_vfs_get_registered_mime_types ()">gnome_vfs_get_registered_mime_types</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-registered-mime-type-list-free" title="gnome_vfs_mime_registered_mime_type_list_free ()">gnome_vfs_mime_registered_mime_type_list_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-set-registered-type-key" title="gnome_vfs_mime_set_registered_type_key ()">gnome_vfs_mime_set_registered_type_key</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-set-extensions-list" title="gnome_vfs_mime_set_extensions_list ()">gnome_vfs_mime_set_extensions_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-registered-mime-type-delete" title="gnome_vfs_mime_registered_mime_type_delete ()">gnome_vfs_mime_registered_mime_type_delete</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-reset" title="gnome_vfs_mime_reset ()">gnome_vfs_mime_reset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeActionType" title="enum GnomeVFSMimeActionType">GnomeVFSMimeActionType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeApplicationArgumentType" title="enum GnomeVFSMimeApplicationArgumentType">GnomeVFSMimeApplicationArgumentType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeAction" title="struct GnomeVFSMimeAction">GnomeVFSMimeAction</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">
+</pre>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gnome-vfs-mime-get-default-action-type"></a><h3>gnome_vfs_mime_get_default_action_type ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeActionType" title="enum GnomeVFSMimeActionType"><span class="returnvalue">GnomeVFSMimeActionType</span></a>
+gnome_vfs_mime_get_default_action_type
+                               (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_get_default_action_type</code> is deprecated and should not be used in newly-written code.</p>
+<p>This function does not work with the new mime system.
+It always returns none</p>
+</div>
+<p>Query the MIME database for the type of action to be performed on <em class="parameter"><code>mime_type</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.2.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>a const char * containing a mime type, e.g. "application/x-php".</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.2.7"></a><h4>Returns</h4>
+<p> The type of action to be performed on a file of
+MIME type <em class="parameter"><code>mime_type</code></em>
+by default.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-get-default-action"></a><h3>gnome_vfs_mime_get_default_action ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeAction" title="struct GnomeVFSMimeAction"><span class="returnvalue">GnomeVFSMimeAction</span></a> *
+gnome_vfs_mime_get_default_action (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_get_default_action</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database.html#gnome-vfs-mime-get-default-application" title="gnome_vfs_mime_get_default_application ()"><code class="function">gnome_vfs_mime_get_default_application()</code></a> instead.</p>
+</div>
+<p>Query the MIME database for default action associated with <em class="parameter"><code>mime_type</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.3.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>a const char * containing a mime type, e.g. "application/x-php".</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.3.7"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeAction" title="struct GnomeVFSMimeAction"><span class="type">GnomeVFSMimeAction</span></a> representing the default action to perform upon
+file of type <em class="parameter"><code>mime_type</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-get-short-list-applications"></a><h3>gnome_vfs_mime_get_short_list_applications ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+gnome_vfs_mime_get_short_list_applications
+                               (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_get_short_list_applications</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database.html#gnome-vfs-mime-get-all-applications" title="gnome_vfs_mime_get_all_applications ()"><code class="function">gnome_vfs_mime_get_all_applications()</code></a> instead.</p>
+</div>
+<p>Return an alphabetically sorted list of <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database.html#GnomeVFSMimeApplication" title="GnomeVFSMimeApplication"><span class="type">GnomeVFSMimeApplication</span></a> data
+structures for the <em class="parameter"><code>mime_type</code></em>
+. gnome-vfs no longer supports the
+concept of a "short list" of applications that the user might be interested
+in.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.4.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>a const char * containing a mime type, e.g. "image/png".</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.4.7"></a><h4>Returns</h4>
+<p> a <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> * where the elements are <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database.html#GnomeVFSMimeApplication" title="GnomeVFSMimeApplication"><span class="type">GnomeVFSMimeApplication</span></a> *
+representing various applications to display in the short list for <em class="parameter"><code>mime_type</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-get-short-list-components"></a><h3>gnome_vfs_mime_get_short_list_components ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+gnome_vfs_mime_get_short_list_components
+                               (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_mime_get_short_list_components</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.5.6"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-set-default-action-type"></a><h3>gnome_vfs_mime_set_default_action_type ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_mime_set_default_action_type
+                               (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
+                                <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeActionType" title="enum GnomeVFSMimeActionType"><span class="type">GnomeVFSMimeActionType</span></a> action_type</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_set_default_action_type</code> is deprecated and should not be used in newly-written code.</p>
+<p>User modifications to the MIME database are no longer supported by gnome-vfs.</p>
+</div>
+<p>Sets the default action type to be performed on files of <em class="parameter"><code>mime_type</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.6.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>a const char * containing a mime type, e.g. "image/png".</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action_type</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeActionType" title="enum GnomeVFSMimeActionType"><span class="type">GnomeVFSMimeActionType</span></a> containing the action to perform by default.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.6.7"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating the success of the operation or reporting
+any errors encountered.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-set-icon"></a><h3>gnome_vfs_mime_set_icon ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_mime_set_icon (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
+                         <em class="parameter"><code>const <span class="type">char</span> *filename</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_set_icon</code> is deprecated and should not be used in newly-written code.</p>
+<p>User modifications to the MIME database are no longer
+supported in gnome-vfs.</p>
+</div>
+<p>Set the icon entry for <em class="parameter"><code>mime_type</code></em>
+ in the MIME database. Note that
+icon entries need not necessarily contain the full path, and do not necessarily need to
+specify an extension. So "i-regular", "my-special-icon.png", and "some-icon"
+are all valid icon filenames.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.7.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>a const char * containing a  MIME type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>a const char * containing an image filename.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.7.7"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating the success of the operation
+or any errors that may have occurred.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-set-description"></a><h3>gnome_vfs_mime_set_description ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_mime_set_description (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
+                                <em class="parameter"><code>const <span class="type">char</span> *description</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_set_description</code> is deprecated and should not be used in newly-written code.</p>
+<p>User modifications to the MIME database are no longer supported by gnome-vfs.</p>
+</div>
+<p>Set the <em class="parameter"><code>description</code></em>
+ of this MIME type in the MIME database. The <em class="parameter"><code>description</code></em>
+
+should be something like "Gnumeric spreadsheet".</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.8.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>a const char * containing a mime type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>description</p></td>
+<td class="parameter_description"><p>a description of this MIME type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.8.7"></a><h4>Returns</h4>
+<p> <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating the success of the operation or any
+errors that may have occurred.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-set-can-be-executable"></a><h3>gnome_vfs_mime_set_can_be_executable ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_mime_set_can_be_executable (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> new_value</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_mime_set_can_be_executable</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>Set whether files of <em class="parameter"><code>mime_type</code></em>
+ might conceivably be executable.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.9.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>a const char * containing a mime type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>new_value</p></td>
+<td class="parameter_description"><p>a boolean value indicating whether <em class="parameter"><code>mime_type</code></em>
+could be executable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.9.7"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating the success of the operation or any
+errors that may have occurred.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-set-short-list-applications"></a><h3>gnome_vfs_mime_set_short_list_applications ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_mime_set_short_list_applications
+                               (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *application_ids</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_set_short_list_applications</code> is deprecated and should not be used in newly-written code.</p>
+<p>User modifications to the MIME database are no longer supported by gnome-vfs.</p>
+</div>
+<p>Set the short list of applications for the specified MIME type. The short list
+contains applications recommended for possible selection by the user.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.10.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>a const char * containing a mime type, e.g. "application/x-php".</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>application_ids</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of const char * application ids.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.10.7"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating the success of the operation or reporting
+any errors encountered.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-set-short-list-components"></a><h3>gnome_vfs_mime_set_short_list_components ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_mime_set_short_list_components
+                               (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *component_iids</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_set_short_list_components</code> is deprecated and should not be used in newly-written code.</p>
+<p>User modifications to the MIME database are no longer supported by gnome-vfs.</p>
+</div>
+<p>Set the short list of components for the <em class="parameter"><code>mime_type</code></em>
+. The short list
+contains companents recommended for possible selection by the user.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.11.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>a const char * containing a mime type, e.g. "application/x-php".</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>component_iids</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of const char * OAFIIDs.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.11.7"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating the success of the operation or reporting
+any errors encountered.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-add-application-to-short-list"></a><h3>gnome_vfs_mime_add_application_to_short_list ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_mime_add_application_to_short_list
+                               (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
+                                <em class="parameter"><code>const <span class="type">char</span> *application_id</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_add_application_to_short_list</code> is deprecated and should not be used in newly-written code.</p>
+<p>User modifications to the MIME database are no longer supported by gnome-vfs.</p>
+</div>
+<p>Add an application to the short list for <em class="parameter"><code>mime_type</code></em>
+. The short list contains
+applications recommended for display as choices to the user for a particular MIME type.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.12.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>a const char * containing a mime type, e.g. "application/x-php".</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>application_id</p></td>
+<td class="parameter_description"><p>const char * containing the application's id in the MIME database.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.12.7"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating the success of the operation or reporting
+any errors encountered.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-remove-application-from-short-list"></a><h3>gnome_vfs_mime_remove_application_from_short_list ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_mime_remove_application_from_short_list
+                               (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
+                                <em class="parameter"><code>const <span class="type">char</span> *application_id</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_remove_application_from_short_list</code> is deprecated and should not be used in newly-written code.</p>
+<p>User modifications to the MIME database are no longer supported by gnome-vfs.</p>
+</div>
+<p>Remove an application specified by <em class="parameter"><code>application_id</code></em>
+ from the short list for <em class="parameter"><code>mime_type</code></em>
+. A short list contains
+applications recommended for display as choices to the user for a particular MIME type.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.13.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>a const char * containing a mime type, e.g. "application/x-php".</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>application_id</p></td>
+<td class="parameter_description"><p>const char * containing the application's id in the MIME database.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.13.7"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating the success of the operation or reporting
+any errors encountered.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-add-component-to-short-list"></a><h3>gnome_vfs_mime_add_component_to_short_list ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_mime_add_component_to_short_list
+                               (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
+                                <em class="parameter"><code>const <span class="type">char</span> *iid</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_add_component_to_short_list</code> is deprecated and should not be used in newly-written code.</p>
+<p>User modifications to the MIME database are no longer supported by gnome-vfs.</p>
+</div>
+<p>Add a component to the short list for <em class="parameter"><code>mime_type</code></em>
+. A short list contains
+components recommended for display as choices to the user for a particular MIME type.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.14.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>a const char * containing a mime type, e.g. "application/x-php".</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iid</p></td>
+<td class="parameter_description"><p>const char * containing the component's OAFIID.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.14.7"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating the success of the operation or reporting
+any errors encountered.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-remove-component-from-short-list"></a><h3>gnome_vfs_mime_remove_component_from_short_list ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_mime_remove_component_from_short_list
+                               (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
+                                <em class="parameter"><code>const <span class="type">char</span> *iid</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_remove_component_from_short_list</code> is deprecated and should not be used in newly-written code.</p>
+<p>User modifications to the MIME database are no longer supported by gnome-vfs.</p>
+</div>
+<p>Remove a component from the short list for <em class="parameter"><code>mime_type</code></em>
+. The short list contains
+components recommended for display as choices to the user for a particular MIME type.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.15.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>a const char * containing a mime type, e.g. "application/x-php".</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iid</p></td>
+<td class="parameter_description"><p>const char * containing the component's OAFIID.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.15.7"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating the success of the operation or reporting
+any errors encountered.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-set-default-application"></a><h3>gnome_vfs_mime_set_default_application ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_mime_set_default_application
+                               (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
+                                <em class="parameter"><code>const <span class="type">char</span> *application_id</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_set_default_application</code> is deprecated and should not be used in newly-written code.</p>
+<p>User modifications to the MIME database are no longer supported by gnome-vfs.</p>
+</div>
+<p>Sets the default application to be run on files of <em class="parameter"><code>mime_type</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.16.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>a const char * containing a mime type, e.g. "application/x-php".</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>application_id</p></td>
+<td class="parameter_description"><p>a key representing an application in the MIME database
+(<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database.html#GnomeVFSMimeApplication" title="GnomeVFSMimeApplication"><span class="type">GnomeVFSMimeApplication</span></a>-&gt;id, for example).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.16.7"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating the success of the operation or reporting
+any errors encountered.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-set-default-component"></a><h3>gnome_vfs_mime_set_default_component ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_mime_set_default_component (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
+                                      <em class="parameter"><code>const <span class="type">char</span> *component_iid</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_set_default_component</code> is deprecated and should not be used in newly-written code.</p>
+<p>User modifications to the MIME database are no longer supported by gnome-vfs.</p>
+</div>
+<p>Sets the default component to be activated for files of <em class="parameter"><code>mime_type</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.17.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>a const char * containing a mime type, e.g. "application/x-php".</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>component_iid</p></td>
+<td class="parameter_description"><p>OAFIID of a component.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.17.7"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating the success of the operation or reporting
+any errors encountered.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-add-extension"></a><h3>gnome_vfs_mime_add_extension ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_mime_add_extension (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
+                              <em class="parameter"><code>const <span class="type">char</span> *extension</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_add_extension</code> is deprecated and should not be used in newly-written code.</p>
+<p>User modifications to the MIME database are no longer supported by gnome-vfs.</p>
+</div>
+<p>Add a file extension to the specificed MIME type in the MIME database.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.18.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>mime type to add the mapping to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>extension</p></td>
+<td class="parameter_description"><p>extension to add (e.g. "txt").</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.18.7"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating the success of the operation or any
+errors that may have occurred.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-remove-extension"></a><h3>gnome_vfs_mime_remove_extension ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_mime_remove_extension (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
+                                 <em class="parameter"><code>const <span class="type">char</span> *extension</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_remove_extension</code> is deprecated and should not be used in newly-written code.</p>
+<p>User modifications to the MIME database are no longer supported by gnome-vfs.</p>
+</div>
+<p>Removes a file extension from the <em class="parameter"><code>mime_type</code></em>
+ in the MIME database.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.19.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>mime type to remove the extension from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>extension</p></td>
+<td class="parameter_description"><p>extension to remove.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.19.7"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating the success of the operation or any
+errors that may have occurred.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-extend-all-applications"></a><h3>gnome_vfs_mime_extend_all_applications ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_mime_extend_all_applications
+                               (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *application_ids</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_extend_all_applications</code> is deprecated and should not be used in newly-written code.</p>
+<p>User modifications to the MIME database are no longer supported by gnome-vfs.</p>
+</div>
+<p>Register <em class="parameter"><code>mime_type</code></em>
+ as being handled by all applications list in <em class="parameter"><code>application_ids</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.20.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>a const char * containing a mime type, e.g. "application/x-php".</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>application_ids</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of const char * containing application ids.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.20.7"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating the success of the operation or reporting
+any errors encountered.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-remove-from-all-applications"></a><h3>gnome_vfs_mime_remove_from_all_applications ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_mime_remove_from_all_applications
+                               (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *application_ids</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_remove_from_all_applications</code> is deprecated and should not be used in newly-written code.</p>
+<p>User modifications to the MIME database are no longer supported by gnome-vfs.</p>
+</div>
+<p>Remove <em class="parameter"><code>mime_type</code></em>
+ as a handled type from every application in <em class="parameter"><code>application_ids</code></em>
+</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.21.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>a const char * containing a mime type, e.g. "application/x-php".</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>application_ids</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of const char * containing application ids.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.21.7"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> indicating the success of the operation or reporting
+any errors encountered.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-application-new-from-id"></a><h3>gnome_vfs_mime_application_new_from_id ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database.html#GnomeVFSMimeApplication" title="GnomeVFSMimeApplication"><span class="returnvalue">GnomeVFSMimeApplication</span></a> *
+gnome_vfs_mime_application_new_from_id
+                               (<em class="parameter"><code>const <span class="type">char</span> *id</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_application_new_from_id</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database.html#gnome-vfs-mime-application-new-from-desktop-id" title="gnome_vfs_mime_application_new_from_desktop_id ()"><code class="function">gnome_vfs_mime_application_new_from_desktop_id()</code></a>
+instead.</p>
+</div>
+<p>Fetches the <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database.html#GnomeVFSMimeApplication" title="GnomeVFSMimeApplication"><span class="type">GnomeVFSMimeApplication</span></a> associated with the specified
+application <em class="parameter"><code>id</code></em>
+ from the MIME database.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.22.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>a const char * containing an application id.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.22.7"></a><h4>Returns</h4>
+<p> a <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database.html#GnomeVFSMimeApplication" title="GnomeVFSMimeApplication"><span class="type">GnomeVFSMimeApplication</span></a> * corresponding to <em class="parameter"><code>id</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-action-launch"></a><h3>gnome_vfs_mime_action_launch ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_mime_action_launch (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeAction" title="struct GnomeVFSMimeAction"><span class="type">GnomeVFSMimeAction</span></a> *action</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *uris</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_action_launch</code> is deprecated and should not be used in newly-written code.</p>
+<p>MIME actions are deprecated, use
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database.html#gnome-vfs-mime-application-launch" title="gnome_vfs_mime_application_launch ()"><code class="function">gnome_vfs_mime_application_launch()</code></a> instead.</p>
+</div>
+<p>Launches the given mime <em class="parameter"><code>action</code></em>
+ with the given parameters. If 
+the <em class="parameter"><code>action</code></em>
+ is an application the command line parameters will
+be expanded as required by the application. The application
+will also be launched in a terminal if that is required. If the
+application only supports one argument per instance then multiple
+instances of the application will be launched.</p>
+<p>If the default action is a component it will be launched with
+the component viewer application defined using the gconf value:
+/desktop/gnome/application/component_viewer/exec. The parameters
+<code class="literal">s</code> and <code class="literal">c</code> in the command line will be replaced with the list of
+parameters and the default component IID respectively.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.23.8"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>action</p></td>
+<td class="parameter_description"><p>the <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeAction" title="struct GnomeVFSMimeAction"><span class="type">GnomeVFSMimeAction</span></a> to launch.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uris</p></td>
+<td class="parameter_description"><p>parameters for the <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeAction" title="struct GnomeVFSMimeAction"><span class="type">GnomeVFSMimeAction</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.23.9"></a><h4>Returns</h4>
+<p> <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a> if the <em class="parameter"><code>action</code></em>
+was launched,
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-ERROR-BAD-PARAMETERS:CAPS"><code class="literal">GNOME_VFS_ERROR_BAD_PARAMETERS</code></a> for an invalid <em class="parameter"><code>action</code></em>
+.
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-ERROR-NOT-SUPPORTED:CAPS"><code class="literal">GNOME_VFS_ERROR_NOT_SUPPORTED</code></a> if the uri protocol is
+not supported by the <em class="parameter"><code>action</code></em>
+.
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-ERROR-PARSE:CAPS"><code class="literal">GNOME_VFS_ERROR_PARSE</code></a> if the <em class="parameter"><code>action</code></em>
+command can not be parsed.
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-ERROR-LAUNCH:CAPS"><code class="literal">GNOME_VFS_ERROR_LAUNCH</code></a> if the <em class="parameter"><code>action</code></em>
+command can not be launched.
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-ERROR-INTERNAL:CAPS"><code class="literal">GNOME_VFS_ERROR_INTERNAL</code></a> for other internal and GConf errors.</p>
+<p></p>
+</div>
+<p class="since">Since 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-action-launch-with-env"></a><h3>gnome_vfs_mime_action_launch_with_env ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_mime_action_launch_with_env (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeAction" title="struct GnomeVFSMimeAction"><span class="type">GnomeVFSMimeAction</span></a> *action</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *uris</code></em>,
+                                       <em class="parameter"><code><span class="type">char</span> **envp</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_action_launch_with_env</code> is deprecated and should not be used in newly-written code.</p>
+<p>MIME actions are deprecated, use
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database.html#gnome-vfs-mime-application-launch-with-env" title="gnome_vfs_mime_application_launch_with_env ()"><code class="function">gnome_vfs_mime_application_launch_with_env()</code></a> instead.</p>
+</div>
+<p>Same as <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-action-launch" title="gnome_vfs_mime_action_launch ()"><code class="function">gnome_vfs_mime_action_launch()</code></a> except that the
+application or component viewer will be launched with
+the given environment.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.24.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>action</p></td>
+<td class="parameter_description"><p>the <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeAction" title="struct GnomeVFSMimeAction"><span class="type">GnomeVFSMimeAction</span></a> to launch.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uris</p></td>
+<td class="parameter_description"><p>parameters for the <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeAction" title="struct GnomeVFSMimeAction"><span class="type">GnomeVFSMimeAction</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>envp</p></td>
+<td class="parameter_description"><p>the environment to use for the action.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.24.8"></a><h4>Returns</h4>
+<p> same as <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-action-launch" title="gnome_vfs_mime_action_launch ()"><code class="function">gnome_vfs_mime_action_launch()</code></a>.</p>
+<p></p>
+</div>
+<p class="since">Since 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-action-free"></a><h3>gnome_vfs_mime_action_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_mime_action_free (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeAction" title="struct GnomeVFSMimeAction"><span class="type">GnomeVFSMimeAction</span></a> *action</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_action_free</code> is deprecated and should not be used in newly-written code.</p>
+<p><a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeAction" title="struct GnomeVFSMimeAction"><span class="type">GnomeVFSMimeAction</span></a> structures should not be used in new
+code.</p>
+</div>
+<p>Frees a <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeAction" title="struct GnomeVFSMimeAction"><span class="type">GnomeVFSMimeAction</span></a> *.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.25.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>action</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeAction" title="struct GnomeVFSMimeAction"><span class="type">GnomeVFSMimeAction</span></a> to be freed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-id-in-application-list"></a><h3>gnome_vfs_mime_id_in_application_list ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gnome_vfs_mime_id_in_application_list (<em class="parameter"><code>const <span class="type">char</span> *id</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *applications</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_mime_id_in_application_list</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>Check whether an application id is in a list of <a href="gnome-vfs-2.0-gnome-vfs-mime-database.html#GnomeVFSMimeApplication"><span class="type">GnomeVFSMimeApplications</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.26.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>an application id.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>applications</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> * whose nodes are <a href="gnome-vfs-2.0-gnome-vfs-mime-database.html#GnomeVFSMimeApplication"><span class="type">GnomeVFSMimeApplications</span></a>, such as the
+result of <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-get-short-list-applications" title="gnome_vfs_mime_get_short_list_applications ()"><code class="function">gnome_vfs_mime_get_short_list_applications()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.26.7"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if an application whose id matches <em class="parameter"><code>id</code></em>
+is in <em class="parameter"><code>applications</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-id-in-component-list"></a><h3>gnome_vfs_mime_id_in_component_list ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gnome_vfs_mime_id_in_component_list (<em class="parameter"><code>const <span class="type">char</span> *iid</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *components</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_mime_id_in_component_list</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.27.6"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-remove-application-from-list"></a><h3>gnome_vfs_mime_remove_application_from_list ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+gnome_vfs_mime_remove_application_from_list
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *applications</code></em>,
+                                <em class="parameter"><code>const <span class="type">char</span> *application_id</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *did_remove</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_mime_remove_application_from_list</code> is deprecated and should not be used in newly-written code.</p>
+<p>User modifications to the MIME database are no longer supported by gnome-vfs.</p>
+</div>
+<p>Remove an application specified by id from a list of <a href="gnome-vfs-2.0-gnome-vfs-mime-database.html#GnomeVFSMimeApplication"><span class="type">GnomeVFSMimeApplications</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.28.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>applications</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> * whose nodes are <a href="gnome-vfs-2.0-gnome-vfs-mime-database.html#GnomeVFSMimeApplication"><span class="type">GnomeVFSMimeApplications</span></a>, such as the
+result of <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-get-short-list-applications" title="gnome_vfs_mime_get_short_list_applications ()"><code class="function">gnome_vfs_mime_get_short_list_applications()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>application_id</p></td>
+<td class="parameter_description"><p>id of an application to remove from <em class="parameter"><code>applications</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>did_remove</p></td>
+<td class="parameter_description"><p>If non-NULL, this is filled in with <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the application
+was found in the list, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.28.7"></a><h4>Returns</h4>
+<p> The modified list. If the application is not found, the list will
+be unchanged.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-remove-component-from-list"></a><h3>gnome_vfs_mime_remove_component_from_list ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+gnome_vfs_mime_remove_component_from_list
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *components</code></em>,
+                                <em class="parameter"><code>const <span class="type">char</span> *iid</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *did_remove</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_mime_remove_component_from_list</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.29.6"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-id-list-from-component-list"></a><h3>gnome_vfs_mime_id_list_from_component_list ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+gnome_vfs_mime_id_list_from_component_list
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *components</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_mime_id_list_from_component_list</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.30.6"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-id-list-from-application-list"></a><h3>gnome_vfs_mime_id_list_from_application_list ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+gnome_vfs_mime_id_list_from_application_list
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *applications</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_mime_id_list_from_application_list</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>Create a list of application ids from a list of <a href="gnome-vfs-2.0-gnome-vfs-mime-database.html#GnomeVFSMimeApplication"><span class="type">GnomeVFSMimeApplications</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.31.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>applications</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> * whose nodes are GnomeVFSMimeApplications, such as the
+result of <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-get-short-list-applications" title="gnome_vfs_mime_get_short_list_applications ()"><code class="function">gnome_vfs_mime_get_short_list_applications()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.31.7"></a><h4>Returns</h4>
+<p> a new list where each <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database.html#GnomeVFSMimeApplication" title="GnomeVFSMimeApplication"><span class="type">GnomeVFSMimeApplication</span></a> in the original
+list is replaced by a char * with the application's id. The original list is
+not modified.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-freeze"></a><h3>gnome_vfs_mime_freeze ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_mime_freeze (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Freezes the mime data so that you can do multiple
+updates to the data in one batch without needing
+to back the files to disk or reading them.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-thaw"></a><h3>gnome_vfs_mime_thaw ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_mime_thaw (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>UnFreezes the mime data so that you can do multiple
+updates to the data in one batch without needing
+to back the files to disk or reading them.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-info-reload"></a><h3>gnome_vfs_mime_info_reload ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_mime_info_reload (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Reload the MIME database from disk and notify any listeners
+holding active <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-monitor.html#GnomeVFSMIMEMonitor" title="GnomeVFSMIMEMonitor"><span class="type">GnomeVFSMIMEMonitor</span></a> objects.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-type-is-known"></a><h3>gnome_vfs_mime_type_is_known ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gnome_vfs_mime_type_is_known (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>);</pre>
+<p>This function returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>mime_type</code></em>
+ is in the MIME database at all.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.35.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>a mime type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.35.6"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if anything is known about <em class="parameter"><code>mime_type</code></em>
+, otherwise <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-get-value"></a><h3>gnome_vfs_mime_get_value ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+gnome_vfs_mime_get_value (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
+                          <em class="parameter"><code>const <span class="type">char</span> *key</code></em>);</pre>
+<p>This function retrieves the value associated with <em class="parameter"><code>key</code></em>
+ in
+the given <span class="type">GnomeMimeContext</span>.  The string is private, you
+should not free the result.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.36.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>a mime type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>a key to lookup for the given <em class="parameter"><code>mime_type</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.36.6"></a><h4>Returns</h4>
+<p> <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a> if the operation succeeded, otherwise an error code.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-set-value"></a><h3>gnome_vfs_mime_set_value ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_mime_set_value (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
+                          <em class="parameter"><code>const <span class="type">char</span> *key</code></em>,
+                          <em class="parameter"><code>const <span class="type">char</span> *value</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_mime_set_value</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>This function will set the <em class="parameter"><code>value</code></em>
+ for the <em class="parameter"><code>key</code></em>
+ and it will save it
+to the user' file if necessary.
+You should not free the <em class="parameter"><code>key</code></em>
+/<em class="parameter"><code>value</code></em>
+ passed to this function.
+They are used internally.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.37.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>a mime type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>a key to store the value in.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>the value to store in the <em class="parameter"><code>key</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.37.7"></a><h4>Returns</h4>
+<p> <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a> if the operation succeeded, otherwise an error code.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-get-key-list"></a><h3>gnome_vfs_mime_get_key_list ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+gnome_vfs_mime_get_key_list (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_mime_get_key_list</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.38.6"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-keys-list-free"></a><h3>gnome_vfs_mime_keys_list_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_mime_keys_list_free (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *mime_type_list</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_mime_keys_list_free</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-get-extensions-list"></a><h3>gnome_vfs_mime_get_extensions_list ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+gnome_vfs_mime_get_extensions_list (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>);</pre>
+<p>Get the file extensions associated with mime type <em class="parameter"><code>mime_type</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.40.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>mime type to get the extensions of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.7.7.40.6"></a><h4>Returns</h4>
+<p> a <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of char *s.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-extensions-list-free"></a><h3>gnome_vfs_mime_extensions_list_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_mime_extensions_list_free (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *list</code></em>);</pre>
+<p>Call this function on the list returned by <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-get-extensions-list" title="gnome_vfs_mime_get_extensions_list ()"><code class="function">gnome_vfs_mime_get_extensions_list()</code></a>
+to free the <em class="parameter"><code>list</code></em>
+ and all of its elements.</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.41.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>list</p></td>
+<td class="parameter_description"><p>the extensions list.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-get-extensions-string"></a><h3>gnome_vfs_mime_get_extensions_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_mime_get_extensions_string (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_mime_get_extensions_string</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.42.6"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-get-extensions-pretty-string"></a><h3>gnome_vfs_mime_get_extensions_pretty_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_mime_get_extensions_pretty_string
+                               (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_mime_get_extensions_pretty_string</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.43.6"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-get-registered-mime-types"></a><h3>gnome_vfs_get_registered_mime_types ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+gnome_vfs_get_registered_mime_types (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_get_registered_mime_types</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.44.6"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-registered-mime-type-list-free"></a><h3>gnome_vfs_mime_registered_mime_type_list_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_mime_registered_mime_type_list_free
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *list</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_mime_registered_mime_type_list_free</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-set-registered-type-key"></a><h3>gnome_vfs_mime_set_registered_type_key ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_mime_set_registered_type_key
+                               (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
+                                <em class="parameter"><code>const <span class="type">char</span> *key</code></em>,
+                                <em class="parameter"><code>const <span class="type">char</span> *data</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.46.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-set-extensions-list"></a><h3>gnome_vfs_mime_set_extensions_list ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_mime_set_extensions_list (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
+                                    <em class="parameter"><code>const <span class="type">char</span> *extensions_list</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_mime_set_extensions_list</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.11.7.7.47.6"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-registered-mime-type-delete"></a><h3>gnome_vfs_mime_registered_mime_type_delete ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_mime_registered_mime_type_delete
+                               (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_mime_registered_mime_type_delete</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-mime-reset"></a><h3>gnome_vfs_mime_reset ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_mime_reset (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_mime_reset</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GnomeVFSMimeActionType"></a><h3>enum GnomeVFSMimeActionType</h3>
+<div class="warning"><p><code class="literal">GnomeVFSMimeActionType</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>This is used to specify the <code class="literal">type</code> of a <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeAction" title="struct GnomeVFSMimeAction"><span class="type">GnomeVFSMimeAction</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.11.7.8.2.5"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-MIME-ACTION-TYPE-NONE:CAPS"></a>GNOME_VFS_MIME_ACTION_TYPE_NONE</p></td>
+<td class="enum_member_description">
+<p>neither an application nor a component.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-MIME-ACTION-TYPE-APPLICATION:CAPS"></a>GNOME_VFS_MIME_ACTION_TYPE_APPLICATION</p></td>
+<td class="enum_member_description">
+<p>an application.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-MIME-ACTION-TYPE-COMPONENT:CAPS"></a>GNOME_VFS_MIME_ACTION_TYPE_COMPONENT</p></td>
+<td class="enum_member_description">
+<p>a component.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSMimeApplicationArgumentType"></a><h3>enum GnomeVFSMimeApplicationArgumentType</h3>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.11.7.8.3.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-MIME-APPLICATION-ARGUMENT-TYPE-URIS:CAPS"></a>GNOME_VFS_MIME_APPLICATION_ARGUMENT_TYPE_URIS</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-MIME-APPLICATION-ARGUMENT-TYPE-PATHS:CAPS"></a>GNOME_VFS_MIME_APPLICATION_ARGUMENT_TYPE_PATHS</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-MIME-APPLICATION-ARGUMENT-TYPE-URIS-FOR-NON-FILES:CAPS"></a>GNOME_VFS_MIME_APPLICATION_ARGUMENT_TYPE_URIS_FOR_NON_FILES</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSMimeAction"></a><h3>struct GnomeVFSMimeAction</h3>
+<pre class="programlisting">struct GnomeVFSMimeAction {
+	GnomeVFSMimeActionType action_type;
+	union {
+		void *component;
+		void *dummy_component;
+		GnomeVFSMimeApplication *application;
+	} action;
+};
+</pre>
+<div class="warning"><p><code class="literal">GnomeVFSMimeAction</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>This data structure describes an action that can be done 
+on a file.</p>
+<div class="refsect3">
+<a name="id-1.11.7.8.4.6"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody><tr>
+<td class="struct_member_name"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeActionType" title="enum GnomeVFSMimeActionType"><span class="type">GnomeVFSMimeActionType</span></a> <em class="structfield"><code><a name="GnomeVFSMimeAction.action-type"></a>action_type</code></em>;</p></td>
+<td class="struct_member_description"><p>The <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#GnomeVFSMimeActionType" title="enum GnomeVFSMimeActionType"><span class="type">GnomeVFSMimeActionType</span></a> describing the type of this action.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

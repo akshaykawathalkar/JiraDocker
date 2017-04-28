@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libatk-wrapper-java-jni
+/usr/share/doc/libatk-wrapper-java-jni/changelog.Debian.gz
+/usr/share/doc/libatk-wrapper-java-jni/copyright
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/jni
+/usr/lib/x86_64-linux-gnu/jni/libatk-wrapper.so.0.0.13
+/usr/lib/x86_64-linux-gnu/jni/libatk-wrapper.so
+/usr/lib/x86_64-linux-gnu/jni/libatk-wrapper.so.0

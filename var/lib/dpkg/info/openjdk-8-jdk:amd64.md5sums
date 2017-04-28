@@ -1,0 +1,13 @@
+00cdfbbb8723c2c0c4d368071aba5ee4  usr/lib/jvm/java-8-openjdk-amd64/bin/appletviewer
+32867d567eb06fb054ba28feba50dada  usr/lib/jvm/java-8-openjdk-amd64/bin/jconsole
+d3b60d06c11b9b3009904eb90ddfb89f  usr/lib/jvm/java-8-openjdk-amd64/include/jawt.h
+eef628b735e640574820d7e7dee0b269  usr/lib/jvm/java-8-openjdk-amd64/include/linux/jawt_md.h
+d99e8f455aaeeac2fb87c89913945d20  usr/lib/jvm/java-8-openjdk-amd64/lib/jconsole.jar
+3f7261a12b8d3cd6cddb94d623ad9efe  usr/lib/jvm/java-8-openjdk-amd64/man/ja_JP.UTF-8/man1/appletviewer.1.gz
+2d22bbf48a60fb29a1b779e828f1cf0c  usr/lib/jvm/java-8-openjdk-amd64/man/ja_JP.UTF-8/man1/jconsole.1.gz
+fc5492d5e14d9f04537688a465043612  usr/lib/jvm/java-8-openjdk-amd64/man/man1/appletviewer.1.gz
+659e1a6fec2dc8b09a29ec0eee25bbe8  usr/lib/jvm/java-8-openjdk-amd64/man/man1/jconsole.1.gz
+0df506b24c449c406161faa285f69792  usr/share/doc/openjdk-8-jre-headless/test-amd64/check-hotspot-hotspot.log.gz
+3f230ec93720713cc7d896b9e539bda0  usr/share/doc/openjdk-8-jre-headless/test-amd64/check-langtools-hotspot.log.gz
+654cf55f9bab2959aefbf3ad006e9615  usr/share/doc/openjdk-8-jre-headless/test-amd64/failed_tests-hotspot.tar.gz
+117dbacdf9c71c402fe02b1e32589b98  usr/share/doc/openjdk-8-jre-headless/test-amd64/jtreg-summary-hotspot.log.gz

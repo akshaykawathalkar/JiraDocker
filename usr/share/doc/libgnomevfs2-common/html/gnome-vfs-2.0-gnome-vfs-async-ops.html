@@ -1,0 +1,2819 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GnomeVFS - Filesystem Abstraction library: Asynchronous File Operations</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="GnomeVFS - Filesystem Abstraction library">
+<link rel="up" href="gnome-vfs-file-async-ops.html" title="Asynchronous Operations">
+<link rel="prev" href="gnome-vfs-file-async-ops.html" title="Asynchronous Operations">
+<link rel="next" href="gnome-vfs-2.0-gnome-vfs-cancellation.html" title="Cancellation">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-async-ops.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-async-ops.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gnome-vfs-file-async-ops.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gnome-vfs-file-async-ops.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gnome-vfs-2.0-gnome-vfs-cancellation.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gnome-vfs-2.0-gnome-vfs-async-ops"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gnome-vfs-2.0-gnome-vfs-async-ops.top_of_page"></a>Asynchronous File Operations</span></h2>
+<p>Asynchronous File Operations — POSIX-style file operations that run outside your main loop</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-async-ops.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncCallback" title="GnomeVFSAsyncCallback ()">*GnomeVFSAsyncCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncOpenCallback" title="GnomeVFSAsyncOpenCallback ()">*GnomeVFSAsyncOpenCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncOpenAsChannelCallback" title="GnomeVFSAsyncOpenAsChannelCallback ()">*GnomeVFSAsyncOpenAsChannelCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncCreateCallback" title="GnomeVFSAsyncCreateCallback ()">*GnomeVFSAsyncCreateCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncCreateAsChannelCallback" title="GnomeVFSAsyncCreateAsChannelCallback ()">*GnomeVFSAsyncCreateAsChannelCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncCloseCallback" title="GnomeVFSAsyncCloseCallback ()">*GnomeVFSAsyncCloseCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncReadCallback" title="GnomeVFSAsyncReadCallback ()">*GnomeVFSAsyncReadCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncWriteCallback" title="GnomeVFSAsyncWriteCallback ()">*GnomeVFSAsyncWriteCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncSeekCallback" title="GnomeVFSAsyncSeekCallback ()">*GnomeVFSAsyncSeekCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncGetFileInfoCallback" title="GnomeVFSAsyncGetFileInfoCallback ()">*GnomeVFSAsyncGetFileInfoCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncSetFileInfoCallback" title="GnomeVFSAsyncSetFileInfoCallback ()">*GnomeVFSAsyncSetFileInfoCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncFileControlCallback" title="GnomeVFSAsyncFileControlCallback ()">*GnomeVFSAsyncFileControlCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncDirectoryLoadCallback" title="GnomeVFSAsyncDirectoryLoadCallback ()">*GnomeVFSAsyncDirectoryLoadCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncFindDirectoryCallback" title="GnomeVFSAsyncFindDirectoryCallback ()">*GnomeVFSAsyncFindDirectoryCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncXferProgressCallback" title="GnomeVFSAsyncXferProgressCallback ()">*GnomeVFSAsyncXferProgressCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-set-job-limit" title="gnome_vfs_async_set_job_limit ()">gnome_vfs_async_set_job_limit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-get-job-limit" title="gnome_vfs_async_get_job_limit ()">gnome_vfs_async_get_job_limit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-cancel" title="gnome_vfs_async_cancel ()">gnome_vfs_async_cancel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-open" title="gnome_vfs_async_open ()">gnome_vfs_async_open</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-open-uri" title="gnome_vfs_async_open_uri ()">gnome_vfs_async_open_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-open-as-channel" title="gnome_vfs_async_open_as_channel ()">gnome_vfs_async_open_as_channel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-open-uri-as-channel" title="gnome_vfs_async_open_uri_as_channel ()">gnome_vfs_async_open_uri_as_channel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-create" title="gnome_vfs_async_create ()">gnome_vfs_async_create</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-create-uri" title="gnome_vfs_async_create_uri ()">gnome_vfs_async_create_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-create-symbolic-link" title="gnome_vfs_async_create_symbolic_link ()">gnome_vfs_async_create_symbolic_link</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-create-as-channel" title="gnome_vfs_async_create_as_channel ()">gnome_vfs_async_create_as_channel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-create-uri-as-channel" title="gnome_vfs_async_create_uri_as_channel ()">gnome_vfs_async_create_uri_as_channel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-close" title="gnome_vfs_async_close ()">gnome_vfs_async_close</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-read" title="gnome_vfs_async_read ()">gnome_vfs_async_read</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-write" title="gnome_vfs_async_write ()">gnome_vfs_async_write</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-seek" title="gnome_vfs_async_seek ()">gnome_vfs_async_seek</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-get-file-info" title="gnome_vfs_async_get_file_info ()">gnome_vfs_async_get_file_info</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-set-file-info" title="gnome_vfs_async_set_file_info ()">gnome_vfs_async_set_file_info</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-load-directory" title="gnome_vfs_async_load_directory ()">gnome_vfs_async_load_directory</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-load-directory-uri" title="gnome_vfs_async_load_directory_uri ()">gnome_vfs_async_load_directory_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-xfer" title="gnome_vfs_async_xfer ()">gnome_vfs_async_xfer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-find-directory" title="gnome_vfs_async_find_directory ()">gnome_vfs_async_find_directory</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-file-control" title="gnome_vfs_async_file_control ()">gnome_vfs_async_file_control</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSFindDirectoryResult" title="GnomeVFSFindDirectoryResult"><span class="returnvalue">GnomeVFSFindDirectoryResult</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-find-directory-result-dup" title="gnome_vfs_find_directory_result_dup ()">gnome_vfs_find_directory_result_dup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-find-directory-result-free" title="gnome_vfs_find_directory_result_free ()">gnome_vfs_find_directory_result_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-async-ops.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MIN:CAPS" title="GNOME_VFS_PRIORITY_MIN">GNOME_VFS_PRIORITY_MIN</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MAX:CAPS" title="GNOME_VFS_PRIORITY_MAX">GNOME_VFS_PRIORITY_MAX</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-DEFAULT:CAPS" title="GNOME_VFS_PRIORITY_DEFAULT">GNOME_VFS_PRIORITY_DEFAULT</a></td>
+</tr>
+<tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle">GnomeVFSAsyncHandle</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSFindDirectoryResult" title="GnomeVFSFindDirectoryResult">GnomeVFSFindDirectoryResult</a></td>
+</tr>
+<tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSCancellation" title="GnomeVFSCancellation">GnomeVFSCancellation</a></td>
+</tr>
+<tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSContext" title="GnomeVFSContext">GnomeVFSContext</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-async-ops.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">
+</pre>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-async-ops.description"></a><h2>Description</h2>
+<p>
+  When executing an asynchornous operation on a file the program does not
+  block waiting for the operation to finish, instead it keeps on running,
+  which means that the process and the I/O operation can be both running
+  concurrently. Once the I/O operation has been completed the process is
+  notified using a callback.
+</p>
+<p>
+  Asynchronous operations are particularly good when long I/O operations
+  are expected, in this case the program can continue normaly, the I/O
+  will be performed in the background. On the other hand when operations
+  are expected to be short (creating a file, writing/reading small amounts
+  of data, etc.) synchronous operations are prefered.
+</p>
+<p>
+  Within a graphical desktop asynchornous I/O operations can be used to
+  avoid blocking the UI (User Interface) during a long operation, and
+  to be able to provide some kind of feedback to the user.
+</p>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-async-ops.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GnomeVFSAsyncCallback"></a><h3>GnomeVFSAsyncCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GnomeVFSAsyncCallback<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> *handle</code></em>,
+                          <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> result</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Basic callback from an async operation that passes no data back,
+informing the user of the <em class="parameter"><code>result</code></em>
+ of the operation.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the operation generating the callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a> if the operation was successful, otherwise
+an error code.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>user data defined when the callback was established</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSAsyncOpenCallback"></a><h3>GnomeVFSAsyncOpenCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GnomeVFSAsyncOpenCallback<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> *handle</code></em>,
+                              <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> result</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Callback for the <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-open" title="gnome_vfs_async_open ()"><code class="function">gnome_vfs_async_open()</code></a> function,
+informing the user of the <em class="parameter"><code>result</code></em>
+ of the operation.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the operation generating the callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a> if the operation was successful, otherwise
+an error code.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>user data defined when the callback was established</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSAsyncOpenAsChannelCallback"></a><h3>GnomeVFSAsyncOpenAsChannelCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GnomeVFSAsyncOpenAsChannelCallback<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> *handle</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-IO-Channels.html#GIOChannel"><span class="type">GIOChannel</span></a> *channel</code></em>,
+                                       <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> result</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<div class="warning"><p><code class="literal">GnomeVFSAsyncOpenAsChannelCallback</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>Callback for the <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-open-as-channel" title="gnome_vfs_async_open_as_channel ()"><code class="function">gnome_vfs_async_open_as_channel()</code></a> function,
+informing the user of the <em class="parameter"><code>result</code></em>
+ of the operation.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.4.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the operation generating the callback.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channel</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/glib/glib-IO-Channels.html#GIOChannel"><span class="type">GIOChannel</span></a> corresponding to the file opened</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a> if the operation was successful, otherwise
+an error code.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>user data defined when the callback was established.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSAsyncCreateCallback"></a><h3>GnomeVFSAsyncCreateCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GnomeVFSAsyncCreateCallback<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> *handle</code></em>,
+                                <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> result</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Callback for the <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-create" title="gnome_vfs_async_create ()"><code class="function">gnome_vfs_async_create()</code></a> function,
+informing the user of the <em class="parameter"><code>result</code></em>
+ of the operation.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the operation generating the callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a> if the operation was successful, otherwise
+an error code.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>user data defined when the callback was established</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSAsyncCreateAsChannelCallback"></a><h3>GnomeVFSAsyncCreateAsChannelCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GnomeVFSAsyncCreateAsChannelCallback<span class="c_punctuation">)</span>
+                               (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> *handle</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-IO-Channels.html#GIOChannel"><span class="type">GIOChannel</span></a> *channel</code></em>,
+                                <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> result</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<div class="warning"><p><code class="literal">GnomeVFSAsyncCreateAsChannelCallback</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>Callback for the <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-create-as-channel" title="gnome_vfs_async_create_as_channel ()"><code class="function">gnome_vfs_async_create_as_channel()</code></a> function,
+informing the user of the <em class="parameter"><code>result</code></em>
+ of the operation.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.6.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the operation generating the callback.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>channel</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/glib/glib-IO-Channels.html#GIOChannel"><span class="type">GIOChannel</span></a> corresponding to the file created</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a> if the operation was successful, otherwise
+an error code.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>user data defined when the callback was established.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSAsyncCloseCallback"></a><h3>GnomeVFSAsyncCloseCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GnomeVFSAsyncCloseCallback<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> *handle</code></em>,
+                               <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> result</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Callback for the <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-close" title="gnome_vfs_async_close ()"><code class="function">gnome_vfs_async_close()</code></a> function,
+informing the user of the <em class="parameter"><code>result</code></em>
+ of the operation.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the operation generating the callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a> if the operation was successful, otherwise
+an error code.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>user data defined when the callback was established</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSAsyncReadCallback"></a><h3>GnomeVFSAsyncReadCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GnomeVFSAsyncReadCallback<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> *handle</code></em>,
+                              <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> result</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> buffer</code></em>,
+                              <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-size.html#GnomeVFSFileSize" title="GnomeVFSFileSize"><span class="type">GnomeVFSFileSize</span></a> bytes_requested</code></em>,
+                              <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-size.html#GnomeVFSFileSize" title="GnomeVFSFileSize"><span class="type">GnomeVFSFileSize</span></a> bytes_read</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Callback for the <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-read" title="gnome_vfs_async_read ()"><code class="function">gnome_vfs_async_read()</code></a> function,
+informing the user of the <em class="parameter"><code>result</code></em>
+ of the operation.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the operation generating the callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a> if the operation was successful, otherwise
+an error code.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>buffer containing data read from <em class="parameter"><code>handle</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bytes_requested</p></td>
+<td class="parameter_description"><p>the number of bytes asked for in the call to
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-read" title="gnome_vfs_async_read ()"><code class="function">gnome_vfs_async_read()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bytes_read</p></td>
+<td class="parameter_description"><p>the number of bytes actually read from <em class="parameter"><code>handle</code></em>
+into <em class="parameter"><code>buffer</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>user data defined when the callback was established</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSAsyncWriteCallback"></a><h3>GnomeVFSAsyncWriteCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GnomeVFSAsyncWriteCallback<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> *handle</code></em>,
+                               <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> result</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> buffer</code></em>,
+                               <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-size.html#GnomeVFSFileSize" title="GnomeVFSFileSize"><span class="type">GnomeVFSFileSize</span></a> bytes_requested</code></em>,
+                               <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-size.html#GnomeVFSFileSize" title="GnomeVFSFileSize"><span class="type">GnomeVFSFileSize</span></a> bytes_written</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Callback for the <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-write" title="gnome_vfs_async_write ()"><code class="function">gnome_vfs_async_write()</code></a> function,
+informing the user of the <em class="parameter"><code>result</code></em>
+ of the operation.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the operation generating the callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a> if the operation was successful, otherwise
+an error code.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>buffer containing data written to <em class="parameter"><code>handle</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bytes_requested</p></td>
+<td class="parameter_description"><p>the number of bytes asked to write in the call to
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-write" title="gnome_vfs_async_write ()"><code class="function">gnome_vfs_async_write()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bytes_written</p></td>
+<td class="parameter_description"><p>the number of bytes actually written to <em class="parameter"><code>handle</code></em>
+from <em class="parameter"><code>buffer</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>user data defined when the callback was established.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSAsyncSeekCallback"></a><h3>GnomeVFSAsyncSeekCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GnomeVFSAsyncSeekCallback<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> *handle</code></em>,
+                              <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> result</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Callback for the <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-seek" title="gnome_vfs_async_seek ()"><code class="function">gnome_vfs_async_seek()</code></a> function,
+informing the user of the <em class="parameter"><code>result</code></em>
+ of the operation.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the operation generating the callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a> if the operation was successful, otherwise
+an error code.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>user data defined when the callback was established.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSAsyncGetFileInfoCallback"></a><h3>GnomeVFSAsyncGetFileInfoCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GnomeVFSAsyncGetFileInfoCallback<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> *handle</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *results</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Callback for the <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-get-file-info" title="gnome_vfs_async_get_file_info ()"><code class="function">gnome_vfs_async_get_file_info()</code></a> function,
+informing the user of the <em class="parameter"><code>results</code></em>
+ of the operation.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the operation generating the callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of <span class="type">GnomeVFSFileInfoResult</span> * items representing
+the success of each <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info-ops.html#gnome-vfs-get-file-info" title="gnome_vfs_get_file_info ()"><code class="function">gnome_vfs_get_file_info()</code></a> and the data retrieved.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>user data defined when the callback was established.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSAsyncSetFileInfoCallback"></a><h3>GnomeVFSAsyncSetFileInfoCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GnomeVFSAsyncSetFileInfoCallback<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> *handle</code></em>,
+                                     <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> result</code></em>,
+                                     <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> *file_info</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Callback for the <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-set-file-info" title="gnome_vfs_async_set_file_info ()"><code class="function">gnome_vfs_async_set_file_info()</code></a> function,
+informing the user of the <em class="parameter"><code>result</code></em>
+ of the operation and
+returning the new <em class="parameter"><code>file_info</code></em>
+.</p>
+<div class="note"><p>
+  Setting the file info sometimes changes more information than the
+  caller specified; for example, if the name changes the MIME type might
+  change, and if the owner changes the SUID &amp; SGID bits might change. 
+  Therefore the callback returns the new <em class="parameter"><code>file_info</code></em> for the caller's
+  convenience. The GnomeVFSFileInfoOptions passed here are those used 
+  for the returned file info; they are not used when setting.
+ </p></div>
+<div class="refsect3">
+<a name="id-1.8.2.7.12.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the operation generating the callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a> if the operation was successful, otherwise a
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> error code.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>file_info</p></td>
+<td class="parameter_description"><p>if <em class="parameter"><code>result</code></em>
+is <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a>, a <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> struct containing
+information about the file.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>user data defined when the callback was established</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSAsyncFileControlCallback"></a><h3>GnomeVFSAsyncFileControlCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GnomeVFSAsyncFileControlCallback<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> *handle</code></em>,
+                                     <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> result</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> operation_data</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Callback for the <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-find-directory" title="gnome_vfs_async_find_directory ()"><code class="function">gnome_vfs_async_find_directory()</code></a> function.
+informing the user of the <em class="parameter"><code>result</code></em>
+ of the operation, and
+providing the requested <em class="parameter"><code>operation_data</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the operation generating the callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a> if the operation was successful, otherwise a
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> error code.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operation_data</p></td>
+<td class="parameter_description"><p>The data requested from the module if <em class="parameter"><code>result</code></em>
+is <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>User data defined when the operation was established.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSAsyncDirectoryLoadCallback"></a><h3>GnomeVFSAsyncDirectoryLoadCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GnomeVFSAsyncDirectoryLoadCallback<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> *handle</code></em>,
+                                       <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> result</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *list</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> entries_read</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Callback for the <code class="function">gnome_vfs_async_directory_load()</code> function.
+informing the user of the <em class="parameter"><code>result</code></em>
+ of the operation and
+providing a file <em class="parameter"><code>list</code></em>
+ if the <em class="parameter"><code>result</code></em>
+ is <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the operation generating the callback.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a> if the operation was sucessful,
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-ERROR-EOF:CAPS"><code class="literal">GNOME_VFS_ERROR_EOF</code></a> if the last file in the directory
+has been read, otherwise a <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> error code</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>list</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> structs representing
+information about the files just loaded.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>entries_read</p></td>
+<td class="parameter_description"><p>number of entries read from <em class="parameter"><code>handle</code></em>
+for this instance of
+the callback.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>user data defined when the callback was established.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSAsyncFindDirectoryCallback"></a><h3>GnomeVFSAsyncFindDirectoryCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GnomeVFSAsyncFindDirectoryCallback<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> *handle</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *results</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<p>Callback for the <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-find-directory" title="gnome_vfs_async_find_directory ()"><code class="function">gnome_vfs_async_find_directory()</code></a> function,
+informing the user of the <em class="parameter"><code>results</code></em>
+ of the operation.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.15.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the operation generating the callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>results</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSFindDirectoryResult" title="GnomeVFSFindDirectoryResult"><span class="type">GnomeVFSFindDirectoryResult</span></a> *s containing
+special directories matching the find criteria.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>user data defined when the operation was established</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSAsyncXferProgressCallback"></a><h3>GnomeVFSAsyncXferProgressCallback ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+<span class="c_punctuation">(</span>*GnomeVFSAsyncXferProgressCallback<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> *handle</code></em>,
+                                      <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-xfer.html#GnomeVFSXferProgressInfo" title="GnomeVFSXferProgressInfo"><span class="type">GnomeVFSXferProgressInfo</span></a> *info</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>This callback is passed to <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-xfer" title="gnome_vfs_async_xfer ()"><code class="function">gnome_vfs_async_xfer()</code></a> and should
+be used for user interaction. That said, it serves two purposes:
+Informing the user about the progress of the operation, and
+making decisions.</p>
+<p>On the one hand, when the transfer progresses normally,
+i.e. when the <em class="parameter"><code>info</code></em>
+'s status is <a class="link" href="gnome-vfs-2.0-gnome-vfs-xfer.html#GNOME-VFS-XFER-PROGRESS-STATUS-OK:CAPS"><code class="literal">GNOME_VFS_XFER_PROGRESS_STATUS_OK</code></a>
+it is called periodically whenever new progress information
+is available, and it wasn't called already within the last
+100 milliseconds.</p>
+<p>On the other hand, it is called whenever a decision is
+requested from the user, i.e. whenever the <em class="parameter"><code>info</code></em>
+'s <code class="literal">status</code>
+is not <a class="link" href="gnome-vfs-2.0-gnome-vfs-xfer.html#GNOME-VFS-XFER-PROGRESS-STATUS-OK:CAPS"><code class="literal">GNOME_VFS_XFER_PROGRESS_STATUS_OK</code></a>.</p>
+<p>Either way, it acts like <a class="link" href="gnome-vfs-2.0-gnome-vfs-xfer.html#GnomeVFSXferProgressCallback" title="GnomeVFSXferProgressCallback ()"><span class="type">GnomeVFSXferProgressCallback</span></a>
+would act in non-asynchronous mode. The differences in
+invocation are explained in the <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-xfer" title="gnome_vfs_async_xfer ()"><code class="function">gnome_vfs_async_xfer()</code></a>
+documentation.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.16.8"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>Handle of the Xfer operation generating the callback.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>Information on the current progress in the transfer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>The user data that was passed to <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-xfer" title="gnome_vfs_async_xfer ()"><code class="function">gnome_vfs_async_xfer()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.2.7.16.9"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><code class="literal">gint</code></a> depending on the <a class="link" href="gnome-vfs-2.0-gnome-vfs-xfer.html#GnomeVFSXferProgressInfo" title="GnomeVFSXferProgressInfo"><span class="type">GnomeVFSXferProgressInfo</span></a>.
+Please consult <a class="link" href="gnome-vfs-2.0-gnome-vfs-xfer.html#GnomeVFSXferProgressCallback" title="GnomeVFSXferProgressCallback ()"><span class="type">GnomeVFSXferProgressCallback</span></a> for details.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-set-job-limit"></a><h3>gnome_vfs_async_set_job_limit ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_async_set_job_limit (<em class="parameter"><code><span class="type">int</span> limit</code></em>);</pre>
+<p>Restrict the number of worker threads used by async operations
+to <em class="parameter"><code>limit</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.17.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>limit</p></td>
+<td class="parameter_description"><p>maximum number of allowable threads.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-get-job-limit"></a><h3>gnome_vfs_async_get_job_limit ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+gnome_vfs_async_get_job_limit (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the current maximum allowable number of
+worker threads for async operations.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.18.5"></a><h4>Returns</h4>
+<p> current maximum number of threads.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-cancel"></a><h3>gnome_vfs_async_cancel ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_async_cancel (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> *handle</code></em>);</pre>
+<p>Cancel an asynchronous operation and close all its callbacks.</p>
+<p>In a single-threaded application, its guaranteed that if you
+call this before the operation finished callback has been called
+the callback will never be called.</p>
+<p>However, in a multithreaded application, or to be more specific, if
+you call gnome_vfs_async_cancel from another thread than the thread
+handling the glib mainloop, there is a race condition where if
+the operation finished callback was just dispatched, you might
+still cancel the operation. So, in this case you need to handle the
+fact that the operation callback might still run even though another
+thread has cancelled the operation.</p>
+<p>One way to avoid problems from this is to mark the data structure you're
+using as callback_data as destroyed, and then queue an idle and do the
+actual freeing in an idle handler. The idle handler is guaranteed to run
+after the callback has been exectuted, so by then it is safe to destroy
+the callback_data. The callback handler must handle the case where the
+callback_data is marked destroyed by doing nothing.</p>
+<p>This is clearly not ideal for multithreaded applications, but as good as
+we can with the current API. Eventually we'll have to change the API to
+make this work better.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.19.9"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the async operation to be cancelled.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-open"></a><h3>gnome_vfs_async_open ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_async_open (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> **handle_return</code></em>,
+                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text_uri</code></em>,
+                      <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#GnomeVFSOpenMode" title="enum GnomeVFSOpenMode"><span class="type">GnomeVFSOpenMode</span></a> open_mode</code></em>,
+                      <em class="parameter"><code><span class="type">int</span> priority</code></em>,
+                      <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncOpenCallback" title="GnomeVFSAsyncOpenCallback ()"><span class="type">GnomeVFSAsyncOpenCallback</span></a> callback</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Open <em class="parameter"><code>text_uri</code></em>
+ according to mode <em class="parameter"><code>open_mode</code></em>
+.  On return, <em class="parameter"><code>handle_return</code></em>
+ will
+contain a pointer to the operation. Once the file has been successfully opened,
+<em class="parameter"><code>callback</code></em>
+ will be called with the <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.20.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle_return</p></td>
+<td class="parameter_description"><p>pointer to a pointer to a <span class="type">GnomeVFSHandle</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text_uri</p></td>
+<td class="parameter_description"><p>string of the uri to open.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>open_mode</p></td>
+<td class="parameter_description"><p>open mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>priority</p></td>
+<td class="parameter_description"><p>a value from <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MIN:CAPS" title="GNOME_VFS_PRIORITY_MIN"><code class="literal">GNOME_VFS_PRIORITY_MIN</code></a> to <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MAX:CAPS" title="GNOME_VFS_PRIORITY_MAX"><code class="literal">GNOME_VFS_PRIORITY_MAX</code></a> (normally
+should be <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-DEFAULT:CAPS" title="GNOME_VFS_PRIORITY_DEFAULT"><code class="literal">GNOME_VFS_PRIORITY_DEFAULT</code></a>) indicating the priority to assign to this job
+in allocating threads from the thread pool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when the operation is complete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-open-uri"></a><h3>gnome_vfs_async_open_uri ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_async_open_uri (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> **handle_return</code></em>,
+                          <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *uri</code></em>,
+                          <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#GnomeVFSOpenMode" title="enum GnomeVFSOpenMode"><span class="type">GnomeVFSOpenMode</span></a> open_mode</code></em>,
+                          <em class="parameter"><code><span class="type">int</span> priority</code></em>,
+                          <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncOpenCallback" title="GnomeVFSAsyncOpenCallback ()"><span class="type">GnomeVFSAsyncOpenCallback</span></a> callback</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Open <em class="parameter"><code>uri</code></em>
+ according to mode <em class="parameter"><code>open_mode</code></em>
+.  On return, <em class="parameter"><code>handle_return</code></em>
+ will
+contain a pointer to the operation. Once the file has been successfully opened,
+<em class="parameter"><code>callback</code></em>
+ will be called with the <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.21.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle_return</p></td>
+<td class="parameter_description"><p>pointer to a pointer to a <span class="type">GnomeVFSHandle</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>uri to open.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>open_mode</p></td>
+<td class="parameter_description"><p>open mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>priority</p></td>
+<td class="parameter_description"><p>a value from <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MIN:CAPS" title="GNOME_VFS_PRIORITY_MIN"><code class="literal">GNOME_VFS_PRIORITY_MIN</code></a> to <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MAX:CAPS" title="GNOME_VFS_PRIORITY_MAX"><code class="literal">GNOME_VFS_PRIORITY_MAX</code></a> (normally
+should be <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-DEFAULT:CAPS" title="GNOME_VFS_PRIORITY_DEFAULT"><code class="literal">GNOME_VFS_PRIORITY_DEFAULT</code></a>) indicating the priority to assign to this job
+in allocating threads from the thread pool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when the operation is complete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-open-as-channel"></a><h3>gnome_vfs_async_open_as_channel ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_async_open_as_channel (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> **handle_return</code></em>,
+                                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text_uri</code></em>,
+                                 <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#GnomeVFSOpenMode" title="enum GnomeVFSOpenMode"><span class="type">GnomeVFSOpenMode</span></a> open_mode</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> advised_block_size</code></em>,
+                                 <em class="parameter"><code><span class="type">int</span> priority</code></em>,
+                                 <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncOpenAsChannelCallback" title="GnomeVFSAsyncOpenAsChannelCallback ()"><span class="type">GnomeVFSAsyncOpenAsChannelCallback</span></a> callback</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_async_open_as_channel</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>Open <em class="parameter"><code>text_uri</code></em>
+ as a <a href="/usr/share/gtk-doc/html/glib/glib-IO-Channels.html#GIOChannel"><span class="type">GIOChannel</span></a>. Once the channel has been established
+<em class="parameter"><code>callback</code></em>
+ will be called with <em class="parameter"><code>callback_data</code></em>
+, the result of the operation,
+and if the result was <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a>, a reference to a <a href="/usr/share/gtk-doc/html/glib/glib-IO-Channels.html#GIOChannel"><span class="type">GIOChannel</span></a> pointing
+at <em class="parameter"><code>text_uri</code></em>
+ in <em class="parameter"><code>open_mode</code></em>
+.</p>
+<p>This function has been deprecated due to behaving weirdly which suggests 
+that it hasn't been used. See bugs <span class="type">157266</span>, <span class="type">157265</span>, <span class="type">157261</span>, <span class="type">138398</span> in
+the GNOME Bugzilla. If the *_as_channel functions are needed they should be
+fixed and undeprecated.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.22.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle_return</p></td>
+<td class="parameter_description"><p>pointer to a pointer to a <span class="type">GnomeVFSHandle</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text_uri</p></td>
+<td class="parameter_description"><p>string of the uri to open as a <a href="/usr/share/gtk-doc/html/glib/glib-IO-Channels.html#GIOChannel"><span class="type">GIOChannel</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>open_mode</p></td>
+<td class="parameter_description"><p>open mode i.e. for reading, writing, random, etc.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>advised_block_size</p></td>
+<td class="parameter_description"><p>the preferred block size for <a href="/usr/share/gtk-doc/html/glib/glib-IO-Channels.html#GIOChannel"><span class="type">GIOChannel</span></a> to read.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>priority</p></td>
+<td class="parameter_description"><p>a value from <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MIN:CAPS" title="GNOME_VFS_PRIORITY_MIN"><code class="literal">GNOME_VFS_PRIORITY_MIN</code></a> to <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MAX:CAPS" title="GNOME_VFS_PRIORITY_MAX"><code class="literal">GNOME_VFS_PRIORITY_MAX</code></a> (normally
+should be <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-DEFAULT:CAPS" title="GNOME_VFS_PRIORITY_DEFAULT"><code class="literal">GNOME_VFS_PRIORITY_DEFAULT</code></a>) indicating the priority to assign this job
+in allocating threads from the thread pool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when the operation is complete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-open-uri-as-channel"></a><h3>gnome_vfs_async_open_uri_as_channel ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_async_open_uri_as_channel (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> **handle_return</code></em>,
+                                     <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *uri</code></em>,
+                                     <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#GnomeVFSOpenMode" title="enum GnomeVFSOpenMode"><span class="type">GnomeVFSOpenMode</span></a> open_mode</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> advised_block_size</code></em>,
+                                     <em class="parameter"><code><span class="type">int</span> priority</code></em>,
+                                     <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncOpenAsChannelCallback" title="GnomeVFSAsyncOpenAsChannelCallback ()"><span class="type">GnomeVFSAsyncOpenAsChannelCallback</span></a> callback</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_async_open_uri_as_channel</code> is deprecated and should not be used in newly-written code.</p>
+<p>This function has been deprecated due to behaving weirdly which suggests 
+that it shouldn't be used. See bugs <span class="type">157266</span>, <span class="type">157265</span>, <span class="type">157261</span>, <span class="type">138398</span> in
+the GNOME Bugzilla. If the *_as_channel functions are needed they should be
+fixed and undeprecated.</p>
+</div>
+<p>Open <em class="parameter"><code>uri</code></em>
+ as a <a href="/usr/share/gtk-doc/html/glib/glib-IO-Channels.html#GIOChannel"><span class="type">GIOChannel</span></a>. Once the channel has been established
+<em class="parameter"><code>callback</code></em>
+ will be called with <em class="parameter"><code>callback_data</code></em>
+, the result of the operation,
+and if the result was <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a>, a reference to a <a href="/usr/share/gtk-doc/html/glib/glib-IO-Channels.html#GIOChannel"><span class="type">GIOChannel</span></a> pointing
+at <em class="parameter"><code>uri</code></em>
+ in <em class="parameter"><code>open_mode</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.23.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle_return</p></td>
+<td class="parameter_description"><p>pointer to a pointer to a <span class="type">GnomeVFSHandle</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>uri to open as a <a href="/usr/share/gtk-doc/html/glib/glib-IO-Channels.html#GIOChannel"><span class="type">GIOChannel</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>open_mode</p></td>
+<td class="parameter_description"><p>open mode i.e. for reading, writing, random, etc.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>advised_block_size</p></td>
+<td class="parameter_description"><p>the preferred block size for <a href="/usr/share/gtk-doc/html/glib/glib-IO-Channels.html#GIOChannel"><span class="type">GIOChannel</span></a> to read.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>priority</p></td>
+<td class="parameter_description"><p>a value from <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MIN:CAPS" title="GNOME_VFS_PRIORITY_MIN"><code class="literal">GNOME_VFS_PRIORITY_MIN</code></a> to <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MAX:CAPS" title="GNOME_VFS_PRIORITY_MAX"><code class="literal">GNOME_VFS_PRIORITY_MAX</code></a> (normally
+should be <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-DEFAULT:CAPS" title="GNOME_VFS_PRIORITY_DEFAULT"><code class="literal">GNOME_VFS_PRIORITY_DEFAULT</code></a>) indicating the priority to assign this job
+in allocating threads from the thread pool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when the operation is complete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-create"></a><h3>gnome_vfs_async_create ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_async_create (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> **handle_return</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text_uri</code></em>,
+                        <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#GnomeVFSOpenMode" title="enum GnomeVFSOpenMode"><span class="type">GnomeVFSOpenMode</span></a> open_mode</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> exclusive</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> perm</code></em>,
+                        <em class="parameter"><code><span class="type">int</span> priority</code></em>,
+                        <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncOpenCallback" title="GnomeVFSAsyncOpenCallback ()"><span class="type">GnomeVFSAsyncOpenCallback</span></a> callback</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_async_create</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>Create a file at <em class="parameter"><code>uri</code></em>
+ according to mode <em class="parameter"><code>open_mode</code></em>
+, with permissions <em class="parameter"><code>perm</code></em>
+ (in
+the standard UNIX packed bit permissions format). When the create has been completed
+<em class="parameter"><code>callback</code></em>
+ will be called with the result code and <em class="parameter"><code>callback_data</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.24.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle_return</p></td>
+<td class="parameter_description"><p>pointer to a pointer to a <span class="type">GnomeVFSHandle</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text_uri</p></td>
+<td class="parameter_description"><p>string representing the uri to create.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>open_mode</p></td>
+<td class="parameter_description"><p>mode to leave the file opened in after creation (or <code class="literal">GNOME_VFS_OPEN_MODE_NONE</code>
+to leave the file closed after creation).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>exclusive</p></td>
+<td class="parameter_description"><p>whether the file should be created in "exclusive" mode:
+i.e. if this flag is nonzero, operation will fail if a file with the
+same name already exists.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>perm</p></td>
+<td class="parameter_description"><p>bitmap representing the permissions for the newly created file
+(Unix style).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>priority</p></td>
+<td class="parameter_description"><p>a value from <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MIN:CAPS" title="GNOME_VFS_PRIORITY_MIN"><code class="literal">GNOME_VFS_PRIORITY_MIN</code></a> to <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MAX:CAPS" title="GNOME_VFS_PRIORITY_MAX"><code class="literal">GNOME_VFS_PRIORITY_MAX</code></a> (normally
+should be <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-DEFAULT:CAPS" title="GNOME_VFS_PRIORITY_DEFAULT"><code class="literal">GNOME_VFS_PRIORITY_DEFAULT</code></a>) indicating the priority to assign this job
+in allocating threads from the thread pool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when the operation is complete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-create-uri"></a><h3>gnome_vfs_async_create_uri ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_async_create_uri (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> **handle_return</code></em>,
+                            <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *uri</code></em>,
+                            <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#GnomeVFSOpenMode" title="enum GnomeVFSOpenMode"><span class="type">GnomeVFSOpenMode</span></a> open_mode</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> exclusive</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> perm</code></em>,
+                            <em class="parameter"><code><span class="type">int</span> priority</code></em>,
+                            <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncOpenCallback" title="GnomeVFSAsyncOpenCallback ()"><span class="type">GnomeVFSAsyncOpenCallback</span></a> callback</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Create a file at <em class="parameter"><code>uri</code></em>
+ according to mode <em class="parameter"><code>open_mode</code></em>
+, with permissions <em class="parameter"><code>perm</code></em>
+ (in
+the standard UNIX packed bit permissions format). When the create has been completed
+<em class="parameter"><code>callback</code></em>
+ will be called with the result code and <em class="parameter"><code>callback_data</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.25.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle_return</p></td>
+<td class="parameter_description"><p>pointer to a pointer to a <span class="type">GnomeVFSHandle</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>uri to create a file at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>open_mode</p></td>
+<td class="parameter_description"><p>mode to leave the file opened in after creation (or <code class="literal">GNOME_VFS_OPEN_MODE_NONE</code>
+to leave the file closed after creation).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>exclusive</p></td>
+<td class="parameter_description"><p>Whether the file should be created in "exclusive" mode:
+i.e. if this flag is nonzero, operation will fail if a file with the
+same name already exists.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>perm</p></td>
+<td class="parameter_description"><p>bitmap representing the permissions for the newly created file
+(Unix style).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>priority</p></td>
+<td class="parameter_description"><p>a value from <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MIN:CAPS" title="GNOME_VFS_PRIORITY_MIN"><code class="literal">GNOME_VFS_PRIORITY_MIN</code></a> to <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MAX:CAPS" title="GNOME_VFS_PRIORITY_MAX"><code class="literal">GNOME_VFS_PRIORITY_MAX</code></a> (normally
+should be <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-DEFAULT:CAPS" title="GNOME_VFS_PRIORITY_DEFAULT"><code class="literal">GNOME_VFS_PRIORITY_DEFAULT</code></a>) indicating the priority to assign this job
+in allocating threads from the thread pool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when the operation is complete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-create-symbolic-link"></a><h3>gnome_vfs_async_create_symbolic_link ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_async_create_symbolic_link (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> **handle_return</code></em>,
+                                      <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *uri</code></em>,
+                                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri_reference</code></em>,
+                                      <em class="parameter"><code><span class="type">int</span> priority</code></em>,
+                                      <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncOpenCallback" title="GnomeVFSAsyncOpenCallback ()"><span class="type">GnomeVFSAsyncOpenCallback</span></a> callback</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Create a symbolic link at <em class="parameter"><code>uri</code></em>
+ pointing to <em class="parameter"><code>uri_reference</code></em>
+. When the operation
+has completed <em class="parameter"><code>callback</code></em>
+ will be called with the result of the operation and
+<em class="parameter"><code>callback_data</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.26.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle_return</p></td>
+<td class="parameter_description"><p>when the function returns, will point to a handle for
+the async operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>location to create the link at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri_reference</p></td>
+<td class="parameter_description"><p>location to point <em class="parameter"><code>uri</code></em>
+to (can be a uri fragment, i.e. relative).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>priority</p></td>
+<td class="parameter_description"><p>a value from <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MIN:CAPS" title="GNOME_VFS_PRIORITY_MIN"><code class="literal">GNOME_VFS_PRIORITY_MIN</code></a> to <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MAX:CAPS" title="GNOME_VFS_PRIORITY_MAX"><code class="literal">GNOME_VFS_PRIORITY_MAX</code></a> (normally
+should be <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-DEFAULT:CAPS" title="GNOME_VFS_PRIORITY_DEFAULT"><code class="literal">GNOME_VFS_PRIORITY_DEFAULT</code></a>) indicating the priority to assign to this job
+in allocating threads from the thread pool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when the operation is complete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-create-as-channel"></a><h3>gnome_vfs_async_create_as_channel ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_async_create_as_channel (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> **handle_return</code></em>,
+                                   <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text_uri</code></em>,
+                                   <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#GnomeVFSOpenMode" title="enum GnomeVFSOpenMode"><span class="type">GnomeVFSOpenMode</span></a> open_mode</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> exclusive</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> perm</code></em>,
+                                   <em class="parameter"><code><span class="type">int</span> priority</code></em>,
+                                   <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncCreateAsChannelCallback" title="GnomeVFSAsyncCreateAsChannelCallback ()"><span class="type">GnomeVFSAsyncCreateAsChannelCallback</span></a> callback</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_async_create_as_channel</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>Open <em class="parameter"><code>text_uri</code></em>
+ as a <a href="/usr/share/gtk-doc/html/glib/glib-IO-Channels.html#GIOChannel"><span class="type">GIOChannel</span></a>, creating it as necessary. Once the channel has 
+been established <em class="parameter"><code>callback</code></em>
+ will be called with <em class="parameter"><code>callback_data</code></em>
+, the result of the 
+operation, and if the result was <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a>, a reference to a <a href="/usr/share/gtk-doc/html/glib/glib-IO-Channels.html#GIOChannel"><span class="type">GIOChannel</span></a> pointing
+at <em class="parameter"><code>text_uri</code></em>
+ in <em class="parameter"><code>open_mode</code></em>
+.</p>
+<p>This function has been deprecated due to behaving weirdly which suggests 
+that it hasn't been used. See bugs <span class="type">157266</span>, <span class="type">157265</span>, <span class="type">157261</span>, <span class="type">138398</span> in
+the GNOME Bugzilla. If the *_as_channel functions are needed they should be
+fixed and undeprecated.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.27.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle_return</p></td>
+<td class="parameter_description"><p>pointer to a pointer to a <span class="type">GnomeVFSHandle</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text_uri</p></td>
+<td class="parameter_description"><p>string of the uri to open as a <a href="/usr/share/gtk-doc/html/glib/glib-IO-Channels.html#GIOChannel"><span class="type">GIOChannel</span></a>, creating it as necessary.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>open_mode</p></td>
+<td class="parameter_description"><p>open mode i.e. for reading, writing, random, etc.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>exclusive</p></td>
+<td class="parameter_description"><p>replace the file if it already exists.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>perm</p></td>
+<td class="parameter_description"><p>standard POSIX-style permissions bitmask, permissions of created file.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>priority</p></td>
+<td class="parameter_description"><p>a value from <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MIN:CAPS" title="GNOME_VFS_PRIORITY_MIN"><code class="literal">GNOME_VFS_PRIORITY_MIN</code></a> to <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MAX:CAPS" title="GNOME_VFS_PRIORITY_MAX"><code class="literal">GNOME_VFS_PRIORITY_MAX</code></a> (normally
+should be <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-DEFAULT:CAPS" title="GNOME_VFS_PRIORITY_DEFAULT"><code class="literal">GNOME_VFS_PRIORITY_DEFAULT</code></a>) indicating the priority to assign this job
+in allocating threads from the thread pool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when the operation is complete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-create-uri-as-channel"></a><h3>gnome_vfs_async_create_uri_as_channel ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_async_create_uri_as_channel (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> **handle_return</code></em>,
+                                       <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *uri</code></em>,
+                                       <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#GnomeVFSOpenMode" title="enum GnomeVFSOpenMode"><span class="type">GnomeVFSOpenMode</span></a> open_mode</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> exclusive</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> perm</code></em>,
+                                       <em class="parameter"><code><span class="type">int</span> priority</code></em>,
+                                       <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncCreateAsChannelCallback" title="GnomeVFSAsyncCreateAsChannelCallback ()"><span class="type">GnomeVFSAsyncCreateAsChannelCallback</span></a> callback</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_async_create_uri_as_channel</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>Open <em class="parameter"><code>uri</code></em>
+ as a <a href="/usr/share/gtk-doc/html/glib/glib-IO-Channels.html#GIOChannel"><span class="type">GIOChannel</span></a>, creating it as necessary. Once the channel has 
+been established <em class="parameter"><code>callback</code></em>
+ will be called with <em class="parameter"><code>callback_data</code></em>
+, the result of the 
+operation, and if the result was <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a>, a reference to a <a href="/usr/share/gtk-doc/html/glib/glib-IO-Channels.html#GIOChannel"><span class="type">GIOChannel</span></a> pointing
+at <em class="parameter"><code>text_uri</code></em>
+ in <em class="parameter"><code>open_mode</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.28.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle_return</p></td>
+<td class="parameter_description"><p>pointer to a pointer to a <span class="type">GnomeVFSHandle</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>uri to open as a <a href="/usr/share/gtk-doc/html/glib/glib-IO-Channels.html#GIOChannel"><span class="type">GIOChannel</span></a>, creating it as necessary.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>open_mode</p></td>
+<td class="parameter_description"><p>open mode i.e. for reading, writing, random, etc.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>exclusive</p></td>
+<td class="parameter_description"><p>replace the file if it already exists.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>perm</p></td>
+<td class="parameter_description"><p>standard POSIX-style permissions bitmask, permissions of created file.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>priority</p></td>
+<td class="parameter_description"><p>a value from <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MIN:CAPS" title="GNOME_VFS_PRIORITY_MIN"><code class="literal">GNOME_VFS_PRIORITY_MIN</code></a> to <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MAX:CAPS" title="GNOME_VFS_PRIORITY_MAX"><code class="literal">GNOME_VFS_PRIORITY_MAX</code></a> (normally
+should be <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-DEFAULT:CAPS" title="GNOME_VFS_PRIORITY_DEFAULT"><code class="literal">GNOME_VFS_PRIORITY_DEFAULT</code></a>) indicating the priority to assign this job
+in allocating threads from the thread pool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when the operation is complete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 2.12</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-close"></a><h3>gnome_vfs_async_close ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_async_close (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> *handle</code></em>,
+                       <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncCloseCallback" title="GnomeVFSAsyncCloseCallback ()"><span class="type">GnomeVFSAsyncCloseCallback</span></a> callback</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_async_close</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>Close <em class="parameter"><code>handle</code></em>
+ opened with <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-open" title="gnome_vfs_async_open ()"><code class="function">gnome_vfs_async_open()</code></a>. When the close
+has completed, <em class="parameter"><code>callback</code></em>
+ will be called with <em class="parameter"><code>callback_data</code></em>
+ and
+the result of the operation.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.29.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>async handle to close.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when the operation is complete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-read"></a><h3>gnome_vfs_async_read ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_async_read (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> *handle</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> buffer</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> bytes</code></em>,
+                      <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncReadCallback" title="GnomeVFSAsyncReadCallback ()"><span class="type">GnomeVFSAsyncReadCallback</span></a> callback</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Read <em class="parameter"><code>bytes</code></em>
+ bytes from the file pointed to be <em class="parameter"><code>handle</code></em>
+ into <em class="parameter"><code>buffer</code></em>
+.
+When the operation is complete, <em class="parameter"><code>callback</code></em>
+ will be called with the
+result of the operation and <em class="parameter"><code>callback_data</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.30.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle for the file to be read.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>allocated block of memory to read into.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bytes</p></td>
+<td class="parameter_description"><p>number of bytes to read.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when the operation is complete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-write"></a><h3>gnome_vfs_async_write ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_async_write (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> *handle</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> buffer</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> bytes</code></em>,
+                       <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncWriteCallback" title="GnomeVFSAsyncWriteCallback ()"><span class="type">GnomeVFSAsyncWriteCallback</span></a> callback</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Write <em class="parameter"><code>bytes</code></em>
+ bytes from <em class="parameter"><code>buffer</code></em>
+ into the file pointed to be <em class="parameter"><code>handle</code></em>
+.
+When the operation is complete, <em class="parameter"><code>callback</code></em>
+ will be called with the
+result of the operation and <em class="parameter"><code>callback_data</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.31.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle for the file to be written.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>block of memory containing data to be written.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bytes</p></td>
+<td class="parameter_description"><p>number of bytes to write.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when the operation is complete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-seek"></a><h3>gnome_vfs_async_seek ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_async_seek (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> *handle</code></em>,
+                      <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-rw-ops.html#GnomeVFSSeekPosition" title="enum GnomeVFSSeekPosition"><span class="type">GnomeVFSSeekPosition</span></a> whence</code></em>,
+                      <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-size.html#GnomeVFSFileOffset" title="GnomeVFSFileOffset"><span class="type">GnomeVFSFileOffset</span></a> offset</code></em>,
+                      <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncSeekCallback" title="GnomeVFSAsyncSeekCallback ()"><span class="type">GnomeVFSAsyncSeekCallback</span></a> callback</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Set the current position for reading/writing through <em class="parameter"><code>handle</code></em>
+.
+When the operation is complete, <em class="parameter"><code>callback</code></em>
+ will be called with the
+result of the operation and <em class="parameter"><code>callback_data</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.32.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle for which the current position must be changed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>whence</p></td>
+<td class="parameter_description"><p>integer value representing the starting position.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offset</p></td>
+<td class="parameter_description"><p>number of bytes to skip from the position specified by <em class="parameter"><code>whence</code></em>
+.
+(a positive value means to move forward; a negative one to move backwards).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when the operation is complete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-get-file-info"></a><h3>gnome_vfs_async_get_file_info ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_async_get_file_info (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> **handle_return</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *uri_list</code></em>,
+                               <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfoOptions" title="enum GnomeVFSFileInfoOptions"><span class="type">GnomeVFSFileInfoOptions</span></a> options</code></em>,
+                               <em class="parameter"><code><span class="type">int</span> priority</code></em>,
+                               <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncGetFileInfoCallback" title="GnomeVFSAsyncGetFileInfoCallback ()"><span class="type">GnomeVFSAsyncGetFileInfoCallback</span></a> callback</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Fetch information about the files indicated in <em class="parameter"><code>uri_list</code></em>
+ and return the
+information progressively to <em class="parameter"><code>callback</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.33.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle_return</p></td>
+<td class="parameter_description"><p>when the function returns, will point to a handle for
+the async operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri_list</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of <a href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI"><span class="type">GnomeVFSURIs</span></a> to fetch information about.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>options</p></td>
+<td class="parameter_description"><p>packed boolean type providing control over various details
+of the get_file_info operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>priority</p></td>
+<td class="parameter_description"><p>a value from <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MIN:CAPS" title="GNOME_VFS_PRIORITY_MIN"><code class="literal">GNOME_VFS_PRIORITY_MIN</code></a> to <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MAX:CAPS" title="GNOME_VFS_PRIORITY_MAX"><code class="literal">GNOME_VFS_PRIORITY_MAX</code></a> (normally
+should be <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-DEFAULT:CAPS" title="GNOME_VFS_PRIORITY_DEFAULT"><code class="literal">GNOME_VFS_PRIORITY_DEFAULT</code></a>) indicating the priority to assign this job
+in allocating threads from the thread pool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when the operation is complete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-set-file-info"></a><h3>gnome_vfs_async_set_file_info ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_async_set_file_info (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> **handle_return</code></em>,
+                               <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *uri</code></em>,
+                               <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> *info</code></em>,
+                               <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSSetFileInfoMask" title="enum GnomeVFSSetFileInfoMask"><span class="type">GnomeVFSSetFileInfoMask</span></a> mask</code></em>,
+                               <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfoOptions" title="enum GnomeVFSFileInfoOptions"><span class="type">GnomeVFSFileInfoOptions</span></a> options</code></em>,
+                               <em class="parameter"><code><span class="type">int</span> priority</code></em>,
+                               <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncSetFileInfoCallback" title="GnomeVFSAsyncSetFileInfoCallback ()"><span class="type">GnomeVFSAsyncSetFileInfoCallback</span></a> callback</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Set file info details about the file at <em class="parameter"><code>uri</code></em>
+, such as permissions, name,
+owner, and modification time.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.34.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle_return</p></td>
+<td class="parameter_description"><p>when the function returns, will point to a handle for
+the async operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>uri to set the file info of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>the struct containing new information about the file.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mask</p></td>
+<td class="parameter_description"><p>control which fields of <em class="parameter"><code>info</code></em>
+are to be changed about the file at <em class="parameter"><code>uri</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>options</p></td>
+<td class="parameter_description"><p>packed boolean type providing control over various details
+of the set_file_info operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>priority</p></td>
+<td class="parameter_description"><p>a value from <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MIN:CAPS" title="GNOME_VFS_PRIORITY_MIN"><code class="literal">GNOME_VFS_PRIORITY_MIN</code></a> to <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MAX:CAPS" title="GNOME_VFS_PRIORITY_MAX"><code class="literal">GNOME_VFS_PRIORITY_MAX</code></a> (normally
+should be <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-DEFAULT:CAPS" title="GNOME_VFS_PRIORITY_DEFAULT"><code class="literal">GNOME_VFS_PRIORITY_DEFAULT</code></a>) indicating the priority to assign this job
+in allocating threads from the thread pool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when the operation is complete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-load-directory"></a><h3>gnome_vfs_async_load_directory ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_async_load_directory (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> **handle_return</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text_uri</code></em>,
+                                <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfoOptions" title="enum GnomeVFSFileInfoOptions"><span class="type">GnomeVFSFileInfoOptions</span></a> options</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> items_per_notification</code></em>,
+                                <em class="parameter"><code><span class="type">int</span> priority</code></em>,
+                                <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncDirectoryLoadCallback" title="GnomeVFSAsyncDirectoryLoadCallback ()"><span class="type">GnomeVFSAsyncDirectoryLoadCallback</span></a> callback</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Read the contents of the directory at <em class="parameter"><code>text_uri</code></em>
+, passing back <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> 
+structs about each file in the directory to <em class="parameter"><code>callback</code></em>
+. <em class="parameter"><code>items_per_notification</code></em>
+
+files will be processed between each call to <em class="parameter"><code>callback</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.35.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle_return</p></td>
+<td class="parameter_description"><p>when the function returns, will point to a handle for
+the async operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text_uri</p></td>
+<td class="parameter_description"><p>string representing the uri of the directory to be loaded.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>options</p></td>
+<td class="parameter_description"><p>packed boolean type providing control over various details
+of the get_file_info operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>items_per_notification</p></td>
+<td class="parameter_description"><p>number of files to process in a row before calling <em class="parameter"><code>callback</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>priority</p></td>
+<td class="parameter_description"><p>a value from <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MIN:CAPS" title="GNOME_VFS_PRIORITY_MIN"><code class="literal">GNOME_VFS_PRIORITY_MIN</code></a> to <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MAX:CAPS" title="GNOME_VFS_PRIORITY_MAX"><code class="literal">GNOME_VFS_PRIORITY_MAX</code></a> (normally
+should be <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-DEFAULT:CAPS" title="GNOME_VFS_PRIORITY_DEFAULT"><code class="literal">GNOME_VFS_PRIORITY_DEFAULT</code></a>) indicating the priority to assign to this job
+in allocating threads from the thread pool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when the operation is complete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-load-directory-uri"></a><h3>gnome_vfs_async_load_directory_uri ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_async_load_directory_uri (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> **handle_return</code></em>,
+                                    <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *uri</code></em>,
+                                    <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfoOptions" title="enum GnomeVFSFileInfoOptions"><span class="type">GnomeVFSFileInfoOptions</span></a> options</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> items_per_notification</code></em>,
+                                    <em class="parameter"><code><span class="type">int</span> priority</code></em>,
+                                    <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncDirectoryLoadCallback" title="GnomeVFSAsyncDirectoryLoadCallback ()"><span class="type">GnomeVFSAsyncDirectoryLoadCallback</span></a> callback</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Read the contents of the directory at <em class="parameter"><code>uri</code></em>
+, passing back <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-info.html#GnomeVFSFileInfo" title="GnomeVFSFileInfo"><span class="type">GnomeVFSFileInfo</span></a> structs
+about each file in the directory to <em class="parameter"><code>callback</code></em>
+. <em class="parameter"><code>items_per_notification</code></em>
+
+files will be processed between each call to <em class="parameter"><code>callback</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.36.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle_return</p></td>
+<td class="parameter_description"><p>when the function returns, will point to a handle for
+the async operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>uri of the directory to be loaded.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>options</p></td>
+<td class="parameter_description"><p>packed boolean type providing control over various details
+of the get_file_info operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>items_per_notification</p></td>
+<td class="parameter_description"><p>number of files to process in a row before calling <em class="parameter"><code>callback</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>priority</p></td>
+<td class="parameter_description"><p>a value from <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MIN:CAPS" title="GNOME_VFS_PRIORITY_MIN"><code class="literal">GNOME_VFS_PRIORITY_MIN</code></a> to <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MAX:CAPS" title="GNOME_VFS_PRIORITY_MAX"><code class="literal">GNOME_VFS_PRIORITY_MAX</code></a> (normally
+should be <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-DEFAULT:CAPS" title="GNOME_VFS_PRIORITY_DEFAULT"><code class="literal">GNOME_VFS_PRIORITY_DEFAULT</code></a>) indicating the priority to assign this job
+in allocating threads from the thread pool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when the operation is complete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-xfer"></a><h3>gnome_vfs_async_xfer ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_async_xfer (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> **handle_return</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *source_uri_list</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *target_uri_list</code></em>,
+                      <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-xfer.html#GnomeVFSXferOptions" title="enum GnomeVFSXferOptions"><span class="type">GnomeVFSXferOptions</span></a> xfer_options</code></em>,
+                      <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-xfer.html#GnomeVFSXferErrorMode" title="enum GnomeVFSXferErrorMode"><span class="type">GnomeVFSXferErrorMode</span></a> error_mode</code></em>,
+                      <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-xfer.html#GnomeVFSXferOverwriteMode" title="enum GnomeVFSXferOverwriteMode"><span class="type">GnomeVFSXferOverwriteMode</span></a> overwrite_mode</code></em>,
+                      <em class="parameter"><code><span class="type">int</span> priority</code></em>,
+                      <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncXferProgressCallback" title="GnomeVFSAsyncXferProgressCallback ()"><span class="type">GnomeVFSAsyncXferProgressCallback</span></a> progress_update_callback</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> update_callback_data</code></em>,
+                      <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-xfer.html#GnomeVFSXferProgressCallback" title="GnomeVFSXferProgressCallback ()"><span class="type">GnomeVFSXferProgressCallback</span></a> progress_sync_callback</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> sync_callback_data</code></em>);</pre>
+<p>Performs an Xfer operation in a seperate thread, otherwise like
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-xfer.html#gnome-vfs-xfer-uri-list" title="gnome_vfs_xfer_uri_list ()"><code class="function">gnome_vfs_xfer_uri_list()</code></a>.</p>
+<p>See <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncXferProgressCallback" title="GnomeVFSAsyncXferProgressCallback ()"><span class="type">GnomeVFSAsyncXferProgressCallback</span></a> and <a class="link" href="gnome-vfs-2.0-gnome-vfs-xfer.html#GnomeVFSXferProgressCallback" title="GnomeVFSXferProgressCallback ()"><span class="type">GnomeVFSXferProgressCallback</span></a> for details on how the
+callback mechanism works.</p>
+<div class="note">
+<p>
+  <em class="parameter"><code>progress_sync_callback</code></em> should only be used if you want to execute additional
+  actions that may not wait until after the transfer, for instance because
+  you have to do them for each transferred file/directory, and that require
+  a very specific action to be taken. For instance, the Nautilus application
+  schedules metadata removal/moving/copying at specific phases.
+ </p>
+<p>
+  Do not use <em class="parameter"><code>progress_sync_callback</code></em> if you just need user feedback, because
+  each invocation is expensive, and requires a context switch.
+ </p>
+<p>
+  If you use both <em class="parameter"><code>progress_update_callback</code></em> and <em class="parameter"><code>progress_sync_callback</code></em>,
+  the <em class="parameter"><code>progress_sync_callback</code></em> will always be invoked before the
+  <em class="parameter"><code>progress_update_callback</code></em>. It is recommended to do conflict
+  handling in <em class="parameter"><code>progress_update_callback</code></em>, and always return <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>
+  in <em class="parameter"><code>progress_sync_callback</code></em>, because if the Xfer's
+  <a class="link" href="gnome-vfs-2.0-gnome-vfs-xfer.html#GnomeVFSXferProgressStatus" title="enum GnomeVFSXferProgressStatus"><span class="type">GnomeVFSXferProgressStatus</span></a> is <a class="link" href="gnome-vfs-2.0-gnome-vfs-xfer.html#GNOME-VFS-XFER-PROGRESS-STATUS-OK:CAPS"><code class="literal">GNOME_VFS_XFER_PROGRESS_STATUS_OK</code></a>,
+  <em class="parameter"><code>progress_update_callback</code></em> will only be invoked if it hasn't
+  been invoked within the last 100 milliseconds, and if 
+  <em class="parameter"><code>progress_update_callback</code></em> is not invoked, only
+  <em class="parameter"><code>progress_sync_callback</code></em> is authoritative for the
+  further processing, causing abortion if it is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.
+ </p>
+</div>
+<div class="refsect3">
+<a name="id-1.8.2.7.37.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle_return</p></td>
+<td class="parameter_description"><p>when the function returns, will point to a handle for the operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source_uri_list</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of source <a href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI"><span class="type">GnomeVFSURIs</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_uri_list</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of target <a href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI"><span class="type">GnomeVFSURIs</span></a>, each corresponding to one URI in
+<em class="parameter"><code>source_uri_list</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xfer_options</p></td>
+<td class="parameter_description"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-xfer.html#GnomeVFSXferOptions" title="enum GnomeVFSXferOptions"><span class="type">GnomeVFSXferOptions</span></a> defining the desired operation and parameters.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error_mode</p></td>
+<td class="parameter_description"><p>A <span class="type">GnomeVFSErrorMode</span> specifying how to proceed if a VFS error occurs.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>overwrite_mode</p></td>
+<td class="parameter_description"><p>A <span class="type">GnomeVFSOverwriteMode</span> specifying how to proceed if a file is being overwritten.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>priority</p></td>
+<td class="parameter_description"><p>A value from <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MIN:CAPS" title="GNOME_VFS_PRIORITY_MIN"><code class="literal">GNOME_VFS_PRIORITY_MIN</code></a> to <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MAX:CAPS" title="GNOME_VFS_PRIORITY_MAX"><code class="literal">GNOME_VFS_PRIORITY_MAX</code></a> (normally
+should be <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-DEFAULT:CAPS" title="GNOME_VFS_PRIORITY_DEFAULT"><code class="literal">GNOME_VFS_PRIORITY_DEFAULT</code></a>) indicating the priority to assign this job
+in allocating threads from the thread pool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>progress_update_callback</p></td>
+<td class="parameter_description"><p>A <span class="type">GnomeVFSAsyncXferCallback</span> called periodically for
+informing the program about progress, and when the program requires responses to
+interactive queries (e.g. overwriting files, handling errors, etc).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>update_callback_data</p></td>
+<td class="parameter_description"><p>User data to pass to <em class="parameter"><code>progress_update_callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>progress_sync_callback</p></td>
+<td class="parameter_description"><p>An optional <span class="type">GnomeVFSXferCallback</span> called whenever some state changed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sync_callback_data</p></td>
+<td class="parameter_description"><p>User data to pass to <em class="parameter"><code>progress_sync_callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.2.7.37.8"></a><h4>Returns</h4>
+<p> <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a> if the paramaters were in order,
+or <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-ERROR-BAD-PARAMETERS:CAPS"><code class="literal">GNOME_VFS_ERROR_BAD_PARAMETERS</code></a> if something was wrong in the passed in arguments.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-find-directory"></a><h3>gnome_vfs_async_find_directory ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_async_find_directory (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> **handle_return</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *near_uri_list</code></em>,
+                                <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-directory-find-ops.html#GnomeVFSFindDirectoryKind" title="enum GnomeVFSFindDirectoryKind"><span class="type">GnomeVFSFindDirectoryKind</span></a> kind</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> create_if_needed</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> find_if_needed</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> permissions</code></em>,
+                                <em class="parameter"><code><span class="type">int</span> priority</code></em>,
+                                <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncFindDirectoryCallback" title="GnomeVFSAsyncFindDirectoryCallback ()"><span class="type">GnomeVFSAsyncFindDirectoryCallback</span></a> callback</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Used to return special directories such as Trash and Desktop from different
+file systems.</p>
+<p>There is quite a complicated logic behind finding/creating a Trash directory
+and you need to be aware of some implications:
+Finding the Trash the first time when using the file method may be pretty 
+expensive. A cache file is used to store the location of that Trash file
+for next time.
+If <em class="parameter"><code>create_if_needed</code></em>
+ is specified without <em class="parameter"><code>find_if_needed</code></em>
+, you may end up
+creating a Trash file when there already is one. Your app should start out
+by doing a gnome_vfs_find_directory with the <em class="parameter"><code>find_if_needed</code></em>
+ to avoid this
+and then use the <em class="parameter"><code>create_if_needed</code></em>
+ flag to create Trash lazily when it is
+needed for throwing away an item on a given disk.</p>
+<p>When the operation has completed, <em class="parameter"><code>callback</code></em>
+ will be called with the result
+of the operation and <em class="parameter"><code>user_data</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.38.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle_return</p></td>
+<td class="parameter_description"><p>when the function returns, will point to a handle for the operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>near_uri_list</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of <a href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI"><span class="type">GnomeVFSURIs</span></a>, find a special directory on the same
+volume as <em class="parameter"><code>near_uri_list</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>kind</p></td>
+<td class="parameter_description"><p>kind of special directory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>create_if_needed</p></td>
+<td class="parameter_description"><p>if directory we are looking for does not exist, try to create it.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>find_if_needed</p></td>
+<td class="parameter_description"><p>if we don't know where the directory is yet, look for it.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>permissions</p></td>
+<td class="parameter_description"><p>if creating, use these permissions.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>priority</p></td>
+<td class="parameter_description"><p>a value from <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MIN:CAPS" title="GNOME_VFS_PRIORITY_MIN"><code class="literal">GNOME_VFS_PRIORITY_MIN</code></a> to <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-MAX:CAPS" title="GNOME_VFS_PRIORITY_MAX"><code class="literal">GNOME_VFS_PRIORITY_MAX</code></a> (normally
+should be <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GNOME-VFS-PRIORITY-DEFAULT:CAPS" title="GNOME_VFS_PRIORITY_DEFAULT"><code class="literal">GNOME_VFS_PRIORITY_DEFAULT</code></a>) indicating the priority to assign to this job
+in allocating threads from the thread pool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when the operation is complete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+. </p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-async-file-control"></a><h3>gnome_vfs_async_file_control ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_async_file_control (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncHandle" title="GnomeVFSAsyncHandle"><span class="type">GnomeVFSAsyncHandle</span></a> *handle</code></em>,
+                              <em class="parameter"><code>const <span class="type">char</span> *operation</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> operation_data</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> operation_data_destroy_func</code></em>,
+                              <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncFileControlCallback" title="GnomeVFSAsyncFileControlCallback ()"><span class="type">GnomeVFSAsyncFileControlCallback</span></a> callback</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Execute a backend dependent operation specified by the string <em class="parameter"><code>operation</code></em>
+.
+This is typically used for specialized vfs backends that need additional
+operations that gnome-vfs doesn't have. Compare it to the unix call <code class="function">ioctl()</code>.
+The format of <em class="parameter"><code>operation_data</code></em>
+ depends on the operation. Operation that are
+backend specific are normally namespaced by their module name.</p>
+<p>When the operation is complete, <em class="parameter"><code>callback</code></em>
+ will be called with the
+result of the operation, <em class="parameter"><code>operation_data</code></em>
+ and <em class="parameter"><code>callback_data</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.39.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the file to affect.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operation</p></td>
+<td class="parameter_description"><p>operation to execute.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operation_data</p></td>
+<td class="parameter_description"><p>data needed to execute the operation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>operation_data_destroy_func</p></td>
+<td class="parameter_description"><p>callback to destroy <em class="parameter"><code>operation_data</code></em>
+when its no longer needed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when the <em class="parameter"><code>operation</code></em>
+is complete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-find-directory-result-dup"></a><h3>gnome_vfs_find_directory_result_dup ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSFindDirectoryResult" title="GnomeVFSFindDirectoryResult"><span class="returnvalue">GnomeVFSFindDirectoryResult</span></a> *
+gnome_vfs_find_directory_result_dup (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSFindDirectoryResult" title="GnomeVFSFindDirectoryResult"><span class="type">GnomeVFSFindDirectoryResult</span></a> *result</code></em>);</pre>
+<p>Duplicates <em class="parameter"><code>result</code></em>
+.</p>
+<p>Note: The internal uri is not duplicated but its
+refcount is incremented.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.40.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSFindDirectoryResult" title="GnomeVFSFindDirectoryResult"><span class="type">GnomeVFSFindDirectoryResult</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.2.7.40.7"></a><h4>Returns</h4>
+<p> A 1:1 copy of <em class="parameter"><code>result</code></em>
+.</p>
+<p></p>
+</div>
+<p class="since">Since 2.12</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-find-directory-result-free"></a><h3>gnome_vfs_find_directory_result_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_find_directory_result_free (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSFindDirectoryResult" title="GnomeVFSFindDirectoryResult"><span class="type">GnomeVFSFindDirectoryResult</span></a> *result</code></em>);</pre>
+<p>Unrefs the inner uri object and frees the memory 
+allocated for <em class="parameter"><code>result</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.8.2.7.41.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSFindDirectoryResult" title="GnomeVFSFindDirectoryResult"><span class="type">GnomeVFSFindDirectoryResult</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since 2.12</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-async-ops.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GNOME-VFS-PRIORITY-MIN:CAPS"></a><h3>GNOME_VFS_PRIORITY_MIN</h3>
+<pre class="programlisting">#define GNOME_VFS_PRIORITY_MIN     -10
+</pre>
+<p>The minimuum priority a job can have.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GNOME-VFS-PRIORITY-MAX:CAPS"></a><h3>GNOME_VFS_PRIORITY_MAX</h3>
+<pre class="programlisting">#define GNOME_VFS_PRIORITY_MAX     10
+</pre>
+<p>The maximuum priority a job can have.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GNOME-VFS-PRIORITY-DEFAULT:CAPS"></a><h3>GNOME_VFS_PRIORITY_DEFAULT</h3>
+<pre class="programlisting">#define GNOME_VFS_PRIORITY_DEFAULT 0
+</pre>
+<p>The default job priority. Its best to use this
+unless you have a reason to do otherwise.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSAsyncHandle"></a><h3>GnomeVFSAsyncHandle</h3>
+<pre class="programlisting">typedef struct GnomeVFSAsyncHandle GnomeVFSAsyncHandle;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSFindDirectoryResult"></a><h3>GnomeVFSFindDirectoryResult</h3>
+<pre class="programlisting">typedef struct {
+	GnomeVFSURI *uri;
+	GnomeVFSResult result;
+} GnomeVFSFindDirectoryResult;
+</pre>
+<p>This structure is passed to a <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#GnomeVFSAsyncFindDirectoryCallback" title="GnomeVFSAsyncFindDirectoryCallback ()"><span class="type">GnomeVFSAsyncFindDirectoryCallback</span></a>
+by <a class="link" href="gnome-vfs-2.0-gnome-vfs-async-ops.html#gnome-vfs-async-find-directory" title="gnome_vfs_async_find_directory ()"><code class="function">gnome_vfs_async_find_directory()</code></a> and contains the information
+associated with a single <a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> matching the specified
+find request.</p>
+<div class="refsect3">
+<a name="id-1.8.2.8.6.5"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *<em class="structfield"><code><a name="GnomeVFSFindDirectoryResult.uri"></a>uri</code></em>;</p></td>
+<td class="struct_member_description"><p>The <a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> that was found.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> <em class="structfield"><code><a name="GnomeVFSFindDirectoryResult.result"></a>result</code></em>;</p></td>
+<td class="struct_member_description"><p>The <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> that was obtained when finding <em class="parameter"><code>uri</code></em>
+.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSCancellation"></a><h3>GnomeVFSCancellation</h3>
+<pre class="programlisting">typedef struct GnomeVFSCancellation GnomeVFSCancellation;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSContext"></a><h3>GnomeVFSContext</h3>
+<pre class="programlisting">typedef struct GnomeVFSContext GnomeVFSContext;
+</pre>
+<p>
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

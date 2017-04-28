@@ -1,0 +1,793 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GnomeVFS - Filesystem Abstraction library: Basic File Operations</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="GnomeVFS - Filesystem Abstraction library">
+<link rel="up" href="gnome-vfs-basic-file-ops.html" title="File Operations">
+<link rel="prev" href="gnome-vfs-basic-file-ops.html" title="File Operations">
+<link rel="next" href="gnome-vfs-2.0-gnome-vfs-file-rw-ops.html" title="Reading and Writing Files">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-file-basic-ops.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-file-basic-ops.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gnome-vfs-basic-file-ops.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gnome-vfs-basic-file-ops.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gnome-vfs-2.0-gnome-vfs-file-rw-ops.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gnome-vfs-2.0-gnome-vfs-file-basic-ops"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gnome-vfs-2.0-gnome-vfs-file-basic-ops.top_of_page"></a>Basic File Operations</span></h2>
+<p>Basic File Operations — Essential VFS operations. This includes creating, moving and deleting files, opening and closing file handles.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-file-basic-ops.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#gnome-vfs-create" title="gnome_vfs_create ()">gnome_vfs_create</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#gnome-vfs-create-uri" title="gnome_vfs_create_uri ()">gnome_vfs_create_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#gnome-vfs-open" title="gnome_vfs_open ()">gnome_vfs_open</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#gnome-vfs-open-uri" title="gnome_vfs_open_uri ()">gnome_vfs_open_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#gnome-vfs-close" title="gnome_vfs_close ()">gnome_vfs_close</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#gnome-vfs-unlink" title="gnome_vfs_unlink ()">gnome_vfs_unlink</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#gnome-vfs-unlink-from-uri" title="gnome_vfs_unlink_from_uri ()">gnome_vfs_unlink_from_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#gnome-vfs-move-uri" title="gnome_vfs_move_uri ()">gnome_vfs_move_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#gnome-vfs-move" title="gnome_vfs_move ()">gnome_vfs_move</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#gnome-vfs-check-same-fs-uris" title="gnome_vfs_check_same_fs_uris ()">gnome_vfs_check_same_fs_uris</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#gnome-vfs-check-same-fs" title="gnome_vfs_check_same_fs ()">gnome_vfs_check_same_fs</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#gnome-vfs-uri-exists" title="gnome_vfs_uri_exists ()">gnome_vfs_uri_exists</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#gnome-vfs-create-symbolic-link" title="gnome_vfs_create_symbolic_link ()">gnome_vfs_create_symbolic_link</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-file-basic-ops.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#GnomeVFSOpenMode" title="enum GnomeVFSOpenMode">GnomeVFSOpenMode</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-file-basic-ops.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">
+</pre>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-file-basic-ops.description"></a><h2>Description</h2>
+<p>
+GnomeVFS file operations are, for the most part, patterned after
+their POSIX equivalents, with the systematic difference that they
+accept URIs rather than paths on the local filesystem. This makes
+them easy to learn as if you are already familiar with basic commands
+such as <code class="function">open()</code>, <code class="function">seek()</code>, <code class="function">write()</code>, etc you will feel right at home
+with GnomeVFS after learning a little about URIs.
+</p>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-file-basic-ops.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gnome-vfs-create"></a><h3>gnome_vfs_create ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_create (<em class="parameter"><code><span class="type">GnomeVFSHandle</span> **handle</code></em>,
+                  <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text_uri</code></em>,
+                  <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#GnomeVFSOpenMode" title="enum GnomeVFSOpenMode"><span class="type">GnomeVFSOpenMode</span></a> open_mode</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> exclusive</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> perm</code></em>);</pre>
+<p>Create <em class="parameter"><code>text_uri</code></em>
+ according to mode <em class="parameter"><code>open_mode</code></em>
+.  On return, <em class="parameter"><code>handle</code></em>
+ will then
+contain a pointer to a handle for the open file.</p>
+<div class="refsect3">
+<a name="id-1.5.2.7.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>pointer to a pointer to a <span class="type">GnomeVFSHandle</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text_uri</p></td>
+<td class="parameter_description"><p>string representing the uri to create.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>open_mode</p></td>
+<td class="parameter_description"><p>mode to leave the file opened in after creation (or <code class="literal">GNOME_VFS_OPEN_MODE_NONE</code>
+to leave the file closed after creation).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>exclusive</p></td>
+<td class="parameter_description"><p>whether the file should be created in "exclusive" mode.
+i.e. if this flag is nonzero, operation will fail if a file with the
+same name already exists.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>perm</p></td>
+<td class="parameter_description"><p>bitmap representing the permissions for the newly created file
+(Unix style).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.2.7.2.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-create-uri"></a><h3>gnome_vfs_create_uri ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_create_uri (<em class="parameter"><code><span class="type">GnomeVFSHandle</span> **handle</code></em>,
+                      <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *uri</code></em>,
+                      <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#GnomeVFSOpenMode" title="enum GnomeVFSOpenMode"><span class="type">GnomeVFSOpenMode</span></a> open_mode</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> exclusive</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> perm</code></em>);</pre>
+<p>Create <em class="parameter"><code>uri</code></em>
+ according to mode <em class="parameter"><code>open_mode</code></em>
+.  On return, <em class="parameter"><code>handle</code></em>
+ will then
+contain a pointer to a handle for the open file.</p>
+<div class="refsect3">
+<a name="id-1.5.2.7.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>pointer to a pointer to a <span class="type">GnomeVFSHandle</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>uri for the file to create.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>open_mode</p></td>
+<td class="parameter_description"><p>open mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>exclusive</p></td>
+<td class="parameter_description"><p>whether the file should be created in "exclusive" mode.
+i.e. if this flag is nonzero, operation will fail if a file with the
+same name already exists.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>perm</p></td>
+<td class="parameter_description"><p>bitmap representing the permissions for the newly created file
+(Unix style).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.2.7.3.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-open"></a><h3>gnome_vfs_open ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_open (<em class="parameter"><code><span class="type">GnomeVFSHandle</span> **handle</code></em>,
+                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text_uri</code></em>,
+                <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#GnomeVFSOpenMode" title="enum GnomeVFSOpenMode"><span class="type">GnomeVFSOpenMode</span></a> open_mode</code></em>);</pre>
+<p>Open <em class="parameter"><code>text_uri</code></em>
+ according to mode <em class="parameter"><code>open_mode</code></em>
+.  On return, <em class="parameter"><code>handle</code></em>
+ will then
+contain a pointer to a handle for the open file.</p>
+<div class="refsect3">
+<a name="id-1.5.2.7.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>pointer to a pointer to a <span class="type">GnomeVFSHandle</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text_uri</p></td>
+<td class="parameter_description"><p>string representing the uri to open.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>open_mode</p></td>
+<td class="parameter_description"><p>open mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.2.7.4.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-open-uri"></a><h3>gnome_vfs_open_uri ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_open_uri (<em class="parameter"><code><span class="type">GnomeVFSHandle</span> **handle</code></em>,
+                    <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *uri</code></em>,
+                    <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html#GnomeVFSOpenMode" title="enum GnomeVFSOpenMode"><span class="type">GnomeVFSOpenMode</span></a> open_mode</code></em>);</pre>
+<p>Open <em class="parameter"><code>uri</code></em>
+ according to mode <em class="parameter"><code>open_mode</code></em>
+.  On return, <em class="parameter"><code>handle</code></em>
+ will then
+contain a pointer to a handle for the open file.</p>
+<div class="refsect3">
+<a name="id-1.5.2.7.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>pointer to a pointer to a <span class="type">GnomeVFSHandle</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>uri to open.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>open_mode</p></td>
+<td class="parameter_description"><p>open mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.2.7.5.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-close"></a><h3>gnome_vfs_close ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_close (<em class="parameter"><code><span class="type">GnomeVFSHandle</span> *handle</code></em>);</pre>
+<p>Close file associated with <em class="parameter"><code>handle</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.5.2.7.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>pointer to a <span class="type">GnomeVFSHandle</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.2.7.6.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-unlink"></a><h3>gnome_vfs_unlink ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_unlink (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text_uri</code></em>);</pre>
+<p>Unlink <em class="parameter"><code>text_uri</code></em>
+ (i.e. delete the file).</p>
+<div class="refsect3">
+<a name="id-1.5.2.7.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>text_uri</p></td>
+<td class="parameter_description"><p>uri of the file to be unlinked.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.2.7.7.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-unlink-from-uri"></a><h3>gnome_vfs_unlink_from_uri ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_unlink_from_uri (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *uri</code></em>);</pre>
+<p>Unlink <em class="parameter"><code>uri</code></em>
+ (i.e. delete the file).</p>
+<div class="refsect3">
+<a name="id-1.5.2.7.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>uri of the file to be unlinked.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.2.7.8.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-move-uri"></a><h3>gnome_vfs_move_uri ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_move_uri (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *old_uri</code></em>,
+                    <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *new_uri</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> force_replace</code></em>);</pre>
+<p>Move a file from uri <em class="parameter"><code>old_uri</code></em>
+ to <em class="parameter"><code>new_uri</code></em>
+.  This will only work if <em class="parameter"><code>old_uri</code></em>
+ 
+and <em class="parameter"><code>new_uri</code></em>
+ are on the same file system.  Otherwise, it is necessary 
+to use the more general <a class="link" href="gnome-vfs-2.0-gnome-vfs-xfer.html#gnome-vfs-xfer-uri" title="gnome_vfs_xfer_uri ()"><code class="function">gnome_vfs_xfer_uri()</code></a> function.</p>
+<div class="refsect3">
+<a name="id-1.5.2.7.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>old_uri</p></td>
+<td class="parameter_description"><p>source uri.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>new_uri</p></td>
+<td class="parameter_description"><p>destination uri.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>force_replace</p></td>
+<td class="parameter_description"><p>if <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, move <em class="parameter"><code>old_uri</code></em>
+to <em class="parameter"><code>new_uri</code></em>
+even if there
+is already a file at <em class="parameter"><code>new_uri</code></em>
+. If there is a file, it will be discarded.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.2.7.9.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-move"></a><h3>gnome_vfs_move ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_move (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *old_text_uri</code></em>,
+                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *new_text_uri</code></em>,
+                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> force_replace</code></em>);</pre>
+<p>Move a file from <em class="parameter"><code>old_text_uri</code></em>
+ to <em class="parameter"><code>new_text_uri</code></em>
+.  This will only work 
+if <em class="parameter"><code>old_text_uri</code></em>
+ and <em class="parameter"><code>new_text_uri</code></em>
+ are on the same file system.  Otherwise,
+it is necessary to use the more general <a class="link" href="gnome-vfs-2.0-gnome-vfs-xfer.html#gnome-vfs-xfer-uri" title="gnome_vfs_xfer_uri ()"><code class="function">gnome_vfs_xfer_uri()</code></a> function.</p>
+<div class="refsect3">
+<a name="id-1.5.2.7.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>old_text_uri</p></td>
+<td class="parameter_description"><p>string representing the source file location.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>new_text_uri</p></td>
+<td class="parameter_description"><p>string representing the destination file location.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>force_replace</p></td>
+<td class="parameter_description"><p>if <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, perform the operation even if it unlinks an existing
+file at <em class="parameter"><code>new_text_uri</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.2.7.10.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-check-same-fs-uris"></a><h3>gnome_vfs_check_same_fs_uris ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_check_same_fs_uris (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *source_uri</code></em>,
+                              <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *target_uri</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *same_fs_return</code></em>);</pre>
+<p>Check if <em class="parameter"><code>source_uri</code></em>
+ and <em class="parameter"><code>target_uri</code></em>
+ are on the same file system.</p>
+<div class="refsect3">
+<a name="id-1.5.2.7.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>source_uri</p></td>
+<td class="parameter_description"><p>a uri.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_uri</p></td>
+<td class="parameter_description"><p>another uri.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>same_fs_return</p></td>
+<td class="parameter_description"><p>pointer to a boolean variable which will be set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>
+on return if <em class="parameter"><code>source_uri</code></em>
+and <em class="parameter"><code>target_uri</code></em>
+are on the same file system.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.2.7.11.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-check-same-fs"></a><h3>gnome_vfs_check_same_fs ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_check_same_fs (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *target</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> *same_fs_return</code></em>);</pre>
+<p>Check if <em class="parameter"><code>source</code></em>
+ and <em class="parameter"><code>target</code></em>
+ are on the same file system.</p>
+<div class="refsect3">
+<a name="id-1.5.2.7.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>path to a file.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>path to another file.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>same_fs_return</p></td>
+<td class="parameter_description"><p>pointer to a boolean variable which will be set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>
+on return if <em class="parameter"><code>source</code></em>
+and <em class="parameter"><code>target</code></em>
+are on the same file system.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.2.7.12.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-uri-exists"></a><h3>gnome_vfs_uri_exists ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gnome_vfs_uri_exists (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *uri</code></em>);</pre>
+<p>Check if the uri points to an existing entity.</p>
+<div class="refsect3">
+<a name="id-1.5.2.7.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>a uri.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.2.7.13.6"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if uri exists.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-create-symbolic-link"></a><h3>gnome_vfs_create_symbolic_link ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_create_symbolic_link (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *uri</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *target_reference</code></em>);</pre>
+<p>Creates a symbolic link, or eventually, a uri link (as necessary) 
+at <em class="parameter"><code>uri</code></em>
+ pointing to <em class="parameter"><code>target_reference</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.5.2.7.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>uri to create a link at.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_reference</p></td>
+<td class="parameter_description"><p>uri "reference" to point the link to (uri or relative path).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.2.7.14.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-file-basic-ops.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GnomeVFSOpenMode"></a><h3>enum GnomeVFSOpenMode</h3>
+<p>Mode in which files are opened. If GNOME_VFS_OPEN_RANDOM is not used, the
+file will be have to be accessed sequentially.</p>
+<div class="refsect3">
+<a name="id-1.5.2.8.2.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-OPEN-NONE:CAPS"></a>GNOME_VFS_OPEN_NONE</p></td>
+<td class="enum_member_description">
+<p>No access.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-OPEN-READ:CAPS"></a>GNOME_VFS_OPEN_READ</p></td>
+<td class="enum_member_description">
+<p>Read access.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-OPEN-WRITE:CAPS"></a>GNOME_VFS_OPEN_WRITE</p></td>
+<td class="enum_member_description">
+<p>Write access.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-OPEN-RANDOM:CAPS"></a>GNOME_VFS_OPEN_RANDOM</p></td>
+<td class="enum_member_description">
+<p>Random access.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-OPEN-TRUNCATE:CAPS"></a>GNOME_VFS_OPEN_TRUNCATE</p></td>
+<td class="enum_member_description">
+<p>Truncate file before accessing it, i.e. delete its contents.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

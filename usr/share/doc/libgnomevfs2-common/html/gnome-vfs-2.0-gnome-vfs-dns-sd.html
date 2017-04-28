@@ -1,0 +1,788 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GnomeVFS - Filesystem Abstraction library: Zeroconf networking support</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="GnomeVFS - Filesystem Abstraction library">
+<link rel="up" href="networking.html" title="Networking">
+<link rel="prev" href="networking.html" title="Networking">
+<link rel="next" href="gnome-vfs-2.0-gnome-vfs-resolve.html" title="DNS Resolution">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-dns-sd.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-dns-sd.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="networking.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="networking.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gnome-vfs-2.0-gnome-vfs-resolve.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gnome-vfs-2.0-gnome-vfs-dns-sd"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gnome-vfs-2.0-gnome-vfs-dns-sd.top_of_page"></a>Zeroconf networking support</span></h2>
+<p>Zeroconf networking support — Gets information about available Zeroconf (aka <span class="trademark">RendezVous</span>™) services on a local network.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-dns-sd.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#GnomeVFSDNSSDResolveCallback" title="GnomeVFSDNSSDResolveCallback ()">*GnomeVFSDNSSDResolveCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#GnomeVFSDNSSDBrowseCallback" title="GnomeVFSDNSSDBrowseCallback ()">*GnomeVFSDNSSDBrowseCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-dns-sd-browse" title="gnome_vfs_dns_sd_browse ()">gnome_vfs_dns_sd_browse</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-dns-sd-stop-browse" title="gnome_vfs_dns_sd_stop_browse ()">gnome_vfs_dns_sd_stop_browse</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-dns-sd-resolve" title="gnome_vfs_dns_sd_resolve ()">gnome_vfs_dns_sd_resolve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-dns-sd-cancel-resolve" title="gnome_vfs_dns_sd_cancel_resolve ()">gnome_vfs_dns_sd_cancel_resolve</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-dns-sd-browse-sync" title="gnome_vfs_dns_sd_browse_sync ()">gnome_vfs_dns_sd_browse_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-dns-sd-resolve-sync" title="gnome_vfs_dns_sd_resolve_sync ()">gnome_vfs_dns_sd_resolve_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-dns-sd-service-list-free" title="gnome_vfs_dns_sd_service_list_free ()">gnome_vfs_dns_sd_service_list_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-dns-sd-list-browse-domains-sync" title="gnome_vfs_dns_sd_list_browse_domains_sync ()">gnome_vfs_dns_sd_list_browse_domains_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-get-default-browse-domains" title="gnome_vfs_get_default_browse_domains ()">gnome_vfs_get_default_browse_domains</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-dns-sd.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#GnomeVFSDNSSDServiceStatus" title="enum GnomeVFSDNSSDServiceStatus">GnomeVFSDNSSDServiceStatus</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#GnomeVFSDNSSDService" title="GnomeVFSDNSSDService">GnomeVFSDNSSDService</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-dns-sd.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">
+</pre>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-dns-sd.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-dns-sd.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GnomeVFSDNSSDResolveCallback"></a><h3>GnomeVFSDNSSDResolveCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GnomeVFSDNSSDResolveCallback<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">GnomeVFSDNSSDResolveHandle</span> *handle</code></em>,
+                                 <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="type">GnomeVFSResult</span></a> result</code></em>,
+                                 <em class="parameter"><code>const <a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#GnomeVFSDNSSDService" title="GnomeVFSDNSSDService"><span class="type">GnomeVFSDNSSDService</span></a> *service</code></em>,
+                                 <em class="parameter"><code>const <span class="type">char</span> *host</code></em>,
+                                 <em class="parameter"><code><span class="type">int</span> port</code></em>,
+                                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> *text</code></em>,
+                                 <em class="parameter"><code><span class="type">int</span> text_raw_len</code></em>,
+                                 <em class="parameter"><code>const <span class="type">char</span> *text_raw</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Callback for the <a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-dns-sd-resolve" title="gnome_vfs_dns_sd_resolve ()"><code class="function">gnome_vfs_dns_sd_resolve()</code></a> function that is called
+when a service has been resolved.</p>
+<p>The <em class="parameter"><code>host</code></em>
+ and <em class="parameter"><code>port</code></em>
+ can be used to contact the requested service, and
+<em class="parameter"><code>text</code></em>
+ contains additional options as defined for the type requested.</p>
+<p>To check for options being set in <em class="parameter"><code>text</code></em>
+ without any value ("key" as
+opposed to "key=value") you must use <a href="/usr/share/gtk-doc/html/glib/glib-Hash-Tables.html#g-hash-table-lookup-extended"><code class="function">g_hash_table_lookup_extended()</code></a>, since
+they are stored in the hash table with a NULL value, and <a href="/usr/share/gtk-doc/html/glib/glib-Hash-Tables.html#g-hash-table-lookup"><code class="function">g_hash_table_lookup()</code></a>
+can't tell that from the case where the key is not in the hash table.</p>
+<div class="refsect3">
+<a name="id-1.10.2.7.2.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the operation generating the callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>whether the resolve succeeded or not</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>service</p></td>
+<td class="parameter_description"><p>the service that was resolved</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>host</p></td>
+<td class="parameter_description"><p>the host name or ip of the host hosting the service</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>port</p></td>
+<td class="parameter_description"><p>the port number to use for the service</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text</p></td>
+<td class="parameter_description"><p>a hash table giving additional options about the service</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text_raw_len</p></td>
+<td class="parameter_description"><p>length of <em class="parameter"><code>text_raw</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text_raw</p></td>
+<td class="parameter_description"><p>raw version of the additional options in <em class="parameter"><code>text</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>user data defined when the callback was established</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSDNSSDBrowseCallback"></a><h3>GnomeVFSDNSSDBrowseCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GnomeVFSDNSSDBrowseCallback<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">GnomeVFSDNSSDBrowseHandle</span> *handle</code></em>,
+                                <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#GnomeVFSDNSSDServiceStatus" title="enum GnomeVFSDNSSDServiceStatus"><span class="type">GnomeVFSDNSSDServiceStatus</span></a> status</code></em>,
+                                <em class="parameter"><code>const <a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#GnomeVFSDNSSDService" title="GnomeVFSDNSSDService"><span class="type">GnomeVFSDNSSDService</span></a> *service</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>);</pre>
+<p>Callback for the <a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-dns-sd-browse" title="gnome_vfs_dns_sd_browse ()"><code class="function">gnome_vfs_dns_sd_browse()</code></a> function that informs
+the user of services that are added or removed.</p>
+<div class="refsect3">
+<a name="id-1.10.2.7.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the operation generating the callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>status</p></td>
+<td class="parameter_description"><p>whether a service addition or removal was detected</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>service</p></td>
+<td class="parameter_description"><p>the service that was discovered or removed</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>user data defined when the callback was established</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-dns-sd-browse"></a><h3>gnome_vfs_dns_sd_browse ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_dns_sd_browse (<em class="parameter"><code><span class="type">GnomeVFSDNSSDBrowseHandle</span> **handle</code></em>,
+                         <em class="parameter"><code>const <span class="type">char</span> *domain</code></em>,
+                         <em class="parameter"><code>const <span class="type">char</span> *type</code></em>,
+                         <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#GnomeVFSDNSSDBrowseCallback" title="GnomeVFSDNSSDBrowseCallback ()"><span class="type">GnomeVFSDNSSDBrowseCallback</span></a> callback</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> callback_data_destroy_func</code></em>);</pre>
+<p>Browses <em class="parameter"><code>domain</code></em>
+ for service of the type <em class="parameter"><code>type</code></em>
+, calling <em class="parameter"><code>callback</code></em>
+ whenever
+a new one is found or removed.</p>
+<p>The domain to use can be "local" for multicast dns on the local network
+(known as mDNS), or it can be the domain of the current host. You can also
+use <a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-dns-sd-list-browse-domains-sync" title="gnome_vfs_dns_sd_list_browse_domains_sync ()"><code class="function">gnome_vfs_dns_sd_list_browse_domains_sync()</code></a> to get a list of domains
+that are interested in a particular domain.</p>
+<p>The type is a string of the form "_type._tcp" or "_type._udp", where type
+is a service type registered at http://www.dns-sd.org/ServiceTypes.html.</p>
+<div class="refsect3">
+<a name="id-1.10.2.7.4.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>pointer to a pointer to a <span class="type">GnomeVFSDNSSDBrowseHandle</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>domain</p></td>
+<td class="parameter_description"><p>dns domain to browse, or "local" for multicast DNS.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>type of service to browse for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when service is discovered.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data_destroy_func</p></td>
+<td class="parameter_description"><p>optional destructor function for <em class="parameter"><code>callback_data</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.10.2.7.4.8"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-dns-sd-stop-browse"></a><h3>gnome_vfs_dns_sd_stop_browse ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_dns_sd_stop_browse (<em class="parameter"><code><span class="type">GnomeVFSDNSSDBrowseHandle</span> *handle</code></em>);</pre>
+<p>Stops browsing a domain started with <a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-dns-sd-browse" title="gnome_vfs_dns_sd_browse ()"><code class="function">gnome_vfs_dns_sd_browse()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.10.2.7.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the browse operation to be stopped.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.10.2.7.5.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-dns-sd-resolve"></a><h3>gnome_vfs_dns_sd_resolve ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_dns_sd_resolve (<em class="parameter"><code><span class="type">GnomeVFSDNSSDResolveHandle</span> **handle</code></em>,
+                          <em class="parameter"><code>const <span class="type">char</span> *name</code></em>,
+                          <em class="parameter"><code>const <span class="type">char</span> *type</code></em>,
+                          <em class="parameter"><code>const <span class="type">char</span> *domain</code></em>,
+                          <em class="parameter"><code><span class="type">int</span> timeout</code></em>,
+                          <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#GnomeVFSDNSSDResolveCallback" title="GnomeVFSDNSSDResolveCallback ()"><span class="type">GnomeVFSDNSSDResolveCallback</span></a> callback</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> callback_data</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> callback_data_destroy_func</code></em>);</pre>
+<p>Tries to resolve a specific service (typically recieved from
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-dns-sd-browse" title="gnome_vfs_dns_sd_browse ()"><code class="function">gnome_vfs_dns_sd_browse()</code></a>) into a hostname/ip, port number and additional
+options.</p>
+<p>If you ever have to save a reference to a service you should store the
+unresolved name/type/domain tripplet, because the actual host for the
+service can change.</p>
+<p>The <em class="parameter"><code>timeout</code></em>
+ argument is primarily useful for local resolves, since the
+host owning the service might no longer be around to answer.</p>
+<div class="refsect3">
+<a name="id-1.10.2.7.6.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>pointer to a pointer to a <span class="type">GnomeVFSDNSSDResolveHandle</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the service to resolve in UTF-8 encoding.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>type of the service to resolve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>domain</p></td>
+<td class="parameter_description"><p>dns domain of the service to resolve, or "local" for multicast DNS.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>timeout</p></td>
+<td class="parameter_description"><p>maximum time (in milliseconds) to try to resolve, or zero if no maximum.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when the service has been resolved.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback_data_destroy_func</p></td>
+<td class="parameter_description"><p>optional destructor function for <em class="parameter"><code>callback_data</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.10.2.7.6.8"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-dns-sd-cancel-resolve"></a><h3>gnome_vfs_dns_sd_cancel_resolve ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_dns_sd_cancel_resolve (<em class="parameter"><code><span class="type">GnomeVFSDNSSDResolveHandle</span> *handle</code></em>);</pre>
+<p>Cancels resolving a service started with <a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-dns-sd-resolve" title="gnome_vfs_dns_sd_resolve ()"><code class="function">gnome_vfs_dns_sd_resolve()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.10.2.7.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the resolve operation to be cancelled.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.10.2.7.7.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-dns-sd-browse-sync"></a><h3>gnome_vfs_dns_sd_browse_sync ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_dns_sd_browse_sync (<em class="parameter"><code>const <span class="type">char</span> *domain</code></em>,
+                              <em class="parameter"><code>const <span class="type">char</span> *type</code></em>,
+                              <em class="parameter"><code><span class="type">int</span> timeout_msec</code></em>,
+                              <em class="parameter"><code><span class="type">int</span> *n_services</code></em>,
+                              <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#GnomeVFSDNSSDService" title="GnomeVFSDNSSDService"><span class="type">GnomeVFSDNSSDService</span></a> **services</code></em>);</pre>
+<p>Browses <em class="parameter"><code>domain</code></em>
+ for service of the type <em class="parameter"><code>type</code></em>
+, returning the result
+after blocking for the duration of the browse. For details about <em class="parameter"><code>domain</code></em>
+
+and <em class="parameter"><code>type</code></em>
+, see <a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-dns-sd-browse" title="gnome_vfs_dns_sd_browse ()"><code class="function">gnome_vfs_dns_sd_browse()</code></a>.</p>
+<p><em class="parameter"><code>timeout</code></em>
+ is essential for the "local" domain, since you can never really
+know when you've gotten the full set of return values when using multicast.</p>
+<p>The returned list can be freed with <a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-dns-sd-service-list-free" title="gnome_vfs_dns_sd_service_list_free ()"><code class="function">gnome_vfs_dns_sd_service_list_free()</code></a>.</p>
+<p>This is a synchronous version of <a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-dns-sd-browse" title="gnome_vfs_dns_sd_browse ()"><code class="function">gnome_vfs_dns_sd_browse()</code></a>, see that for
+more details.</p>
+<div class="refsect3">
+<a name="id-1.10.2.7.8.8"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>domain</p></td>
+<td class="parameter_description"><p>The dns domain to browse, or "local" for multicast DNS.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>type of the service to browse for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>timeout_msec</p></td>
+<td class="parameter_description"><p>maximum time to browse, in milliseconds.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n_services</p></td>
+<td class="parameter_description"><p>pointer to location to store number of returned services.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>services</p></td>
+<td class="parameter_description"><p>pointer to location to store returned services.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.10.2.7.8.9"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-dns-sd-resolve-sync"></a><h3>gnome_vfs_dns_sd_resolve_sync ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_dns_sd_resolve_sync (<em class="parameter"><code>const <span class="type">char</span> *name</code></em>,
+                               <em class="parameter"><code>const <span class="type">char</span> *type</code></em>,
+                               <em class="parameter"><code>const <span class="type">char</span> *domain</code></em>,
+                               <em class="parameter"><code><span class="type">int</span> timeout_msec</code></em>,
+                               <em class="parameter"><code><span class="type">char</span> **host</code></em>,
+                               <em class="parameter"><code><span class="type">int</span> *port</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Hash-Tables.html#GHashTable"><span class="type">GHashTable</span></a> **text</code></em>,
+                               <em class="parameter"><code><span class="type">int</span> *text_raw_len_out</code></em>,
+                               <em class="parameter"><code><span class="type">char</span> **text_raw_out</code></em>);</pre>
+<p>Tries to resolve a specific service (typically recieved from
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-dns-sd-browse" title="gnome_vfs_dns_sd_browse ()"><code class="function">gnome_vfs_dns_sd_browse()</code></a>) into a hostname/ip, port number and additional
+options.</p>
+<p>This is a synchronous version of <a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-dns-sd-resolve" title="gnome_vfs_dns_sd_resolve ()"><code class="function">gnome_vfs_dns_sd_resolve()</code></a>, see that (and
+its callback <a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#GnomeVFSDNSSDResolveCallback" title="GnomeVFSDNSSDResolveCallback ()"><code class="function">GnomeVFSDNSSDResolveCallback()</code></a>) for more details.</p>
+<div class="refsect3">
+<a name="id-1.10.2.7.9.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the service to resolve in UTF-8 encoding.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>type of the service to resolve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>domain</p></td>
+<td class="parameter_description"><p>dns domain of the service to resolve, or "local" for multicast DNS.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>timeout_msec</p></td>
+<td class="parameter_description"><p>maximum time(in milliseconds) to try to resolve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>host</p></td>
+<td class="parameter_description"><p>location to store the host name or ip of the host hosting the service.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>port</p></td>
+<td class="parameter_description"><p>location to store the port number to use for the service.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text</p></td>
+<td class="parameter_description"><p>location to store a hash table giving additional options about the service.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text_raw_len_out</p></td>
+<td class="parameter_description"><p>location to store length of <em class="parameter"><code>text_raw_out</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text_raw_out</p></td>
+<td class="parameter_description"><p>location to store raw version of the additional options in <em class="parameter"><code>text</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.10.2.7.9.7"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-dns-sd-service-list-free"></a><h3>gnome_vfs_dns_sd_service_list_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_dns_sd_service_list_free (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#GnomeVFSDNSSDService" title="GnomeVFSDNSSDService"><span class="type">GnomeVFSDNSSDService</span></a> *services</code></em>,
+                                    <em class="parameter"><code><span class="type">int</span> n_services</code></em>);</pre>
+<p>Frees a list of services as returned by <a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-dns-sd-browse-sync" title="gnome_vfs_dns_sd_browse_sync ()"><code class="function">gnome_vfs_dns_sd_browse_sync()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.10.2.7.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>services</p></td>
+<td class="parameter_description"><p>the list of services to free.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n_services</p></td>
+<td class="parameter_description"><p>the number of services to free.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-dns-sd-list-browse-domains-sync"></a><h3>gnome_vfs_dns_sd_list_browse_domains_sync ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_dns_sd_list_browse_domains_sync
+                               (<em class="parameter"><code>const <span class="type">char</span> *domain</code></em>,
+                                <em class="parameter"><code><span class="type">int</span> timeout_msec</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> **domains</code></em>);</pre>
+<p>Lists the recommended browsing domains for a specific dns domain.
+This can be used to find interesting domains for the domain
+you are currently in. These can then be browsed with <a class="link" href="gnome-vfs-2.0-gnome-vfs-dns-sd.html#gnome-vfs-dns-sd-browse" title="gnome_vfs_dns_sd_browse ()"><code class="function">gnome_vfs_dns_sd_browse()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.10.2.7.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>domain</p></td>
+<td class="parameter_description"><p>the domain to list browsable domains in.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>timeout_msec</p></td>
+<td class="parameter_description"><p>maximum time to run, in milliseconds.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>domains</p></td>
+<td class="parameter_description"><p>location to store the returned list of domain names strings.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.10.2.7.11.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-get-default-browse-domains"></a><h3>gnome_vfs_get_default_browse_domains ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+gnome_vfs_get_default_browse_domains (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Returns a list of domain names that is useful to
+browse for standard services. The list is generated
+by contacting the dns server of the domain part the
+hostname and asking for the list of browse domains.
+Then extra domains from a gconf setting is added.</p>
+<p>The "local" domain is not normally returned by this.
+Care should be taken with local services so that its
+obvious that they are local, and cannot be confused
+with non-local services.</p>
+<div class="refsect3">
+<a name="id-1.10.2.7.12.6"></a><h4>Returns</h4>
+<p> a <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of domain name strings.</p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-dns-sd.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GnomeVFSDNSSDServiceStatus"></a><h3>enum GnomeVFSDNSSDServiceStatus</h3>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.10.2.8.2.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-DNS-SD-SERVICE-ADDED:CAPS"></a>GNOME_VFS_DNS_SD_SERVICE_ADDED</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-DNS-SD-SERVICE-REMOVED:CAPS"></a>GNOME_VFS_DNS_SD_SERVICE_REMOVED</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GnomeVFSDNSSDService"></a><h3>GnomeVFSDNSSDService</h3>
+<pre class="programlisting">typedef struct {
+	char *name;
+	char *type;
+	char *domain;
+} GnomeVFSDNSSDService;
+</pre>
+<p>
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

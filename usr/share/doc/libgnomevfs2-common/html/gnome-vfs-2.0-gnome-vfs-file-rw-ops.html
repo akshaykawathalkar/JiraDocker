@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GnomeVFS - Filesystem Abstraction library: Reading and Writing Files</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="GnomeVFS - Filesystem Abstraction library">
+<link rel="up" href="gnome-vfs-basic-file-ops.html" title="File Operations">
+<link rel="prev" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html" title="Basic File Operations">
+<link rel="next" href="gnome-vfs-2.0-gnome-vfs-file-trunc-ops.html" title="Truncating Files">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-file-rw-ops.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-file-rw-ops.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gnome-vfs-basic-file-ops.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gnome-vfs-2.0-gnome-vfs-file-basic-ops.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gnome-vfs-2.0-gnome-vfs-file-trunc-ops.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gnome-vfs-2.0-gnome-vfs-file-rw-ops"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gnome-vfs-2.0-gnome-vfs-file-rw-ops.top_of_page"></a>Reading and Writing Files</span></h2>
+<p>Reading and Writing Files — Reading from and writing to open file handles.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-file-rw-ops.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-rw-ops.html#gnome-vfs-read" title="gnome_vfs_read ()">gnome_vfs_read</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-rw-ops.html#gnome-vfs-write" title="gnome_vfs_write ()">gnome_vfs_write</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-rw-ops.html#gnome-vfs-seek" title="gnome_vfs_seek ()">gnome_vfs_seek</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-rw-ops.html#gnome-vfs-tell" title="gnome_vfs_tell ()">gnome_vfs_tell</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-file-rw-ops.html#gnome-vfs-forget-cache" title="gnome_vfs_forget_cache ()">gnome_vfs_forget_cache</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-file-rw-ops.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-rw-ops.html#GnomeVFSSeekPosition" title="enum GnomeVFSSeekPosition">GnomeVFSSeekPosition</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-file-rw-ops.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">
+</pre>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-file-rw-ops.description"></a><h2>Description</h2>
+<p>
+  Reading and writing operations are explained, also <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-rw-ops.html#gnome-vfs-seek" title="gnome_vfs_seek ()"><code class="function">gnome_vfs_seek()</code></a>, which
+  is used to move the file pointer inside the file.
+</p>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-file-rw-ops.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gnome-vfs-read"></a><h3>gnome_vfs_read ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_read (<em class="parameter"><code><span class="type">GnomeVFSHandle</span> *handle</code></em>,
+                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> buffer</code></em>,
+                <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-size.html#GnomeVFSFileSize" title="GnomeVFSFileSize"><span class="type">GnomeVFSFileSize</span></a> bytes</code></em>,
+                <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-size.html#GnomeVFSFileSize" title="GnomeVFSFileSize"><span class="type">GnomeVFSFileSize</span></a> *bytes_read</code></em>);</pre>
+<p>Read <em class="parameter"><code>bytes</code></em>
+ from <em class="parameter"><code>handle</code></em>
+.  As with Unix system calls, the number of
+bytes read can effectively be less than <em class="parameter"><code>bytes</code></em>
+ on return and will be
+stored in <em class="parameter"><code>bytes_read</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.5.3.7.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the file to read data from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>pointer to a buffer that must be at least <em class="parameter"><code>bytes</code></em>
+bytes large.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bytes</p></td>
+<td class="parameter_description"><p>number of bytes to read.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bytes_read</p></td>
+<td class="parameter_description"><p>pointer to a variable that will hold the number of bytes
+effectively read on return.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.3.7.2.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-write"></a><h3>gnome_vfs_write ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_write (<em class="parameter"><code><span class="type">GnomeVFSHandle</span> *handle</code></em>,
+                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> buffer</code></em>,
+                 <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-size.html#GnomeVFSFileSize" title="GnomeVFSFileSize"><span class="type">GnomeVFSFileSize</span></a> bytes</code></em>,
+                 <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-size.html#GnomeVFSFileSize" title="GnomeVFSFileSize"><span class="type">GnomeVFSFileSize</span></a> *bytes_written</code></em>);</pre>
+<p>Write <em class="parameter"><code>bytes</code></em>
+ into the file opened through <em class="parameter"><code>handle</code></em>
+.  As with Unix system
+calls, the number of bytes written can effectively be less than <em class="parameter"><code>bytes</code></em>
+ on
+return and will be stored in <em class="parameter"><code>bytes_written</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.5.3.7.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the file to write data to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>pointer to the buffer containing the data to be written.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bytes</p></td>
+<td class="parameter_description"><p>number of bytes to write.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>bytes_written</p></td>
+<td class="parameter_description"><p>pointer to a variable that will hold the number of bytes
+effectively written on return.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.3.7.3.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-seek"></a><h3>gnome_vfs_seek ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_seek (<em class="parameter"><code><span class="type">GnomeVFSHandle</span> *handle</code></em>,
+                <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-rw-ops.html#GnomeVFSSeekPosition" title="enum GnomeVFSSeekPosition"><span class="type">GnomeVFSSeekPosition</span></a> whence</code></em>,
+                <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-size.html#GnomeVFSFileOffset" title="GnomeVFSFileOffset"><span class="type">GnomeVFSFileOffset</span></a> offset</code></em>);</pre>
+<p>Set the current position for reading/writing through <em class="parameter"><code>handle</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.5.3.7.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle for which the current position must be changed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>whence</p></td>
+<td class="parameter_description"><p>integer value representing the starting position.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offset</p></td>
+<td class="parameter_description"><p>number of bytes to skip from the position specified by <em class="parameter"><code>whence</code></em>
+.
+(a positive value means to move forward; a negative one to move backwards).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.3.7.4.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-tell"></a><h3>gnome_vfs_tell ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_tell (<em class="parameter"><code><span class="type">GnomeVFSHandle</span> *handle</code></em>,
+                <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-size.html#GnomeVFSFileSize" title="GnomeVFSFileSize"><span class="type">GnomeVFSFileSize</span></a> *offset_return</code></em>);</pre>
+<p>Return the current position on <em class="parameter"><code>handle</code></em>
+. This is the point in the file
+pointed to by handle that reads and writes will occur on.</p>
+<div class="refsect3">
+<a name="id-1.5.3.7.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle for which the current position must be retrieved.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offset_return</p></td>
+<td class="parameter_description"><p>pointer to a variable that will contain the current position
+on return.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.3.7.5.6"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-forget-cache"></a><h3>gnome_vfs_forget_cache ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_forget_cache (<em class="parameter"><code><span class="type">GnomeVFSHandle</span> *handle</code></em>,
+                        <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-size.html#GnomeVFSFileOffset" title="GnomeVFSFileOffset"><span class="type">GnomeVFSFileOffset</span></a> offset</code></em>,
+                        <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-size.html#GnomeVFSFileSize" title="GnomeVFSFileSize"><span class="type">GnomeVFSFileSize</span></a> size</code></em>);</pre>
+<p>With this call you can announce to gnome-vfs that you will no longer
+use the region of data starting at <em class="parameter"><code>offset</code></em>
+ with the size of <em class="parameter"><code>size</code></em>
+. Any
+cached data for this region might then be freed.</p>
+<p>This might be useful if you stream large files, for example.</p>
+<div class="refsect3">
+<a name="id-1.5.3.7.6.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the file to affect.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offset</p></td>
+<td class="parameter_description"><p>start point of the region to be freed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>length of the region to be freed (or until the end of the
+file if 0 is specified).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.5.3.7.6.7"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+<p class="since">Since 2.12</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-file-rw-ops.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GnomeVFSSeekPosition"></a><h3>enum GnomeVFSSeekPosition</h3>
+<p>This is used to specify the start position for seek operations.</p>
+<div class="refsect3">
+<a name="id-1.5.3.8.2.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-SEEK-START:CAPS"></a>GNOME_VFS_SEEK_START</p></td>
+<td class="enum_member_description">
+<p>Start of the file.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-SEEK-CURRENT:CAPS"></a>GNOME_VFS_SEEK_CURRENT</p></td>
+<td class="enum_member_description">
+<p>Current position.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-SEEK-END:CAPS"></a>GNOME_VFS_SEEK_END</p></td>
+<td class="enum_member_description">
+<p>End of the file.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

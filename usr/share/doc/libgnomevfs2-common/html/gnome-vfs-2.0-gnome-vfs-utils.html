@@ -1,0 +1,1403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GnomeVFS - Filesystem Abstraction library: gnome-vfs-utils</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="GnomeVFS - Filesystem Abstraction library">
+<link rel="up" href="data-types.html" title="Basic Data Types">
+<link rel="prev" href="gnome-vfs-2.0-gnome-vfs-uri.html" title="GnomeVFSURI">
+<link rel="next" href="gnome-vfs-2.0-gnome-vfs-file-info.html" title="GnomeVFSFileInfo">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-utils.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#gnome-vfs-2.0-gnome-vfs-utils.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="data-types.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gnome-vfs-2.0-gnome-vfs-uri.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gnome-vfs-2.0-gnome-vfs-file-info.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gnome-vfs-2.0-gnome-vfs-utils"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gnome-vfs-2.0-gnome-vfs-utils.top_of_page"></a>gnome-vfs-utils</span></h2>
+<p>gnome-vfs-utils — various utilities functions to manipulate uris</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-utils.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-format-file-size-for-display" title="gnome_vfs_format_file_size_for_display ()">gnome_vfs_format_file_size_for_display</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-format-uri-for-display" title="gnome_vfs_format_uri_for_display ()">gnome_vfs_format_uri_for_display</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-url-show" title="gnome_vfs_url_show ()">gnome_vfs_url_show</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-url-show-with-env" title="gnome_vfs_url_show_with_env ()">gnome_vfs_url_show_with_env</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-escape-string" title="gnome_vfs_escape_string ()">gnome_vfs_escape_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-escape-path-string" title="gnome_vfs_escape_path_string ()">gnome_vfs_escape_path_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-escape-host-and-path-string" title="gnome_vfs_escape_host_and_path_string ()">gnome_vfs_escape_host_and_path_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-escape-slashes" title="gnome_vfs_escape_slashes ()">gnome_vfs_escape_slashes</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-escape-set" title="gnome_vfs_escape_set ()">gnome_vfs_escape_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-unescape-string" title="gnome_vfs_unescape_string ()">gnome_vfs_unescape_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-make-uri-canonical" title="gnome_vfs_make_uri_canonical ()">gnome_vfs_make_uri_canonical</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-make-uri-canonical-strip-fragment" title="gnome_vfs_make_uri_canonical_strip_fragment ()">gnome_vfs_make_uri_canonical_strip_fragment</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-make-path-name-canonical" title="gnome_vfs_make_path_name_canonical ()">gnome_vfs_make_path_name_canonical</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-make-uri-from-input" title="gnome_vfs_make_uri_from_input ()">gnome_vfs_make_uri_from_input</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-make-uri-from-input-with-dirs" title="gnome_vfs_make_uri_from_input_with_dirs ()">gnome_vfs_make_uri_from_input_with_dirs</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-make-uri-from-shell-arg" title="gnome_vfs_make_uri_from_shell_arg ()">gnome_vfs_make_uri_from_shell_arg</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-make-uri-full-from-relative" title="gnome_vfs_make_uri_full_from_relative ()">gnome_vfs_make_uri_full_from_relative</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-expand-initial-tilde" title="gnome_vfs_expand_initial_tilde ()">gnome_vfs_expand_initial_tilde</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-unescape-string-for-display" title="gnome_vfs_unescape_string_for_display ()">gnome_vfs_unescape_string_for_display</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-get-local-path-from-uri" title="gnome_vfs_get_local_path_from_uri ()">gnome_vfs_get_local_path_from_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-get-uri-from-local-path" title="gnome_vfs_get_uri_from_local_path ()">gnome_vfs_get_uri_from_local_path</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-is-executable-command-string" title="gnome_vfs_is_executable_command_string ()">gnome_vfs_is_executable_command_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-list-deep-free" title="gnome_vfs_list_deep_free ()">gnome_vfs_list_deep_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-get-volume-free-space" title="gnome_vfs_get_volume_free_space ()">gnome_vfs_get_volume_free_space</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-icon-path-from-filename" title="gnome_vfs_icon_path_from_filename ()">gnome_vfs_icon_path_from_filename</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-is-primary-thread" title="gnome_vfs_is_primary_thread ()">gnome_vfs_is_primary_thread</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-get-uri-scheme" title="gnome_vfs_get_uri_scheme ()">gnome_vfs_get_uri_scheme</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-uris-match" title="gnome_vfs_uris_match ()">gnome_vfs_uris_match</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-open-fd" title="gnome_vfs_open_fd ()">gnome_vfs_open_fd</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-read-entire-file" title="gnome_vfs_read_entire_file ()">gnome_vfs_read_entire_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-utils.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#GnomeVFSMakeURIDirs" title="enum GnomeVFSMakeURIDirs">GnomeVFSMakeURIDirs</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#GNOME-VFS-ASSERT-PRIMARY-THREAD:CAPS" title="GNOME_VFS_ASSERT_PRIMARY_THREAD">GNOME_VFS_ASSERT_PRIMARY_THREAD</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#GNOME-VFS-ASSERT-SECONDARY-THREAD:CAPS" title="GNOME_VFS_ASSERT_SECONDARY_THREAD">GNOME_VFS_ASSERT_SECONDARY_THREAD</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-utils.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">
+</pre>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-utils.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-utils.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gnome-vfs-format-file-size-for-display"></a><h3>gnome_vfs_format_file_size_for_display ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_format_file_size_for_display
+                               (<em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-size.html#GnomeVFSFileSize" title="GnomeVFSFileSize"><span class="type">GnomeVFSFileSize</span></a> size</code></em>);</pre>
+<p>Formats the file <em class="parameter"><code>size</code></em>
+ passed so that it is easy for
+the user to read. Gives the size in bytes, kilobytes, megabytes or
+gigabytes, choosing whatever is appropriate.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-size.html#GnomeVFSFileSize" title="GnomeVFSFileSize"><span class="type">GnomeVFSFileSize</span></a> (a <span class="type">guint64</span> value).</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.2.6"></a><h4>Returns</h4>
+<p> a newly allocated string with the size ready to be shown.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-format-uri-for-display"></a><h3>gnome_vfs_format_uri_for_display ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_format_uri_for_display (<em class="parameter"><code>const <span class="type">char</span> *uri</code></em>);</pre>
+<p>Filter, modify, unescape and change <em class="parameter"><code>uri</code></em>
+ to make it appropriate
+for display to users. The conversion is done such that the roundtrip
+to UTF-8 is reversible.</p>
+<p>Rules:
+	file: uri without fragments should appear as local paths.
+	file: uri with fragments should appear as file:uri.
+	All other uri appear as expected.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.3.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>uri to be displayed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.3.7"></a><h4>Returns</h4>
+<p> a newly allocated string which represents <em class="parameter"><code>uri</code></em>
+and can be displayed.</p>
+<p></p>
+</div>
+<p class="since">Since 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-url-show"></a><h3>gnome_vfs_url_show ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_url_show (<em class="parameter"><code>const <span class="type">char</span> *url</code></em>);</pre>
+<div class="warning"><p><code class="literal">gnome_vfs_url_show</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>Launches the default application or component associated with the given <em class="parameter"><code>url</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.4.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>url</p></td>
+<td class="parameter_description"><p>url to be shown.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.4.8"></a><h4>Returns</h4>
+<p> <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a> if the default action was launched,
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-ERROR-BAD-PARAMETERS:CAPS"><code class="literal">GNOME_VFS_ERROR_BAD_PARAMETERS</code></a> for an invalid or non-existant <em class="parameter"><code>url</code></em>
+,
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-ERROR-NO-DEFAULT:CAPS"><code class="literal">GNOME_VFS_ERROR_NO_DEFAULT</code></a> if no default action is associated with the <em class="parameter"><code>url</code></em>
+.
+Also error codes from <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-action-launch" title="gnome_vfs_mime_action_launch ()"><code class="function">gnome_vfs_mime_action_launch()</code></a>
+or <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-action-launch-with-env" title="gnome_vfs_mime_action_launch_with_env ()"><code class="function">gnome_vfs_mime_action_launch_with_env()</code></a>.</p>
+<p></p>
+</div>
+<p class="since">Since 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-url-show-with-env"></a><h3>gnome_vfs_url_show_with_env ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_url_show_with_env (<em class="parameter"><code>const <span class="type">char</span> *url</code></em>,
+                             <em class="parameter"><code><span class="type">char</span> **envp</code></em>);</pre>
+<p>Like <a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-url-show" title="gnome_vfs_url_show ()"><code class="function">gnome_vfs_url_show()</code></a> except that the default action will be launched
+with the given environment.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>url</p></td>
+<td class="parameter_description"><p>url to be shown.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>envp</p></td>
+<td class="parameter_description"><p>environment data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.5.6"></a><h4>Returns</h4>
+<p> <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a> if the default action was launched.
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-ERROR-BAD-PARAMETERS:CAPS"><code class="literal">GNOME_VFS_ERROR_BAD_PARAMETERS</code></a> for an invalid or non-existant <em class="parameter"><code>url</code></em>
+,
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-ERROR-NO-DEFAULT:CAPS"><code class="literal">GNOME_VFS_ERROR_NO_DEFAULT</code></a> if no default action is associated with the <em class="parameter"><code>url</code></em>
+.
+Also error codes from <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database.html#gnome-vfs-mime-application-launch-with-env" title="gnome_vfs_mime_application_launch_with_env ()"><code class="function">gnome_vfs_mime_application_launch_with_env()</code></a>
+or <a class="link" href="gnome-vfs-2.0-gnome-vfs-mime-database-deprecated.html#gnome-vfs-mime-action-launch-with-env" title="gnome_vfs_mime_action_launch_with_env ()"><code class="function">gnome_vfs_mime_action_launch_with_env()</code></a>.</p>
+<p></p>
+</div>
+<p class="since">Since 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-escape-string"></a><h3>gnome_vfs_escape_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_escape_string (<em class="parameter"><code>const <span class="type">char</span> *string</code></em>);</pre>
+<p>Escapes <em class="parameter"><code>string</code></em>
+, replacing any and all special characters 
+with equivalent escape sequences.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>string to be escaped.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.6.6"></a><h4>Returns</h4>
+<p> a newly allocated string equivalent to <em class="parameter"><code>string</code></em>
+but with all special characters escaped.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-escape-path-string"></a><h3>gnome_vfs_escape_path_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_escape_path_string (<em class="parameter"><code>const <span class="type">char</span> *path</code></em>);</pre>
+<p>Escapes <em class="parameter"><code>path</code></em>
+, replacing only special characters that would not
+be found in paths (so '/', '&amp;', and '=' will not be escaped by
+this function).</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>path</p></td>
+<td class="parameter_description"><p>string to be escaped.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.7.6"></a><h4>Returns</h4>
+<p> a newly allocated string equivalent to <em class="parameter"><code>path</code></em>
+but
+with non-path characters escaped.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-escape-host-and-path-string"></a><h3>gnome_vfs_escape_host_and_path_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_escape_host_and_path_string (<em class="parameter"><code>const <span class="type">char</span> *path</code></em>);</pre>
+<p>Escapes <em class="parameter"><code>path</code></em>
+, replacing only special characters that would not
+be found in paths or host name (so '/', '&amp;', '=', ':' and '@'
+will not be escaped by this function).</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>path</p></td>
+<td class="parameter_description"><p>string to be escaped.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.8.6"></a><h4>Returns</h4>
+<p> a newly allocated string equivalent to <em class="parameter"><code>path</code></em>
+but
+with non-path/host characters escaped.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-escape-slashes"></a><h3>gnome_vfs_escape_slashes ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_escape_slashes (<em class="parameter"><code>const <span class="type">char</span> *string</code></em>);</pre>
+<p>Escapes only '/' and '%' characters in <em class="parameter"><code>string</code></em>
+, replacing
+them with their escape sequence equivalents.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>string to be escaped.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.9.6"></a><h4>Returns</h4>
+<p> a newly allocated string equivalent to <em class="parameter"><code>string</code></em>
+,
+but with no unescaped '/' or '%' characters.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-escape-set"></a><h3>gnome_vfs_escape_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_escape_set (<em class="parameter"><code>const <span class="type">char</span> *string</code></em>,
+                      <em class="parameter"><code>const <span class="type">char</span> *match_set</code></em>);</pre>
+<p>Escapes all characters in <em class="parameter"><code>string</code></em>
+ which are listed in <em class="parameter"><code>match_set</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>string to be escaped.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>match_set</p></td>
+<td class="parameter_description"><p>a string containing all characters to be escaped in <em class="parameter"><code>string</code></em>
+. </p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.10.6"></a><h4>Returns</h4>
+<p> a newly allocated string equivalent to <em class="parameter"><code>string</code></em>
+but
+with characters in <em class="parameter"><code>match_string</code></em>
+escaped.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-unescape-string"></a><h3>gnome_vfs_unescape_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_unescape_string (<em class="parameter"><code>const <span class="type">char</span> *escaped_string</code></em>,
+                           <em class="parameter"><code>const <span class="type">char</span> *illegal_characters</code></em>);</pre>
+<p>Decodes escaped characters (i.e. PERCENTxx sequences) in <em class="parameter"><code>escaped_string</code></em>
+.
+Characters are encoded in PERCENTxy form, where xy is the ASCII hex code 
+for character 16x+y.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>escaped_string</p></td>
+<td class="parameter_description"><p>an escaped uri, path, or other string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>illegal_characters</p></td>
+<td class="parameter_description"><p>a string containing a sequence of characters
+considered "illegal" to be escaped, '\0' is automatically in this list.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.11.6"></a><h4>Returns</h4>
+<p> a newly allocated string with the unescaped
+equivalents, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>escaped_string</code></em>
+contained an escaped
+encoding of one of the characters in <em class="parameter"><code>illegal_characters</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-make-uri-canonical"></a><h3>gnome_vfs_make_uri_canonical ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_make_uri_canonical (<em class="parameter"><code>const <span class="type">char</span> *uri</code></em>);</pre>
+<p>Standardizes the format of the <em class="parameter"><code>uri</code></em>
+, so that it can be used
+later in other functions that expect a canonical uri.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>an absolute or relative stringified uri. It might have scheme.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.12.6"></a><h4>Returns</h4>
+<p> a newly allocated string that contains the canonical
+representation of <em class="parameter"><code>uri</code></em>
+.</p>
+<p></p>
+</div>
+<p class="since">Since 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-make-uri-canonical-strip-fragment"></a><h3>gnome_vfs_make_uri_canonical_strip_fragment ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_make_uri_canonical_strip_fragment
+                               (<em class="parameter"><code>const <span class="type">char</span> *uri</code></em>);</pre>
+<p>Returns a canonicalized uri. If <em class="parameter"><code>uri</code></em>
+ contains a fragment (anything after a '#') strips off that and
+then makes the <em class="parameter"><code>uri</code></em>
+ canonical.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.13.6"></a><h4>Returns</h4>
+<p> a newly allocated string containing a canonical <em class="parameter"><code>uri</code></em>
+.</p>
+<p></p>
+</div>
+<p class="since">Since 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-make-path-name-canonical"></a><h3>gnome_vfs_make_path_name_canonical ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_make_path_name_canonical (<em class="parameter"><code>const <span class="type">char</span> *path</code></em>);</pre>
+<p>Calls <code class="function">_gnome_vfs_canonicalize_pathname()</code>, allocating storage for the 
+result and providing for a cleaner memory management.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>path</p></td>
+<td class="parameter_description"><p>a file path, relative or absolute.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.14.6"></a><h4>Returns</h4>
+<p> a canonical version of <em class="parameter"><code>path</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-make-uri-from-input"></a><h3>gnome_vfs_make_uri_from_input ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_make_uri_from_input (<em class="parameter"><code>const <span class="type">char</span> *location</code></em>);</pre>
+<p>Takes a user input path/uri and makes a valid uri out of it.</p>
+<p>This function is the reverse of <a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-format-uri-for-display" title="gnome_vfs_format_uri_for_display ()"><code class="function">gnome_vfs_format_uri_for_display()</code></a>
+but it also handles the fact that the user could have typed
+arbitrary UTF-8 in the entry showing the string.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.15.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>location</p></td>
+<td class="parameter_description"><p>a possibly mangled "uri", in UTF-8.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.15.7"></a><h4>Returns</h4>
+<p> a newly allocated uri.</p>
+<p></p>
+</div>
+<p class="since">Since 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-make-uri-from-input-with-dirs"></a><h3>gnome_vfs_make_uri_from_input_with_dirs ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_make_uri_from_input_with_dirs
+                               (<em class="parameter"><code>const <span class="type">char</span> *location</code></em>,
+                                <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#GnomeVFSMakeURIDirs" title="enum GnomeVFSMakeURIDirs"><span class="type">GnomeVFSMakeURIDirs</span></a> dirs</code></em>);</pre>
+<p>Determines a fully qualified uri from a relative or absolute input path.
+Basically calls <a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-make-uri-from-input" title="gnome_vfs_make_uri_from_input ()"><code class="function">gnome_vfs_make_uri_from_input()</code></a> except it specifically
+tries to support paths relative to the specified directories (can be homedir
+and/or current directory). See <a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#GnomeVFSMakeURIDirs" title="enum GnomeVFSMakeURIDirs"><span class="type">GnomeVFSMakeURIDirs</span></a> for more information.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.16.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>location</p></td>
+<td class="parameter_description"><p>a relative or absolute path.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dirs</p></td>
+<td class="parameter_description"><p>directory to use as a base directory if <em class="parameter"><code>location</code></em>
+is a relative path.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.16.6"></a><h4>Returns</h4>
+<p> a newly allocated string containing the fully qualified uri.</p>
+<p></p>
+</div>
+<p class="since">Since 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-make-uri-from-shell-arg"></a><h3>gnome_vfs_make_uri_from_shell_arg ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_make_uri_from_shell_arg (<em class="parameter"><code>const <span class="type">char</span> *uri</code></em>);</pre>
+<p>Similar to <a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-make-uri-from-input" title="gnome_vfs_make_uri_from_input ()"><code class="function">gnome_vfs_make_uri_from_input()</code></a>, except that:</p>
+<p>1) guesses relative paths instead of http domains.
+2) doesn't bother stripping leading/trailing white space.
+3) doesn't bother with ~ expansion--that's done by the shell.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.17.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>path to make the uri from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.17.7"></a><h4>Returns</h4>
+<p> a newly allocated string representing <em class="parameter"><code>uri</code></em>
+.</p>
+<p></p>
+</div>
+<p class="since">Since 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-make-uri-full-from-relative"></a><h3>gnome_vfs_make_uri_full_from_relative ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_make_uri_full_from_relative (<em class="parameter"><code>const <span class="type">char</span> *base_uri</code></em>,
+                                       <em class="parameter"><code>const <span class="type">char</span> *relative_uri</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gnome_vfs_make_uri_full_from_relative</code> is deprecated and should not be used in newly-written code.</p>
+<p>This function is deprecated, please use 
+<a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#gnome-vfs-uri-make-full-from-relative" title="gnome_vfs_uri_make_full_from_relative ()"><code class="function">gnome_vfs_uri_make_full_from_relative()</code></a> from gnome-vfs-uri.h .</p>
+</div>
+<p>Returns a string representing the full uri given a full <em class="parameter"><code>base_uri</code></em>
+ and a 
+secondary uri which may be relative.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.18.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>base_uri</p></td>
+<td class="parameter_description"><p>path to use as the base for the full uri.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>relative_uri</p></td>
+<td class="parameter_description"><p>full or relative path to be appended to the <em class="parameter"><code>base_uri</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.18.8"></a><h4>Returns</h4>
+<p> a newly allocated string containing the uri.
+(<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for some bad errors).</p>
+<p></p>
+</div>
+<p class="since">Since 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-expand-initial-tilde"></a><h3>gnome_vfs_expand_initial_tilde ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_expand_initial_tilde (<em class="parameter"><code>const <span class="type">char</span> *path</code></em>);</pre>
+<p>If <em class="parameter"><code>path</code></em>
+ starts with a ~, representing the user's home
+directory, expand it to the actual path location.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.19.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>path</p></td>
+<td class="parameter_description"><p>a local file path which may start with a '~'.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.19.6"></a><h4>Returns</h4>
+<p> a newly allocated string with the initial
+tilde (if there was one) converted to an actual path.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-unescape-string-for-display"></a><h3>gnome_vfs_unescape_string_for_display ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_unescape_string_for_display (<em class="parameter"><code>const <span class="type">char</span> *escaped</code></em>);</pre>
+<p>Similar to gnome_vfs_unescape_string, but it returns something
+semi-intelligable to a user even upon receiving traumatic input
+such as <code class="literal">00</code> or URIs in bad form.</p>
+<p>See also: <a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-unescape-string" title="gnome_vfs_unescape_string ()"><code class="function">gnome_vfs_unescape_string()</code></a>.</p>
+<p>WARNING: You should never use this function on a whole URI!  It
+unescapes reserved characters, and can result in a mangled URI
+that can not be re-entered.  For example, it unescapes "#" "&amp;" and "?",
+which have special meanings in URI strings.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.20.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>escaped</p></td>
+<td class="parameter_description"><p>a string encoded with escaped sequences.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.20.8"></a><h4>Returns</h4>
+<p> a pointer to a g_malloc'd string with all characters
+replacing their escaped hex values.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-get-local-path-from-uri"></a><h3>gnome_vfs_get_local_path_from_uri ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_get_local_path_from_uri (<em class="parameter"><code>const <span class="type">char</span> *uri</code></em>);</pre>
+<p>Create a local path for a file:/// uri. Do not use with uris
+of other methods.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.21.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>uri to convert to a local path.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.21.6"></a><h4>Returns</h4>
+<p> a newly allocated string containing the local path.
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is returned on error or if the uri isn't a file: uri
+without a fragment identifier (or chained uri).</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-get-uri-from-local-path"></a><h3>gnome_vfs_get_uri_from_local_path ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_get_uri_from_local_path (<em class="parameter"><code>const <span class="type">char</span> *local_full_path</code></em>);</pre>
+<p>Returns a file:/// URI for the local path <em class="parameter"><code>local_full_path</code></em>
+, 
+such as a path provided by <code class="function">gtk_file_chooser_get_filename()</code>.
+The resulting URI may be provided, for instance, to <a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#gnome-vfs-uri-new" title="gnome_vfs_uri_new ()"><code class="function">gnome_vfs_uri_new()</code></a>.</p>
+<p>On Windows <em class="parameter"><code>local_full_path</code></em>
+ should be in the UTF-8 encoding, and can start with a drive
+letter, but doesn't have to.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.22.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>local_full_path</p></td>
+<td class="parameter_description"><p>a full local filesystem path (i.e. not relative).</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.22.7"></a><h4>Returns</h4>
+<p> a newly allocated string containing the uri corresponding
+to <em class="parameter"><code>local_full_path</code></em>
+(<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for some bad errors).</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-is-executable-command-string"></a><h3>gnome_vfs_is_executable_command_string ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gnome_vfs_is_executable_command_string
+                               (<em class="parameter"><code>const <span class="type">char</span> *command_string</code></em>);</pre>
+<p>Checks if <em class="parameter"><code>command_string</code></em>
+ starts with the full path of an executable file
+or an executable in $PATH.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.23.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>command_string</p></td>
+<td class="parameter_description"><p>a string representing a command ie "xterm -bg white".</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.23.6"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>command_string</code></em>
+started with an executable file, and is in $PATH,
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-list-deep-free"></a><h3>gnome_vfs_list_deep_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gnome_vfs_list_deep_free (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *list</code></em>);</pre>
+<p>Free <em class="parameter"><code>list</code></em>
+ and call <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> on all data members.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.24.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>list</p></td>
+<td class="parameter_description"><p>list to be freed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-get-volume-free-space"></a><h3>gnome_vfs_get_volume_free_space ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_get_volume_free_space (<em class="parameter"><code>const <a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a> *vfs_uri</code></em>,
+                                 <em class="parameter"><code><a class="link" href="gnome-vfs-2.0-gnome-vfs-file-size.html#GnomeVFSFileSize" title="GnomeVFSFileSize"><span class="type">GnomeVFSFileSize</span></a> *size</code></em>);</pre>
+<p>Stores the amount of free space in bytes on <em class="parameter"><code>vfs</code></em>
+-uri's
+volume in <em class="parameter"><code>size</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.25.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>vfs_uri</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gnome-vfs-2.0-gnome-vfs-uri.html#GnomeVFSURI" title="GnomeVFSURI"><span class="type">GnomeVFSURI</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gnome-vfs-2.0-gnome-vfs-file-size.html#GnomeVFSFileSize" title="GnomeVFSFileSize"><span class="type">GnomeVFSFileSize</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.25.6"></a><h4>Returns</h4>
+<p> <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a> on success, otherwise an
+<code class="literal">GNOME_VFS_ERROR_</code>* code.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-icon-path-from-filename"></a><h3>gnome_vfs_icon_path_from_filename ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_icon_path_from_filename (<em class="parameter"><code>const <span class="type">char</span> *filename</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.4.4.7.26.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>path to a file. Could be relative or absolute path.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.26.5"></a><h4>Returns</h4>
+<p> Returns the icon path for the <em class="parameter"><code>filename</code></em>
+. Example:
+gnome_vfs_icon_path_from_filename ("nautilus/nautilus-desktop.png") will return a string
+forming the full path of the file nautilus-desktop.png ie $PREFIX/share/pixmaps/nautilus/nautilus-desktop.png.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-is-primary-thread"></a><h3>gnome_vfs_is_primary_thread ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gnome_vfs_is_primary_thread (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Check if the current thread is the thread with the main glib event loop.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.27.5"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the current thread is the thread with the
+main glib event loop.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-get-uri-scheme"></a><h3>gnome_vfs_get_uri_scheme ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+gnome_vfs_get_uri_scheme (<em class="parameter"><code>const <span class="type">char</span> *uri</code></em>);</pre>
+<p>Retrieve the scheme used in <em class="parameter"><code>uri</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.28.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>a stringified uri.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.28.6"></a><h4>Returns</h4>
+<p> a newly allocated string containing the scheme, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+if <em class="parameter"><code>uri</code></em>
+doesn't contain a scheme.</p>
+<p></p>
+</div>
+<p class="since">Since 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-uris-match"></a><h3>gnome_vfs_uris_match ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gnome_vfs_uris_match (<em class="parameter"><code>const <span class="type">char</span> *uri_1</code></em>,
+                      <em class="parameter"><code>const <span class="type">char</span> *uri_2</code></em>);</pre>
+<p>Compare two uris.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.29.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>uri_1</p></td>
+<td class="parameter_description"><p>stringified uri to compare with <em class="parameter"><code>uri_2</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri_2</p></td>
+<td class="parameter_description"><p>stringified uri to compare with <em class="parameter"><code>uri_1</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.29.6"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if they are the same, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+<p></p>
+</div>
+<p class="since">Since 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-open-fd"></a><h3>gnome_vfs_open_fd ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_open_fd (<em class="parameter"><code><span class="type">GnomeVFSHandle</span> **handle</code></em>,
+                   <em class="parameter"><code><span class="type">int</span> filedes</code></em>);</pre>
+<p>Converts an open unix file descript into a GnomeVFSHandle that 
+can be used with the normal GnomeVFS file operations. When the
+handle is closed the file descriptor will also be closed.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.30.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>A pointer to a pointer to a GnomeVFSHandle object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filedes</p></td>
+<td class="parameter_description"><p>a UNIX file descriptor</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.30.6"></a><h4>Returns</h4>
+<p> <a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GNOME-VFS-OK:CAPS"><code class="literal">GNOME_VFS_OK</code></a> if the open was ok, a suitable error otherwise.</p>
+<p>Since 2.2</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gnome-vfs-read-entire-file"></a><h3>gnome_vfs_read_entire_file ()</h3>
+<pre class="programlisting"><a class="link" href="gnome-vfs-2.0-gnome-vfs-result.html#GnomeVFSResult" title="enum GnomeVFSResult"><span class="returnvalue">GnomeVFSResult</span></a>
+gnome_vfs_read_entire_file (<em class="parameter"><code>const <span class="type">char</span> *uri</code></em>,
+                            <em class="parameter"><code><span class="type">int</span> *file_size</code></em>,
+                            <em class="parameter"><code><span class="type">char</span> **file_contents</code></em>);</pre>
+<p>Reads an entire file into memory for convenience. Beware accidentally
+loading large files into memory with this function.</p>
+<p>Since version 2.10 the string stored in <em class="parameter"><code>file_contents</code></em>
+ will be null-terminated,
+so for text files you can use result as a normal string.</p>
+<div class="refsect3">
+<a name="id-1.4.4.7.31.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>uri of the file to read.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>file_size</p></td>
+<td class="parameter_description"><p>after reading the file, contains the size of the file read.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>file_contents</p></td>
+<td class="parameter_description"><p>contains the file_size bytes, the contents of the file at <em class="parameter"><code>uri</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.7.31.7"></a><h4>Returns</h4>
+<p> an integer representing the result of the operation.</p>
+<p></p>
+</div>
+<p class="since">Since 2.2</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gnome-vfs-2.0-gnome-vfs-utils.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GnomeVFSMakeURIDirs"></a><h3>enum GnomeVFSMakeURIDirs</h3>
+<p>Flags that can be passed to <a class="link" href="gnome-vfs-2.0-gnome-vfs-utils.html#gnome-vfs-make-uri-from-input-with-dirs" title="gnome_vfs_make_uri_from_input_with_dirs ()"><code class="function">gnome_vfs_make_uri_from_input_with_dirs()</code></a>.
+If the given input might be a relative path it checks for existence of the file
+in the directory specified by this flag.
+If both flags are passed the current directory is checked first.</p>
+<div class="refsect3">
+<a name="id-1.4.4.8.2.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-MAKE-URI-DIR-NONE:CAPS"></a>GNOME_VFS_MAKE_URI_DIR_NONE</p></td>
+<td class="enum_member_description">
+<p>Don't check any directory</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-MAKE-URI-DIR-HOMEDIR:CAPS"></a>GNOME_VFS_MAKE_URI_DIR_HOMEDIR</p></td>
+<td class="enum_member_description">
+<p>Check the home directory</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GNOME-VFS-MAKE-URI-DIR-CURRENT:CAPS"></a>GNOME_VFS_MAKE_URI_DIR_CURRENT</p></td>
+<td class="enum_member_description">
+<p>Check the current direcotry</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GNOME-VFS-ASSERT-PRIMARY-THREAD:CAPS"></a><h3>GNOME_VFS_ASSERT_PRIMARY_THREAD</h3>
+<pre class="programlisting">#define GNOME_VFS_ASSERT_PRIMARY_THREAD g_assert (gnome_vfs_is_primary_thread())
+</pre>
+<p>Asserts that the current thread is the thread with 
+the main glib event loop</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GNOME-VFS-ASSERT-SECONDARY-THREAD:CAPS"></a><h3>GNOME_VFS_ASSERT_SECONDARY_THREAD</h3>
+<pre class="programlisting">#define GNOME_VFS_ASSERT_SECONDARY_THREAD g_assert (!gnome_vfs_is_primary_thread())
+</pre>
+<p>Asserts that the current thread is NOT the thread with
+the main glib event loop</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

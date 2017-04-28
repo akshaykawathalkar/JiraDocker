@@ -1,0 +1,1 @@
+define("jira/analytics",["underscore"],function(_){function globalAJS(){if(!window.AJS){window.AJS={}}return window.AJS}var localAjs=globalAJS();localAjs.EventQueue=localAjs.EventQueue||[];function send(options){options=options||{};options.properties=_.extend({},options.data,options.properties);localAjs.EventQueue.push(options)}return{send:send}});
